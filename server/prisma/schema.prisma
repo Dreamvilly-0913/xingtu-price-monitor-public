@@ -1,0 +1,184 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// 金额使用整数分，避免 SQLite 和 PostgreSQL 浮点计算的舍入差异。
+model User {
+  id           String   @id @default(cuid())
+  username     String   @unique
+  passwordHash String
+  displayName  String
+  tokenVersion Int      @default(0)
+  mustChangePassword Boolean @default(false)
+  createdAt    DateTime @default(now())
+}
+
+model ProductGroup {
+  id        String    @id @default(cuid())
+  name      String    @unique
+  products  Product[]
+  createdAt DateTime  @default(now())
+}
+
+model Product {
+  id               String             @id @default(cuid())
+  name             String
+  platform         String
+  url              String
+  sku              String
+  category         String
+  basePriceCents   Int
+  targetPriceCents Int
+  sourceType       String             @default("demo")
+  collectorConfig  String             @default("{}")
+  enabled          Boolean            @default(true)
+  groupId          String?
+  group            ProductGroup?      @relation(fields: [groupId], references: [id], onDelete: SetNull)
+  collections      CollectionRecord[]
+  alerts           Alert[]
+  alertRuleStates  AlertRuleState[]
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+
+  // currentPrice 和 min/max/avg 不落商品表，均从成功采集流水实时派生。
+  @@index([platform, category, enabled])
+  @@index([groupId])
+}
+
+model CollectionRecord {
+  id            String   @id @default(cuid())
+  productId     String
+  product       Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  sourceType    String
+  sourceLabel   String
+  status        String
+  priceCents    Int?
+  failureReason String?
+  collectedAt   DateTime
+  trigger       String   @default("manual")
+  // 演示采集同日的第 N 次抽样，种子仍仅由商品 ID + 日期确定。
+  demoSequence  Int?
+  collectorSnapshot String @default("{}")
+  createdAt     DateTime @default(now())
+  // 关联调度轮次；手动单商品采集不强制归入全局轮次。
+  runId         String?
+  run           CollectionRun? @relation(fields: [runId], references: [id], onDelete: SetNull)
+  runItem       CollectionRunItem?
+
+  @@index([productId, collectedAt])
+  @@index([status, collectedAt])
+  @@index([productId, status, collectedAt, createdAt, id])
+  @@index([runId, status])
+}
+
+model Alert {
+  id             String    @id @default(cuid())
+  productId      String
+  product        Product   @relation(fields: [productId], references: [id], onDelete: Cascade)
+  rule           String
+  priceCents     Int
+  threshold      Float
+  message        String
+  sourceType     String
+  sourceLabel    String
+  triggeredAt    DateTime
+  readAt         DateTime?
+  resolvedAt     DateTime?
+  baselineRecordId String?
+  baselinePriceCents Int?
+  baselineCollectedAt DateTime?
+  baselineSourceType String?
+  collectionIdentity String @default("")
+  currentRuleState AlertRuleState? @relation("RuleLastAlert")
+
+  @@index([productId, rule, triggeredAt])
+  @@index([readAt, triggeredAt])
+}
+
+// 当前规则状态与通知历史分别保存，冷却期间也能准确表示再次达标。
+model AlertRuleState {
+  id                  String @id @default(cuid())
+  productId           String
+  product             Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  rule                String
+  active              Boolean @default(false)
+  sourceType          String
+  sourceLabel         String
+  collectionIdentity  String
+  // 评估所依据的成功采集点，用于防止同价的新报价被当成旧点忽略。
+  collectionRecordId  String?
+  priceCents          Int?
+  threshold           Float
+  message             String
+  evaluatedAt         DateTime
+  activeSince         DateTime?
+  lastAlertId         String? @unique
+  lastAlert           Alert? @relation("RuleLastAlert", fields: [lastAlertId], references: [id], onDelete: SetNull)
+  baselineRecordId    String?
+  baselinePriceCents  Int?
+  baselineCollectedAt DateTime?
+  baselineSourceType  String?
+
+  @@unique([productId, rule])
+  @@index([active, evaluatedAt])
+}
+
+model Setting {
+  id                        String   @id @default("global")
+  collectionIntervalMinutes Int      @default(30)
+  demoVolatilityPercent     Float    @default(2.5)
+  dropThresholdPercent      Float    @default(5)
+  lastScheduledAt           DateTime?
+  updatedAt                 DateTime @updatedAt
+}
+
+model CollectionRun {
+  id           String    @id @default(cuid())
+  trigger      String
+  startedAt    DateTime  @default(now())
+  finishedAt   DateTime?
+  total        Int       @default(0)
+  successCount Int       @default(0)
+  failureCount Int       @default(0)
+  status       String    @default("running")
+  error        String?
+  interruptedCount Int @default(0)
+  items        CollectionRunItem[]
+  records      CollectionRecord[]
+}
+
+// 不关联Product外键，商品在采集中被删除时仍保留本轮派发与结束情况。
+model CollectionRunItem {
+  id                 String @id @default(cuid())
+  runId              String
+  run                CollectionRun @relation(fields: [runId], references: [id], onDelete: Cascade)
+  productId          String
+  status             String @default("pending")
+  startedAt          DateTime?
+  finishedAt         DateTime?
+  error              String?
+  collectionRecordId String? @unique
+  collectionRecord   CollectionRecord? @relation(fields: [collectionRecordId], references: [id], onDelete: SetNull)
+
+  @@unique([runId, productId])
+  @@index([runId, status])
+}
+
+// 管理操作独立审计，删除商品后仍保留动作；不保存密码、令牌或价格接口密钥。
+model AuditLog {
+  id           String   @id @default(cuid())
+  userId       String?
+  username     String
+  action       String
+  entityType   String
+  entityId     String?
+  metadata     String   @default("{}")
+  createdAt    DateTime @default(now())
+  @@index([createdAt])
+  @@index([entityType, entityId, createdAt])
+}

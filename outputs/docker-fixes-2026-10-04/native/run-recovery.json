@@ -1,0 +1,93 @@
+{
+  "status": "passed",
+  "generatedAt": "2026-10-04T10:45:39.787Z",
+  "assertions": 62,
+  "groups": 9,
+  "isolation": "独立 SQLite、真实本地 HTTP 故障夹具和强杀子进程；不访问运营数据库、不代表市场报价",
+  "database": "<project-root>/work/run-recovery/recovery-1791110726268.db",
+  "results": {
+    "atomicCommit": {
+      "savedRecords": 1,
+      "successCount": 1,
+      "duplicateRecords": 0,
+      "savedPriceCents": 10012
+    },
+    "atomicRollback": {
+      "savedRecords": 0,
+      "successCount": 0,
+      "interruptedCount": 1
+    },
+    "postCommitError": {
+      "runId": "cmutp3258000cug5oj3pccj9s",
+      "total": 1,
+      "successCount": 1,
+      "failureCount": 0,
+      "interruptedCount": 0,
+      "status": "completed"
+    },
+    "hostSpacingUnderDatabaseDelay": {
+      "firstStartDatabaseDelayMs": 120,
+      "minimumConfiguredGapMs": 90,
+      "actualStartGapMs": 106,
+      "runId": "cmutp327f000kug5o7d7fh1y2",
+      "total": 2,
+      "successCount": 2,
+      "failureCount": 0,
+      "interruptedCount": 0,
+      "status": "completed"
+    },
+    "hardKillRecovery": {
+      "killedProcessExit": [
+        null,
+        "SIGKILL"
+      ],
+      "childOutput": "",
+      "beforeKillSuccessCount": 1,
+      "recovered": {
+        "status": "interrupted",
+        "successCount": 1,
+        "failureCount": 0,
+        "interruptedCount": 2
+      },
+      "afterRestart": {
+        "runId": "cmutp35pf000nug5odhmoijzw",
+        "total": 3,
+        "successCount": 2,
+        "failureCount": 1,
+        "interruptedCount": 0,
+        "status": "completed_with_errors"
+      }
+    },
+    "legacyRecovery": {
+      "status": "interrupted",
+      "successCount": 2,
+      "failureCount": 1,
+      "unknownTaskCount": true
+    },
+    "gracefulPreClose": {
+      "status": 200,
+      "connection": "close",
+      "body": {
+        "runId": "cmutp36gy001nug5ol5m60yhy",
+        "total": 3,
+        "successCount": 1,
+        "failureCount": 0,
+        "interruptedCount": 2,
+        "status": "interrupted"
+      },
+      "elapsedMs": 846,
+      "additionalHttpRequests": 0
+    },
+    "backgroundShutdown": {
+      "elapsedMs": 794,
+      "pluginTimeoutMs": 250,
+      "gatedWaitMs": 750,
+      "savedRecords": 1
+    },
+    "manualQueueCancellation": {
+      "startedRequests": 1,
+      "savedRecords": 1,
+      "canceledQueuedRequests": 1
+    }
+  }
+}

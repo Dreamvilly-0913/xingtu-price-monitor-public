@@ -1,0 +1,14 @@
+{
+  "name": "docker-fix-infra",
+  "startedAt": "2026-10-04T09:58:53.325Z",
+  "sourceScope": "新生产镜像的隔离Docker容器；价格为受控测试HTTP报价",
+  "checks": [],
+  "requests": [],
+  "fatalError": "Docker network create failed: Error response from daemon: failed to update bridge store for object type *bridge.networkConfiguration: write /var/lib/docker/network/files/local-kv.db: read-only file system\n",
+  "completedAt": "2026-10-04T09:58:53.688Z",
+  "durationMs": 363,
+  "assertions": 0,
+  "passed": 0,
+  "failed": 0,
+  "status": "incomplete"
+}

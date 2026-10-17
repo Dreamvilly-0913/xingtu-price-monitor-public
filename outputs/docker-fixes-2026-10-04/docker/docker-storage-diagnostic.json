@@ -1,0 +1,23 @@
+{
+  "status": "blocked_by_docker_storage",
+  "attemptedAction": "First isolated QA network creation",
+  "originalError": "Docker network create failed: Error response from daemon: failed to update bridge store for object type *bridge.networkConfiguration: write /var/lib/docker/network/files/local-kv.db: read-only file system",
+  "qaContainersCreated": 0,
+  "qaVolumesCreated": 0,
+  "productionContainerObservedState": "healthy",
+  "imageIdObserved": "sha256:151869e250355eb2191fb0661d80d102fef603d08c6eff9e0c41868c550c9797",
+  "dockerServerVersion": "29.8.1",
+  "dockerStorageDriver": "overlayfs / containerd snapshotter",
+  "wslDistro": "docker-desktop running, version 2",
+  "hostDiskSpaceGB": { "C": { "free": 0.00, "used": 200.00 }, "D": { "free": 225.70, "used": 525.94 } },
+  "kernelErrors": [
+    "EXT4-fs warning (device sdd): I/O error writing to inode",
+    "EXT4-fs (sdd): failed to convert unwritten extents to written extents -- potential data loss!",
+    "EXT4-fs error (device sdd): ext4_journal_check_start: comm dockerd: Detected aborted journal",
+    "EXT4-fs (sdd): I/O error while writing superblock",
+    "EXT4-fs (sdd): Remounting filesystem read-only"
+  ],
+  "readOnlyDiagnosticsPerformed": ["docker image inspect", "docker ps", "docker network/volume label listing", "docker info", "wsl --list --verbose", "WSL mount/df/dmesg"],
+  "repairAttemptsByVerifier": 0,
+  "rootAgentNotified": true
+}

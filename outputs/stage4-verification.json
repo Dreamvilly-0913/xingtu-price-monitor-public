@@ -1,0 +1,172 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-10-04T05:37:10.152Z",
+  "apiBase": "http://127.0.0.1:4010/api",
+  "requests": 40,
+  "assertions": 1551,
+  "productCount": 12,
+  "totalCollections": 372,
+  "replayedPoints": 372,
+  "currentPriceMatchCount": 12,
+  "alertCount": 3,
+  "activeAlertCount": 3,
+  "belowTargetCount": 3,
+  "groups": [
+    {
+      "name": "AirPods Pro 2",
+      "cheapestPlatform": "pdd",
+      "cheapestPrice": 1513.56
+    },
+    {
+      "name": "iPhone 16 128G",
+      "cheapestPlatform": "jd",
+      "cheapestPrice": 5558.62
+    }
+  ],
+  "products": [
+    {
+      "productId": "pdd-midea-0",
+      "name": "美的空调 1.5 匹",
+      "platform": "pdd",
+      "currentPrice": 2041.47,
+      "minPrice": 1990.8,
+      "maxPrice": 2287.1,
+      "avgPrice": 2108.43,
+      "maxDrawdownPercent": 12.9553,
+      "pointCount": 31,
+      "sourceLabel": "演示模拟"
+    },
+    {
+      "productId": "pdd-haier-0",
+      "name": "海尔冰箱 BCD-216",
+      "platform": "pdd",
+      "currentPrice": 1685.24,
+      "minPrice": 1476,
+      "maxPrice": 1717.29,
+      "avgPrice": 1608.5,
+      "maxDrawdownPercent": 3.2676,
+      "pointCount": 31,
+      "sourceLabel": "演示模拟"
+    },
+    {
+      "productId": "pdd-airpods-0",
+      "name": "AirPods Pro 2",
+      "platform": "pdd",
+      "currentPrice": 1513.56,
+      "minPrice": 1428.92,
+      "maxPrice": 1569.38,
+      "avgPrice": 1491.83,
+      "maxDrawdownPercent": 5.9995,
+      "pointCount": 31,
+      "sourceLabel": "演示模拟"
+    },
+    {
+      "productId": "pdd-iphone16-0",
+      "name": "iPhone 16 128G",
+      "platform": "pdd",
+      "currentPrice": 6014.33,
+      "minPrice": 5395.17,
+      "maxPrice": 6127.09,
+      "avgPrice": 5862.66,
+      "maxDrawdownPercent": 5.5376,
+      "pointCount": 31,
+      "sourceLabel": "演示模拟"
+    },
+    {
+      "productId": "tmall-matepad-0",
+      "name": "华为 MatePad 11.5",
+      "platform": "tmall",
+      "currentPrice": 1935.49,
+      "minPrice": 1793.72,
+      "maxPrice": 2115.08,
+      "avgPrice": 1973.94,
+      "maxDrawdownPercent": 8.4909,
+      "pointCount": 31,
+      "sourceLabel": "演示模拟"
+    },
+    {
+      "productId": "tmall-dyson-0",
+      "name": "戴森 V12",
+      "platform": "tmall",
+      "currentPrice": 4484.98,
+      "minPrice": 4303.72,
+      "maxPrice": 4979.37,
+      "avgPrice": 4666.84,
+      "maxDrawdownPercent": 9.9288,
+      "pointCount": 31,
+      "sourceLabel": "演示模拟"
+    },
+    {
+      "productId": "tmall-sony-0",
+      "name": "索尼 WH-1000XM5",
+      "platform": "tmall",
+      "currentPrice": 2432.16,
+      "minPrice": 2143.95,
+      "maxPrice": 2519.66,
+      "avgPrice": 2313.07,
+      "maxDrawdownPercent": 7.9783,
+      "pointCount": 31,
+      "sourceLabel": "演示模拟"
+    },
+    {
+      "productId": "tmall-iphone16-0",
+      "name": "iPhone 16 128G",
+      "platform": "tmall",
+      "currentPrice": 5946.58,
+      "minPrice": 5805.08,
+      "maxPrice": 6249.49,
+      "avgPrice": 6018.94,
+      "maxDrawdownPercent": 5.7964,
+      "pointCount": 31,
+      "sourceLabel": "演示模拟"
+    },
+    {
+      "productId": "jd-switch-0",
+      "name": "Switch OLED",
+      "platform": "jd",
+      "currentPrice": 2497.5,
+      "minPrice": 2463.26,
+      "maxPrice": 2678.49,
+      "avgPrice": 2536.24,
+      "maxDrawdownPercent": 8.0355,
+      "pointCount": 31,
+      "sourceLabel": "演示模拟"
+    },
+    {
+      "productId": "jd-xiaomi15-0",
+      "name": "小米 15",
+      "platform": "jd",
+      "currentPrice": 4873.4,
+      "minPrice": 4152.21,
+      "maxPrice": 4873.4,
+      "avgPrice": 4409.03,
+      "maxDrawdownPercent": 8.1751,
+      "pointCount": 31,
+      "sourceLabel": "演示模拟"
+    },
+    {
+      "productId": "jd-airpods-5",
+      "name": "AirPods Pro 2",
+      "platform": "jd",
+      "currentPrice": 1794.9,
+      "minPrice": 1770.11,
+      "maxPrice": 2004.4,
+      "avgPrice": 1858.02,
+      "maxDrawdownPercent": 11.4962,
+      "pointCount": 31,
+      "sourceLabel": "演示模拟"
+    },
+    {
+      "productId": "jd-iphone16-2",
+      "name": "iPhone 16 128G",
+      "platform": "jd",
+      "currentPrice": 5558.62,
+      "minPrice": 5226.54,
+      "maxPrice": 5999.75,
+      "avgPrice": 5651.53,
+      "maxDrawdownPercent": 12.8874,
+      "pointCount": 31,
+      "sourceLabel": "演示模拟"
+    }
+  ]
+}

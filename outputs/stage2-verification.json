@@ -1,0 +1,135 @@
+{
+  "passed": true,
+  "apiRequests": 56,
+  "assertionCount": 120,
+  "testDatabase": "<project-root>/work/stage2/api-1791091661761.db",
+  "fixtureExplanation": "真实采集器通过本地 HTTP 测试夹具验证 JSON/网页/异常；这些价格不代表电商市场价格，交付演示库未受影响。",
+  "demo": {
+    "firstPrice": 99.94,
+    "secondPrice": 101.15,
+    "movementPercent": 1.210726,
+    "limitPercent": 3
+  },
+  "alerts": {
+    "baselinePrice": 100,
+    "compressedPrice": 80,
+    "dropPercent24h": 20,
+    "createdCount": 2,
+    "duplicateCreatedCount": 0,
+    "cooldownCreatedCount": 0,
+    "remainingActiveAfterRecovery": 0
+  },
+  "collectorCases": [
+    {
+      "path": "/array",
+      "status": "success",
+      "price": 5999,
+      "failureReason": null
+    },
+    {
+      "path": "/html",
+      "status": "success",
+      "price": 1234.56,
+      "failureReason": null
+    },
+    {
+      "path": "/scientific",
+      "status": "success",
+      "price": 1000,
+      "failureReason": null
+    },
+    {
+      "path": "/decimal",
+      "status": "success",
+      "price": 0.99,
+      "failureReason": null
+    },
+    {
+      "path": "/zero",
+      "status": "failure",
+      "price": null,
+      "failureReason": "价格必须大于 0，实际解析值：0"
+    },
+    {
+      "path": "/negative",
+      "status": "failure",
+      "price": null,
+      "failureReason": "价格必须大于 0，实际解析值：-99"
+    },
+    {
+      "path": "/tiny",
+      "status": "failure",
+      "price": null,
+      "failureReason": "价格超出可存储的有效金额范围"
+    },
+    {
+      "path": "/huge",
+      "status": "failure",
+      "price": null,
+      "failureReason": "价格超出可存储的有效金额范围"
+    },
+    {
+      "path": "/bad-json",
+      "status": "failure",
+      "price": null,
+      "failureReason": "返回内容不是有效 JSON，可能遭遇拦截：<html>访问被拦截</html>"
+    },
+    {
+      "path": "/missing",
+      "status": "failure",
+      "price": null,
+      "failureReason": "HTTP 404 Not Found"
+    },
+    {
+      "path": "/timeout",
+      "status": "failure",
+      "price": null,
+      "failureReason": "请求超时，采集已取消"
+    },
+    {
+      "path": "/json",
+      "status": "failure",
+      "price": null,
+      "failureReason": "JSON 路径未找到价格：missing.path"
+    },
+    {
+      "path": "/html",
+      "status": "failure",
+      "price": null,
+      "failureReason": "CSS 选择器未匹配元素：.absent"
+    }
+  ],
+  "failure": {
+    "reason": "fetch failed；bad port",
+    "consecutiveFailures": 2,
+    "unchangedCurrentPrice": 101.15,
+    "oldPriceSource": "演示模拟",
+    "configuredSource": "真实采集"
+  },
+  "scheduler": {
+    "manualRun": {
+      "runId": "cmutdqhe6000xughghz9q7rd9",
+      "total": 3,
+      "successCount": 2,
+      "failureCount": 1
+    },
+    "dueRun": {
+      "runId": "cmutdqhgz0014ughgy0wt283x",
+      "total": 3,
+      "successCount": 2,
+      "failureCount": 1
+    },
+    "nonRepeat": true,
+    "restartAnchorPreserved": true
+  },
+  "comparison": {
+    "cheapestPlatform": "tmall",
+    "cheapestPrice": 80
+  },
+  "pagination": {
+    "pageSize": 2,
+    "returned": 2,
+    "total": 4
+  },
+  "seedDatabaseUntouched": true
+}

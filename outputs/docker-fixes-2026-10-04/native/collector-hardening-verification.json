@@ -1,0 +1,287 @@
+{
+  "status": "passed",
+  "generatedAt": "2026-10-04T10:47:59.214Z",
+  "cases": 13,
+  "assertions": 242,
+  "httpCollectorRequests": 26,
+  "forbiddenEndpointRequests": 0,
+  "durationMs": 418,
+  "noDatabaseMutation": true,
+  "results": [
+    {
+      "name": "JSON严格数值与金额：10种有效格式",
+      "durationMs": 1,
+      "status": "passed"
+    },
+    {
+      "name": "JSON拒绝15种歧义/无效金额",
+      "durationMs": 0,
+      "status": "passed"
+    },
+    {
+      "name": "HTML保守唯一价格：6种有效/18种拒绝",
+      "durationMs": 1,
+      "status": "passed"
+    },
+    {
+      "name": "安全价格提取：唯一捕获及危险正则拒绝",
+      "durationMs": 2,
+      "status": "passed"
+    },
+    {
+      "name": "地址分类：27种特殊地址拒绝、4种公网允许",
+      "durationMs": 7,
+      "status": "passed"
+    },
+    {
+      "name": "逐次DNS校验：私网/混合答案/异常端口/凭据",
+      "durationMs": 36,
+      "status": "passed"
+    },
+    {
+      "name": "固定已验证地址建立实际连接，原hostname不存在也可连接fixture",
+      "durationMs": 31,
+      "status": "passed"
+    },
+    {
+      "name": "HTTP采集：正常JSON/科学计数/小数/HTML与显式促销价",
+      "durationMs": 38,
+      "status": "passed"
+    },
+    {
+      "name": "HTTP采集：歧义、无报价、多元素、HTTP/JSON错误均失败且无价格",
+      "durationMs": 35,
+      "status": "passed"
+    },
+    {
+      "name": "逐跳校验：同端点跳转成功、私网异端点与跳转环拒绝",
+      "durationMs": 16,
+      "status": "passed"
+    },
+    {
+      "name": "响应体上限：Content-Length、chunked、gzip解压均受1MB限制",
+      "durationMs": 31,
+      "status": "passed"
+    },
+    {
+      "name": "端到端截止时间：响应头与响应体两种超时",
+      "durationMs": 213,
+      "status": "passed"
+    },
+    {
+      "name": "默认拒绝私网、allowlist仅精确端点、地址参数脱敏与JSON自有字段",
+      "durationMs": 1,
+      "status": "passed"
+    }
+  ],
+  "httpEvidence": [
+    {
+      "path": "/json",
+      "status": "success",
+      "priceCents": 599900,
+      "failureReason": null,
+      "httpStatus": 200,
+      "durationMs": 9
+    },
+    {
+      "path": "/numeric",
+      "status": "success",
+      "priceCents": 100000,
+      "failureReason": null,
+      "httpStatus": 200,
+      "durationMs": 4
+    },
+    {
+      "path": "/scientific",
+      "status": "success",
+      "priceCents": 100000,
+      "failureReason": null,
+      "httpStatus": 200,
+      "durationMs": 4
+    },
+    {
+      "path": "/fraction",
+      "status": "success",
+      "priceCents": 99,
+      "failureReason": null,
+      "httpStatus": 200,
+      "durationMs": 4
+    },
+    {
+      "path": "/html",
+      "status": "success",
+      "priceCents": 123456,
+      "failureReason": null,
+      "httpStatus": 200,
+      "durationMs": 11
+    },
+    {
+      "path": "/promo",
+      "status": "success",
+      "priceCents": 599900,
+      "failureReason": null,
+      "httpStatus": 200,
+      "durationMs": 4
+    },
+    {
+      "path": "/zero",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "价格必须为大于 0 的有限金额",
+      "httpStatus": 200,
+      "durationMs": 3
+    },
+    {
+      "path": "/inventory",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "页面明确表示暂无可用报价",
+      "httpStatus": 200,
+      "durationMs": 4
+    },
+    {
+      "path": "/promo",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "价格文本包含优惠、分期或多种售价，请缩小选择器或配置唯一价格提取规则",
+      "httpStatus": 200,
+      "durationMs": 4
+    },
+    {
+      "path": "/multi-selector",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "CSS 选择器必须匹配唯一价格元素，实际匹配 2 个",
+      "httpStatus": 200,
+      "durationMs": 4
+    },
+    {
+      "path": "/no-price",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "页面明确表示暂无可用报价",
+      "httpStatus": 200,
+      "durationMs": 3
+    },
+    {
+      "path": "/range",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "价格文本包含 2 个数字，无法唯一确定售价",
+      "httpStatus": 200,
+      "durationMs": 3
+    },
+    {
+      "path": "/html",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "CSS 选择器必须匹配唯一价格元素，实际匹配 0 个",
+      "httpStatus": 200,
+      "durationMs": 3
+    },
+    {
+      "path": "/invalid-json",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "返回内容不是有效 JSON，可能遭遇拦截",
+      "httpStatus": 200,
+      "durationMs": 2
+    },
+    {
+      "path": "/http-error",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "HTTP 429 Too Many Requests",
+      "httpStatus": 429,
+      "durationMs": 3
+    },
+    {
+      "path": "/json",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "JSON 路径未找到价格：notFound",
+      "httpStatus": 200,
+      "durationMs": 3
+    },
+    {
+      "path": "/redirect-ok",
+      "status": "success",
+      "priceCents": 599900,
+      "failureReason": null,
+      "httpStatus": 200,
+      "durationMs": 5
+    },
+    {
+      "path": "/redirect-private",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "采集端口仅允许 80 / 443；其他端点需通过 HTTP_ALLOWED_HOSTS 明确审核",
+      "httpStatus": 302,
+      "durationMs": 2
+    },
+    {
+      "path": "/redirect-loop",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "采集跳转超过 3 次，已终止请求",
+      "httpStatus": 302,
+      "durationMs": 8
+    },
+    {
+      "path": "/large",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "采集响应超过 1 MB 上限",
+      "httpStatus": 200,
+      "durationMs": 6
+    },
+    {
+      "path": "/large-stream",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "采集响应超过 1 MB 上限",
+      "httpStatus": 200,
+      "durationMs": 9
+    },
+    {
+      "path": "/large-gzip",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "采集响应超过 1 MB 上限",
+      "httpStatus": 200,
+      "durationMs": 16
+    },
+    {
+      "path": "/slow",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "请求与解析超时，采集已取消",
+      "httpStatus": null,
+      "durationMs": 106
+    },
+    {
+      "path": "/slow-body",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "请求与解析超时，采集已取消",
+      "httpStatus": 200,
+      "durationMs": 105
+    },
+    {
+      "path": "/json",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "采集端口仅允许 80 / 443；其他端点需通过 HTTP_ALLOWED_HOSTS 明确审核",
+      "httpStatus": null,
+      "durationMs": 0
+    },
+    {
+      "path": "/json",
+      "status": "failure",
+      "priceCents": null,
+      "failureReason": "采集端口仅允许 80 / 443；其他端点需通过 HTTP_ALLOWED_HOSTS 明确审核",
+      "httpStatus": null,
+      "durationMs": 0
+    }
+  ]
+}

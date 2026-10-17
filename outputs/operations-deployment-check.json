@@ -1,0 +1,33 @@
+{
+  "status": "configuration_checks_passed_runtime_unverified",
+  "verifiedAt": "2026-10-04T07:30:33.9342913Z",
+  "workspace": "<project-root>",
+  "productionDatabaseTouched": false,
+  "postgresql": {
+    "schemaCommand": "pnpm db:check-postgres",
+    "schemaExitCode": 0,
+    "schemaResult": "The schema at prisma\\schema.postgresql.prisma is valid",
+    "modelSource": "SQLite与PostgreSQL使用同一份canonical Prisma模型，仅替换provider",
+    "localPsqlClientFound": false,
+    "localPort5432Listening": false,
+    "actualDatabaseTest": "not_run",
+    "reason": "未提供可用的PostgreSQL测试实例；本机未发现psql命令，5432端口没有监听，不能声称完成实际PostgreSQL运行验收。"
+  },
+  "docker": {
+    "composeCommand": "docker compose -f compose.yaml config --quiet",
+    "composeExitCode": 0,
+    "composeWarnings": [],
+    "validationCredentials": "进程中使用公开的临时占位值；不读取、不输出实际部署密钥",
+    "daemonCommand": "docker info --format '{{.ServerVersion}}'",
+    "daemonExitCode": 1,
+    "daemonError": "failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.",
+    "actualImageBuild": "not_run",
+    "actualContainerTest": "not_run",
+    "reason": "Docker Desktop Linux daemon命名管道不存在，当前环境无法构建镜像或实际启动容器；Compose通过仅代表配置解析有效。"
+  },
+  "logs": {
+    "postgresql": "work/operations-postgres-schema.log",
+    "compose": "work/operations-compose.log",
+    "dockerRuntime": "work/operations-docker-runtime.log"
+  }
+}

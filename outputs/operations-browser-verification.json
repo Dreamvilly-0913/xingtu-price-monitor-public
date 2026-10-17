@@ -1,0 +1,120 @@
+{
+  "startedAt": "2026-10-04T07:39:27.075Z",
+  "webBase": "http://127.0.0.1:4399",
+  "apiBase": "http://127.0.0.1:4399/api",
+  "passed": true,
+  "steps": [
+    {
+      "name": "生产空库初始化",
+      "passed": true,
+      "initializationStatus": 201,
+      "demoEnabled": false,
+      "bootstrapTokenRequired": true,
+      "defaultAccountHintVisible": false,
+      "createdUsername": "ops-admin"
+    },
+    {
+      "name": "改密与真实页面重新登录",
+      "passed": true,
+      "oldTokenStatus": 401,
+      "newSessionStatus": 200,
+      "loginStatus": 200
+    },
+    {
+      "name": "过期报价保留但排除有效最低",
+      "passed": true,
+      "oldPrice": 10,
+      "oldPriceAgeMinutes": 4324.66,
+      "livePrice": 20,
+      "freshCheapestPrice": 20,
+      "freshCheapestIds": [
+        "cmuti9uxh0002ugdwwwm3wt47"
+      ]
+    },
+    {
+      "name": "真实配置预览与第100组之后远程搜索",
+      "passed": true,
+      "previewPrice": 20,
+      "sourceLabel": "真实采集",
+      "collectionCountBefore": 33,
+      "collectionCountAfter": 33,
+      "farGroupId": "cmuti9wk000asugdwo5e3pz8n",
+      "totalGroups": 107
+    },
+    {
+      "name": "第100类之后分类可筛选",
+      "passed": true,
+      "farCategory": "远端第106分类可检索",
+      "matchingProducts": 1,
+      "totalCategories": 107
+    },
+    {
+      "name": "标记已读后铃铛立即同步",
+      "passed": true,
+      "unreadBefore": 1,
+      "unreadAfter": 0,
+      "readAlertId": "cmuti9vau001wugdwojpywo35"
+    },
+    {
+      "name": "真实历史曲线与统计元信息",
+      "passed": true,
+      "detailChart": {
+        "renderedPointCount": 31,
+        "rawPointCount": 31,
+        "sampled": false,
+        "seriesCount": 1
+      },
+      "latestSuccessfulPrice": 20,
+      "historySourceLabels": [
+        "真实采集"
+      ]
+    },
+    {
+      "name": "常驻仪表盘自动显示后台新采集",
+      "passed": true,
+      "before": {
+        "renderedPointCount": 31,
+        "rawPointCount": 31,
+        "sampled": false,
+        "seriesCount": 1
+      },
+      "after": {
+        "renderedPointCount": 32,
+        "rawPointCount": 32,
+        "sampled": false,
+        "seriesCount": 1
+      },
+      "collectionPrice": 20,
+      "latestHistoryPrice": 20,
+      "pollingWithoutNavigationOrRefresh": true
+    },
+    {
+      "name": "运营设置和真实采集流水",
+      "passed": true,
+      "manualCollectionIdVisible": "cmutig9ml00b8ugdwzpo5fkl0",
+      "productionReadinessVisible": true,
+      "javascriptErrorCount": 0
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "01-bootstrap-dashboard",
+      "file": "<project-root>/outputs/operations-browser-01-bootstrap-dashboard.png"
+    },
+    {
+      "name": "02-fresh-comparison",
+      "file": "<project-root>/outputs/operations-browser-02-fresh-comparison.png"
+    },
+    {
+      "name": "03-preview-and-far-group",
+      "file": "<project-root>/outputs/operations-browser-03-preview-and-far-group.png"
+    },
+    {
+      "name": "04-live-dashboard",
+      "file": "<project-root>/outputs/operations-browser-04-live-dashboard.png"
+    }
+  ],
+  "errors": [],
+  "completedAt": "2026-10-04T07:40:24.153Z",
+  "durationMs": 57078
+}

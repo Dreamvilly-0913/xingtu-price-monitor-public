@@ -1,0 +1,40 @@
+{
+  "name": "docker-fix-infra",
+  "startedAt": "2026-10-04T10:29:27.871Z",
+  "sourceScope": "新生产镜像的隔离Docker容器；价格为受控测试HTTP报价",
+  "checks": [
+    {
+      "name": "新镜像隔离容器健康",
+      "passed": true,
+      "actual": "healthy",
+      "expected": "healthy"
+    },
+    {
+      "name": "容器标签匹配",
+      "passed": true,
+      "actual": "docker-fix-verification",
+      "expected": "docker-fix-verification"
+    },
+    {
+      "name": "容器使用45秒停止窗口",
+      "passed": true,
+      "actual": 45,
+      "expected": 45
+    },
+    {
+      "name": "受控报价服务可用",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    }
+  ],
+  "requests": [],
+  "imageId": "sha256:6536a6def7cbe5f2c17d5acc1f5c2247865ac41bfd3ff46303e0b234c9101013",
+  "stopTimeoutSeconds": 45,
+  "completedAt": "2026-10-04T10:29:35.443Z",
+  "durationMs": 7572,
+  "assertions": 4,
+  "passed": 4,
+  "failed": 0,
+  "status": "passed"
+}

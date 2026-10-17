@@ -1,0 +1,487 @@
+{
+  "status": "passed",
+  "generatedAt": "2026-10-04T10:49:08.036Z",
+  "image": "xingtu-price-monitor-app:fix-20261004-v3",
+  "imageId": "sha256:ec4815717e6b132e49a0353e95a938806ae9c55e7ddae780ec306415db0c3272",
+  "matchedFiles": 93,
+  "totalBytes": 2427959,
+  "linuxPrismaModels": [
+    "User",
+    "ProductGroup",
+    "Product",
+    "CollectionRecord",
+    "Alert",
+    "AlertRuleState",
+    "Setting",
+    "CollectionRun",
+    "CollectionRunItem",
+    "AuditLog"
+  ],
+  "files": [
+    {
+      "file": "/app/server/dist/prisma/seed.js",
+      "bytes": 7087,
+      "sha256": "53ec43535ca7471149e6716604028e24e2a95c1a1a33d59ef343aa0b06d8874d"
+    },
+    {
+      "file": "/app/server/dist/prisma/seed.js.map",
+      "bytes": 7549,
+      "sha256": "331711d8d328f97892906e102f061563041f335b31f70815d1d1dbaa81b675f4"
+    },
+    {
+      "file": "/app/server/dist/scripts/password.js",
+      "bytes": 1347,
+      "sha256": "ef84ac65882ae5448c7200b71cf8ec39fba85807283f5835af67aa2d109bf721"
+    },
+    {
+      "file": "/app/server/dist/scripts/password.js.map",
+      "bytes": 1579,
+      "sha256": "53611371652524fa6b61d46eee5ccc021c9dddc404229823a47eaa3b1bec677e"
+    },
+    {
+      "file": "/app/server/dist/scripts/serve-operations-fixture.js",
+      "bytes": 5564,
+      "sha256": "4320818e2d3ec94139c7ee61875303249f85787c18279da3b71f787cf67c5699"
+    },
+    {
+      "file": "/app/server/dist/scripts/serve-operations-fixture.js.map",
+      "bytes": 6408,
+      "sha256": "ab5cc572854c9f14c4c1119204cb754caa6731eb7ebac7e4f3b93ff65e2cf4ed"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-alert-rule-state.js",
+      "bytes": 17731,
+      "sha256": "ae4cfaba7d8b1a6198c16e897dbd772d27a3b20e1ab49f345f9940566838b98c"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-alert-rule-state.js.map",
+      "bytes": 19437,
+      "sha256": "f0c60401b9cb9bd4b4a4db16278e51c85b7e630e0e0e0e2aa59913724dcdc697"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-collector-hardening.js",
+      "bytes": 18529,
+      "sha256": "7bb49ec184d4885634b654b3b49a74266a3d8150d76c8df121c73edd69cafe95"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-collector-hardening.js.map",
+      "bytes": 18672,
+      "sha256": "3915e749a88026bcf08a773292449659a06b6b79d29168a873b53b258aa93b5c"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-operations-api.js",
+      "bytes": 17370,
+      "sha256": "3d6c6ea43a5c8643392b2b01751137aba19caae20ddde420cab0a38dfa20a12a"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-operations-api.js.map",
+      "bytes": 18006,
+      "sha256": "0044da5e4eb63c0e668bd8be3d06322a984a5b58546d078c88cbb00c9a1fd62c"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-operations-business.js",
+      "bytes": 22132,
+      "sha256": "98c1e4ee28d2f35acb907063099c0fe8c5cdd1c6276a14589fc62b541ae18aca"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-operations-business.js.map",
+      "bytes": 23691,
+      "sha256": "8295c89f4a66dabc79a1a4eb2522d19dce0bae7a564953eb590a44340ced406e"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-operations-race.js",
+      "bytes": 8484,
+      "sha256": "eae093c21b69fd7006d2dfa1e434b2895f7a85921094f7e757493cf88ad76be5"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-operations-race.js.map",
+      "bytes": 9451,
+      "sha256": "4e170dc729d28e71b2775bf5f6282a970730d92d6a4c43466902d3f075a860e2"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-operations-regression.js",
+      "bytes": 3273,
+      "sha256": "2a1f2a75e43ee710c628c01f217fa5519d9c19ef95356349e7e9878d541d7f0e"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-operations-regression.js.map",
+      "bytes": 3815,
+      "sha256": "8d3e3be66796e79a6dd2dac253233cd520f9bdabaa302646b7dafaf6442345cf"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-run-recovery.js",
+      "bytes": 22224,
+      "sha256": "1d77d1a840521952096a542318810aabdca8fd2ae353af58bfc1cd8797c97086"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-run-recovery.js.map",
+      "bytes": 22665,
+      "sha256": "2fc250efb0ffa7b084b4c30722bde8cefc4c72606f27525c93b0dd799e297fee"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-seed-safety.js",
+      "bytes": 4664,
+      "sha256": "f1d6b247b89e643f4ffa53620267fec705d428d572997b21deca719366a6ec12"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-seed-safety.js.map",
+      "bytes": 5073,
+      "sha256": "7ff46bd2cda1d5078b29181c8ac898dc296c7c30d71f45450f5d04f3f9f73a08"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-stage1.js",
+      "bytes": 6672,
+      "sha256": "eda80fa403667a1e759a89f39384c1c1cce76f63affe7e37c67d2d9f766e77f6"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-stage1.js.map",
+      "bytes": 7884,
+      "sha256": "57fa134788bdf8b2629a2320e0cefc646b6d27f59f488704ccea391753725303"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-stage2.js",
+      "bytes": 20869,
+      "sha256": "c80a77b86c19cded215f6da82153525906ecc925b0db518e68aad1cb04b5557a"
+    },
+    {
+      "file": "/app/server/dist/scripts/verify-stage2.js.map",
+      "bytes": 21445,
+      "sha256": "29e7d95ee9f70bb22604ad2da76da20629d0dba062e92b3479fac53807ab6a0b"
+    },
+    {
+      "file": "/app/server/dist/src/alerts.js",
+      "bytes": 12861,
+      "sha256": "2e0002d6b0f1aa7eb1772a2f8b5877daa64b395881790db77cc1e3a62b42ef71"
+    },
+    {
+      "file": "/app/server/dist/src/alerts.js.map",
+      "bytes": 13761,
+      "sha256": "f83148cc7cb888c1ace9b1019e5c6caaa2a9a6c6d4b26f2a66819364f3edff19"
+    },
+    {
+      "file": "/app/server/dist/src/app.js",
+      "bytes": 9282,
+      "sha256": "6f1ee1eb69ba74a6b749823440306fba55e52ec97c80580b207250b862605ec3"
+    },
+    {
+      "file": "/app/server/dist/src/app.js.map",
+      "bytes": 9622,
+      "sha256": "322ecf0476169af706d872202fe9132f5262510bf6229db9e9637690c367a52f"
+    },
+    {
+      "file": "/app/server/dist/src/auth-service.js",
+      "bytes": 3582,
+      "sha256": "d8e7e03d1f549351c6b444e63ef509a1d31eb8b5b45ed0ad54f65fda1ec2a490"
+    },
+    {
+      "file": "/app/server/dist/src/auth-service.js.map",
+      "bytes": 3871,
+      "sha256": "cd83a46926da6f5514dc9beb10e61e09280d6b2665f5dd78013be48eaa5509d9"
+    },
+    {
+      "file": "/app/server/dist/src/collection-identity.js",
+      "bytes": 1719,
+      "sha256": "a249d90d398e84c8bacc9312e09d250f02c1f49405636b607149d881d543a38e"
+    },
+    {
+      "file": "/app/server/dist/src/collection-identity.js.map",
+      "bytes": 1645,
+      "sha256": "44ed8d21fae3a2935d42a0a6377a01b26ee7936a9c254b46bc3a8eaa33c62567"
+    },
+    {
+      "file": "/app/server/dist/src/collection-service.js",
+      "bytes": 5867,
+      "sha256": "4792ec05fb978ec1c24a673ef79f36e51d4cf46085a08d29076b4de6049cb6f2"
+    },
+    {
+      "file": "/app/server/dist/src/collection-service.js.map",
+      "bytes": 5420,
+      "sha256": "65441e1653add8262a54bce1d234fb94789005b04c9e82ab9863656120ef18db"
+    },
+    {
+      "file": "/app/server/dist/src/collectors/demo.js",
+      "bytes": 2713,
+      "sha256": "7ec770d1fbd48d750038aa0984bb67738985d6c9436b49ccd7c042a1caa7faaa"
+    },
+    {
+      "file": "/app/server/dist/src/collectors/demo.js.map",
+      "bytes": 2894,
+      "sha256": "0c2f481836d6f597c45b4f3cdace5d6c15499263691bb87a8be354e2cc9ca200"
+    },
+    {
+      "file": "/app/server/dist/src/collectors/http.js",
+      "bytes": 8522,
+      "sha256": "11801483e96a6ea201a3b31c0a19d3bc3776dec2cee8c41587b6d4a4853665f3"
+    },
+    {
+      "file": "/app/server/dist/src/collectors/http.js.map",
+      "bytes": 7657,
+      "sha256": "ec44f260624db4f8026846d25b55001b17923da204e3c277900b3a09dbef3889"
+    },
+    {
+      "file": "/app/server/dist/src/collectors/types.js",
+      "bytes": 44,
+      "sha256": "01ae2a5b120382f9a648ced7ee8507493a134f216d100fc61600c6c9738235d2"
+    },
+    {
+      "file": "/app/server/dist/src/collectors/types.js.map",
+      "bytes": 119,
+      "sha256": "ad0e558fbd6774a836ac092dd6e7ed61cd69a7d4706331a471e6e737f46d244e"
+    },
+    {
+      "file": "/app/server/dist/src/config.js",
+      "bytes": 1523,
+      "sha256": "578288e1a023898f9d2ffc94458bbc6667d9331e953db4241ba767677409a001"
+    },
+    {
+      "file": "/app/server/dist/src/config.js.map",
+      "bytes": 1248,
+      "sha256": "b7b15a1a6391f09770341bbbdc9ec656fe4e05f7ddeafce0e3de87cecce25cd4"
+    },
+    {
+      "file": "/app/server/dist/src/dashboard.js",
+      "bytes": 3982,
+      "sha256": "18ee14f2bbd415da5c7a506416ec3293048fb50c5522afdc7b78889141f68e00"
+    },
+    {
+      "file": "/app/server/dist/src/dashboard.js.map",
+      "bytes": 4754,
+      "sha256": "8bbc7a4a3875afb02af32c3cad985d12c5afd1b2621ce0322d683e78a7f18b73"
+    },
+    {
+      "file": "/app/server/dist/src/db.js",
+      "bytes": 141,
+      "sha256": "750f8e71d587c93b7c3daac2d2efc966cb4c2ee1e249586ef0accf9aab650577"
+    },
+    {
+      "file": "/app/server/dist/src/db.js.map",
+      "bytes": 212,
+      "sha256": "7f58fb40ca9eaa2e92c4aa23f66ae8618b8d1c530cf457f412f985f53db663c7"
+    },
+    {
+      "file": "/app/server/dist/src/history-query.js",
+      "bytes": 3135,
+      "sha256": "f606c8996d7723bfe373f85642ab37fbb3ec8d156fa95cc4c83abbff3ed8fb78"
+    },
+    {
+      "file": "/app/server/dist/src/history-query.js.map",
+      "bytes": 3909,
+      "sha256": "b0493632c25abefe219b470079bf9aee2e8f242839e1ccbfc675f79f2044db78"
+    },
+    {
+      "file": "/app/server/dist/src/http-safety.js",
+      "bytes": 8241,
+      "sha256": "2bbd3d5778ffec66a5b62b141922ed746e85cce81755c22fbd5e6b06a232b450"
+    },
+    {
+      "file": "/app/server/dist/src/http-safety.js.map",
+      "bytes": 9820,
+      "sha256": "1a65a6128372d1212d65cbcdbdcb498a187336cc1dfed96b37df82de6e39d631"
+    },
+    {
+      "file": "/app/server/dist/src/index.js",
+      "bytes": 1013,
+      "sha256": "126a41ebcedb3b82c3c425828f4ff198e1c3c1af343796cfde072a4f69208bff"
+    },
+    {
+      "file": "/app/server/dist/src/index.js.map",
+      "bytes": 1276,
+      "sha256": "1edcf58e70775d608111eaf3f1f791cd6511938929c0f029fec9960de97d4ae9"
+    },
+    {
+      "file": "/app/server/dist/src/pricing-parser.js",
+      "bytes": 6831,
+      "sha256": "330c88092b0568ee76651da42e4c74c841fda23a13b9f0be93f8a8109c399c48"
+    },
+    {
+      "file": "/app/server/dist/src/pricing-parser.js.map",
+      "bytes": 5759,
+      "sha256": "885c45b9a875c4677fe9ff10bdd33de679e3fc63538d260313e15ec38a4e7d39"
+    },
+    {
+      "file": "/app/server/dist/src/routes.js",
+      "bytes": 20591,
+      "sha256": "c87f6b251c23dc59abec8ae06188b4cfe66c019662a02dbefa00b0afdfb479c3"
+    },
+    {
+      "file": "/app/server/dist/src/routes.js.map",
+      "bytes": 25020,
+      "sha256": "65da12a89bf75fce25c06db9d73b4009a914b7ef65466e0b2ba53966e9ebad2b"
+    },
+    {
+      "file": "/app/server/dist/src/run-progress.js",
+      "bytes": 6969,
+      "sha256": "a58aa4dd21526e9ae856fb5d253a9533e6d7f9b7a3d44766b11369289b2f57e3"
+    },
+    {
+      "file": "/app/server/dist/src/run-progress.js.map",
+      "bytes": 6394,
+      "sha256": "11ad860c8442b7fddd3e5c25321e699147f81adddef8b86a38ad399f566b26db"
+    },
+    {
+      "file": "/app/server/dist/src/scheduler.js",
+      "bytes": 9689,
+      "sha256": "cab759546d86668b8e3c189acd08ba47c69aa84439b0e12b4ae37d83b371b415"
+    },
+    {
+      "file": "/app/server/dist/src/scheduler.js.map",
+      "bytes": 9387,
+      "sha256": "8955c1a58b9da2a022f0fea88150e1d923fb0f35027ab71998eae7586c55a89e"
+    },
+    {
+      "file": "/app/server/dist/src/serializers.js",
+      "bytes": 2841,
+      "sha256": "69ddbc3f89511f5d0ffd70f4ca75dc06b4a10339707a0ec256fef212305dd764"
+    },
+    {
+      "file": "/app/server/dist/src/serializers.js.map",
+      "bytes": 2806,
+      "sha256": "34617694937c5eceabbd2bde5a40859e6b43e7bba9e2e9ae479151f762fca504"
+    },
+    {
+      "file": "/app/server/dist/src/stats.js",
+      "bytes": 10965,
+      "sha256": "0a3f60f175e6a3e7887a6840622cacecc48092e8f823289a38a0ab8b0cccc6b9"
+    },
+    {
+      "file": "/app/server/dist/src/stats.js.map",
+      "bytes": 12037,
+      "sha256": "f814364bb3eeb2564e82d584fbac2de9b8d1040f148c0937fae1744c62da2aa6"
+    },
+    {
+      "file": "/app/server/dist/src/utils.js",
+      "bytes": 1865,
+      "sha256": "da96a165cf92950238d5d72c0f433edad65a7cfa036e4b25602b38a39fd9157b"
+    },
+    {
+      "file": "/app/server/dist/src/utils.js.map",
+      "bytes": 2390,
+      "sha256": "07ec67b210d2132cf501fc9e0afa354f6fa81b5f941975a94c8b498903861151"
+    },
+    {
+      "file": "/app/server/dist/src/validation.js",
+      "bytes": 2698,
+      "sha256": "8cb8ffb4feadcd2012c693ae21c300de46a67c670d4c3e411d7b8a3222206839"
+    },
+    {
+      "file": "/app/server/dist/src/validation.js.map",
+      "bytes": 4034,
+      "sha256": "f5225dae85a2817286e5b759806a234554bf64e45103d2805aa22077d1fc7d84"
+    },
+    {
+      "file": "/app/client/dist/assets/AlertsPage-D_6_hA5H.js",
+      "bytes": 8065,
+      "sha256": "6400c99e939cc82b0149e5688ef20b830465576c5005d79b033b0d5667b3a6a2"
+    },
+    {
+      "file": "/app/client/dist/assets/Chart-CSAAekj-.js",
+      "bytes": 851,
+      "sha256": "f52849ab0891c6638a038bf549ed8edae26d98aca00a7ac1943a6ce2bbb4c69a"
+    },
+    {
+      "file": "/app/client/dist/assets/charts-qgKyW1XW.js",
+      "bytes": 552396,
+      "sha256": "35a7a851d4b463066c1f81c52681a93a4ba7f87077984f0112092661ca6eba91"
+    },
+    {
+      "file": "/app/client/dist/assets/CollectionsPage-zAXZDgfH.js",
+      "bytes": 4585,
+      "sha256": "63970f135db710441b89802873b6225420940e5eb0ecfc2ea2d13e472413b703"
+    },
+    {
+      "file": "/app/client/dist/assets/ComparisonPage-BkXR9f1K.js",
+      "bytes": 10285,
+      "sha256": "6ca87bf056f629110d3c9b7797f843958eaac855173b1a092644d2e0ac5b4af1"
+    },
+    {
+      "file": "/app/client/dist/assets/DashboardPage-dJg6XSDV.js",
+      "bytes": 8408,
+      "sha256": "e3245947d60d7aa54fce7c85f0fc65c72bced124e979ad1b373818cda67191a1"
+    },
+    {
+      "file": "/app/client/dist/assets/DetailPage-Cypq2Uvd.js",
+      "bytes": 9510,
+      "sha256": "2c7300911f8e0db05d6bc9de2d4ea716b4e7788733e83a9604a575a39f1eece6"
+    },
+    {
+      "file": "/app/client/dist/assets/index-BDpo_kPL.css",
+      "bytes": 19335,
+      "sha256": "6efcc4c7179157989fddc5e5f711d03b46ef1a2386cf2f524e24bf5fa66d9ed1"
+    },
+    {
+      "file": "/app/client/dist/assets/index-Bh1eJN_M.js",
+      "bytes": 10889,
+      "sha256": "8912e244eed8f86e1bcb57056f61562a05031df1f335470669100c0b04e8953f"
+    },
+    {
+      "file": "/app/client/dist/assets/LoginPage-C2yKZFrX.js",
+      "bytes": 5652,
+      "sha256": "e93a0f78a2116e8ac1c20a95e1df564a8dce7726bd6d57db87fba04a5f7bc252"
+    },
+    {
+      "file": "/app/client/dist/assets/ProductsPage-B5ugW22Q.js",
+      "bytes": 16242,
+      "sha256": "5dd5458926b42bd8695626c719883c81a9a4d3b1f1dd468dd5a7e106f87f44e1"
+    },
+    {
+      "file": "/app/client/dist/assets/react-CiVp0v_p.js",
+      "bytes": 176362,
+      "sha256": "5fb6e149652cb1801faad83b8f1081b986db783acc4232dbf51bea81d791fb58"
+    },
+    {
+      "file": "/app/client/dist/assets/SettingsPage-O5SS6WrV.js",
+      "bytes": 11818,
+      "sha256": "aef044dfd04c984e563980acb9c4f007f5352d05a9b132be13d494444e852e02"
+    },
+    {
+      "file": "/app/client/dist/assets/ui-331NTVuP.js",
+      "bytes": 988982,
+      "sha256": "ace894da1a753f7948001cd3879810c7a7e77b38d729d5fe34172fe98db4e5a7"
+    },
+    {
+      "file": "/app/client/dist/assets/ui-BdOndhxL.css",
+      "bytes": 2940,
+      "sha256": "98adf782bd027847cfeac99bc2f2735177375ea17bb836601ce1d7290ca699c5"
+    },
+    {
+      "file": "/app/client/dist/assets/Ui-Pwb_93Q-.js",
+      "bytes": 5202,
+      "sha256": "20acbedb9a72a0e50549b6557050231dda07405c19b6a9d5b68f3cac2ab896b7"
+    },
+    {
+      "file": "/app/client/dist/favicon.svg",
+      "bytes": 256,
+      "sha256": "c695de62ab6608d5667aa047bd1c53885cc7d6ee23a96ebda53aea0c4d01b6c7"
+    },
+    {
+      "file": "/app/client/dist/index.html",
+      "bytes": 763,
+      "sha256": "42a3561c4f5f193ef9798ec126a033ca8a6f7ac9090b330ff9ce176a179e06f2"
+    },
+    {
+      "file": "/app/scripts/database.mjs",
+      "bytes": 2906,
+      "sha256": "ae3fe02215234a7b817912fd606ca0f749ad6cddef0509347a65cdd59f23dacc"
+    },
+    {
+      "file": "/app/scripts/setup-env.mjs",
+      "bytes": 849,
+      "sha256": "4e6f73777933f1aa36d5ef89dc5ec4f43da88042318764a9dfee5b1f5b0b9855"
+    },
+    {
+      "file": "/app/scripts/backup-sqlite.mjs",
+      "bytes": 4706,
+      "sha256": "6d3b7fe3ab1f1b73d07d8b0cbcd326dbf63f431c121c27055007eb4b599490d0"
+    },
+    {
+      "file": "/app/server/prisma/schema.prisma",
+      "bytes": 6130,
+      "sha256": "5373b37de07084730e64c6dcbd0981a6d7ba99ca613642e4b36b21a1bcd5b5fe"
+    },
+    {
+      "file": "/usr/local/bin/xingtu-entrypoint",
+      "bytes": 97,
+      "sha256": "517b38833cbb43e484d5eb6592611121e39dcc124d253c38f308e7c551759c06"
+    }
+  ]
+}

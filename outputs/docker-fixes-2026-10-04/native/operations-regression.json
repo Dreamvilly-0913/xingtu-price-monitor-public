@@ -1,0 +1,351 @@
+{
+  "status": "passed",
+  "generatedAt": "2026-10-04T10:48:57.957Z",
+  "isolatedDatabases": 2,
+  "originalReportsUnchanged": true,
+  "originalReportSha256": {
+    "stage1-verification.json": "d10df0830fd19acacda4c557c5df7b007271ac7c16321940fb87344c98bc8e9d",
+    "stage2-verification.json": "0c336f0186fa5e4cb05621cb4d221b4caa60e7fdb3210783103c3d78613f7f4d"
+  },
+  "stages": {
+    "stage1": {
+      "passed": true,
+      "products": 12,
+      "platforms": {
+        "jd": 4,
+        "tmall": 4,
+        "pdd": 4
+      },
+      "collections": 372,
+      "alerts": 3,
+      "activeRules": 3,
+      "replayedPoints": 372,
+      "testDatabase": "<project-root>/work/stage1/seed-regression-1791110917464.db",
+      "operatingDatabaseUntouched": true,
+      "maximumMovementPercent": 2.49435,
+      "currentPriceMatchCount": 12,
+      "sample": {
+        "id": "jd-iphone16-2",
+        "name": "iPhone 16 128G",
+        "platform": "jd",
+        "basePrice": 5999,
+        "targetPrice": 5699.05,
+        "history30": [
+          {
+            "time": "2026-09-04T04:00:00.000Z",
+            "price": 5912.15,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-05T04:00:00.000Z",
+            "price": 5818.99,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-06T04:00:00.000Z",
+            "price": 5951.81,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-07T04:00:00.000Z",
+            "price": 5836.9,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-08T04:00:00.000Z",
+            "price": 5941.38,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-09T04:00:00.000Z",
+            "price": 5999.75,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-10T04:00:00.000Z",
+            "price": 5932.59,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-11T04:00:00.000Z",
+            "price": 5819.24,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-12T04:00:00.000Z",
+            "price": 5843.62,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-13T04:00:00.000Z",
+            "price": 5896.66,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-14T04:00:00.000Z",
+            "price": 5941.55,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-15T04:00:00.000Z",
+            "price": 5952.89,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-16T04:00:00.000Z",
+            "price": 5948.01,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-17T04:00:00.000Z",
+            "price": 5893.27,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-18T04:00:00.000Z",
+            "price": 5760.37,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-19T04:00:00.000Z",
+            "price": 5665.81,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-20T04:00:00.000Z",
+            "price": 5549.69,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-21T04:00:00.000Z",
+            "price": 5534.98,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-22T04:00:00.000Z",
+            "price": 5475.85,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-23T04:00:00.000Z",
+            "price": 5510.49,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-24T04:00:00.000Z",
+            "price": 5479.05,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-25T04:00:00.000Z",
+            "price": 5370.81,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-26T04:00:00.000Z",
+            "price": 5293.18,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-27T04:00:00.000Z",
+            "price": 5226.54,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-28T04:00:00.000Z",
+            "price": 5320.72,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-29T04:00:00.000Z",
+            "price": 5372.15,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-09-30T04:00:00.000Z",
+            "price": 5297.61,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-10-01T04:00:00.000Z",
+            "price": 5311.06,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-10-02T04:00:00.000Z",
+            "price": 5356.29,
+            "sourceLabel": "演示模拟"
+          },
+          {
+            "time": "2026-10-03T04:00:00.000Z",
+            "price": 5425.54,
+            "sourceLabel": "演示模拟"
+          }
+        ],
+        "historical30Statistics": {
+          "minPrice": 5226.54,
+          "maxPrice": 5999.75,
+          "latestPrice": 5425.54
+        },
+        "todayPoint": {
+          "time": "2026-10-04T10:48:42.015Z",
+          "price": 5558.62
+        },
+        "independentlyComputedAll31": {
+          "minPrice": 5226.54,
+          "maxPrice": 5999.75,
+          "avgPrice": 5651.53,
+          "currentPrice": 5558.62,
+          "pointCount": 31
+        },
+        "dashboardAll31": {
+          "minPrice": 5226.54,
+          "maxPrice": 5999.75,
+          "avgPrice": 5651.53,
+          "currentPrice": 5558.62,
+          "pointCount": 31
+        },
+        "maxDrawdownPercent": 12.8874
+      }
+    },
+    "stage2": {
+      "passed": true,
+      "apiRequests": 57,
+      "assertionCount": 121,
+      "testDatabase": "<project-root>/work/stage2/api-1791110928035.db",
+      "fixtureExplanation": "真实采集器通过本地 HTTP 测试夹具验证 JSON/网页/异常；这些价格不代表电商市场价格，交付演示库未受影响。",
+      "demo": {
+        "firstPrice": 99.86,
+        "secondPrice": 100.05,
+        "movementPercent": 0.190266,
+        "limitPercent": 3
+      },
+      "alerts": {
+        "baselinePrice": 100,
+        "compressedPrice": 80,
+        "dropPercent24h": 20,
+        "createdCount": 2,
+        "duplicateCreatedCount": 0,
+        "cooldownCreatedCount": 0,
+        "remainingActiveAfterRecovery": 0
+      },
+      "collectorCases": [
+        {
+          "path": "/array",
+          "status": "success",
+          "price": 5999,
+          "failureReason": null
+        },
+        {
+          "path": "/html",
+          "status": "success",
+          "price": 1234.56,
+          "failureReason": null
+        },
+        {
+          "path": "/scientific",
+          "status": "success",
+          "price": 1000,
+          "failureReason": null
+        },
+        {
+          "path": "/decimal",
+          "status": "success",
+          "price": 0.99,
+          "failureReason": null
+        },
+        {
+          "path": "/zero",
+          "status": "failure",
+          "price": null,
+          "failureReason": "价格必须为大于 0 的有限金额"
+        },
+        {
+          "path": "/negative",
+          "status": "failure",
+          "price": null,
+          "failureReason": "价格格式不明确：需要一个完整的数字或金额字符串"
+        },
+        {
+          "path": "/tiny",
+          "status": "failure",
+          "price": null,
+          "failureReason": "价格超出可存储的有效金额范围"
+        },
+        {
+          "path": "/huge",
+          "status": "failure",
+          "price": null,
+          "failureReason": "价格超出可存储的有效金额范围"
+        },
+        {
+          "path": "/bad-json",
+          "status": "failure",
+          "price": null,
+          "failureReason": "返回内容不是有效 JSON，可能遭遇拦截"
+        },
+        {
+          "path": "/missing",
+          "status": "failure",
+          "price": null,
+          "failureReason": "HTTP 404 Not Found"
+        },
+        {
+          "path": "/timeout",
+          "status": "failure",
+          "price": null,
+          "failureReason": "请求与解析超时，采集已取消"
+        },
+        {
+          "path": "/json",
+          "status": "failure",
+          "price": null,
+          "failureReason": "JSON 路径未找到价格：missing.path"
+        },
+        {
+          "path": "/html",
+          "status": "failure",
+          "price": null,
+          "failureReason": "CSS 选择器必须匹配唯一价格元素，实际匹配 0 个"
+        }
+      ],
+      "failure": {
+        "reason": "采集端口仅允许 80 / 443；其他端点需通过 HTTP_ALLOWED_HOSTS 明确审核",
+        "consecutiveFailures": 2,
+        "unchangedCurrentPrice": 100.05,
+        "oldPriceSource": "演示模拟",
+        "configuredSource": "真实采集"
+      },
+      "scheduler": {
+        "manualRun": {
+          "runId": "cmutp7fl3002bugqs45yfi8bz",
+          "total": 3,
+          "successCount": 2,
+          "failureCount": 1,
+          "interruptedCount": 0,
+          "status": "completed_with_errors"
+        },
+        "dueRun": {
+          "runId": "cmutp7fz0003bugqs6e4yiqcl",
+          "total": 3,
+          "successCount": 2,
+          "failureCount": 1,
+          "interruptedCount": 0,
+          "status": "completed_with_errors"
+        },
+        "nonRepeat": true,
+        "restartAnchorPreserved": true
+      },
+      "comparison": {
+        "cheapestPlatform": "tmall",
+        "cheapestPrice": 80
+      },
+      "pagination": {
+        "pageSize": 2,
+        "returned": 2,
+        "total": 4
+      },
+      "seedDatabaseUntouched": true
+    }
+  }
+}

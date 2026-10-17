@@ -1,0 +1,69 @@
+{
+  "startedAt": "2026-10-04T07:23:18.179Z",
+  "webBase": "http://127.0.0.1:4399",
+  "apiBase": "http://127.0.0.1:4399/api",
+  "passed": false,
+  "steps": [
+    {
+      "name": "生产空库初始化",
+      "passed": true,
+      "initializationStatus": 201,
+      "demoEnabled": false,
+      "bootstrapTokenRequired": true,
+      "defaultAccountHintVisible": false,
+      "createdUsername": "ops-admin"
+    },
+    {
+      "name": "改密与真实页面重新登录",
+      "passed": true,
+      "oldTokenStatus": 401,
+      "newSessionStatus": 200,
+      "loginStatus": 200
+    },
+    {
+      "name": "过期报价保留但排除有效最低",
+      "passed": true,
+      "oldPrice": 10,
+      "oldPriceAgeMinutes": 4331.31,
+      "livePrice": 20,
+      "freshCheapestPrice": 20,
+      "freshCheapestIds": [
+        "cmuthgjft0002ug6gy40lhjg8"
+      ]
+    },
+    {
+      "name": "真实配置预览与第100组之后远程搜索",
+      "passed": true,
+      "previewPrice": 20,
+      "sourceLabel": "真实采集",
+      "collectionCountBefore": 33,
+      "collectionCountAfter": 33,
+      "farGroupId": "cmuthglad00asug6gl43sj57q",
+      "totalGroups": 107
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "01-bootstrap-dashboard",
+      "file": "<project-root>/outputs/operations-browser-01-bootstrap-dashboard.png"
+    },
+    {
+      "name": "02-fresh-comparison",
+      "file": "<project-root>/outputs/operations-browser-02-fresh-comparison.png"
+    },
+    {
+      "name": "03-preview-and-far-group",
+      "file": "<project-root>/outputs/operations-browser-03-preview-and-far-group.png"
+    }
+  ],
+  "errors": [],
+  "failure": {
+    "name": "Error",
+    "message": "locator.fill: Error: strict mode violation: getByRole('combobox', { name: '分类', exact: true }) resolved to 2 elements:\n    1) <input value=\"\" type=\"search\" role=\"combobox\" aria-label=\"分类\" id=\"rc_select_1\" autocomplete=\"off\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-autocomplete=\"list\" aria-owns=\"rc_select_1_list\" aria-controls=\"rc_select_1_list\" class=\"ant-select-selection-search-input\"/> aka locator('#rc_select_1')\n    2) <input type=\"search\" id=\"category\" value=\"实时运营验收\" role=\"combobox\" autocomplete=\"off\" aria-required=\"true\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-autocomplete=\"list\" aria-owns=\"category_list\" aria-controls=\"category_list\" class=\"ant-select-selection-search-input\"/> aka getByRole('dialog', { name: '编辑监控商品' }).getByLabel('分类')\n\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '分类', exact: true })\u001b[22m\n",
+    "stack": "locator.fill: Error: strict mode violation: getByRole('combobox', { name: '分类', exact: true }) resolved to 2 elements:\n    1) <input value=\"\" type=\"search\" role=\"combobox\" aria-label=\"分类\" id=\"rc_select_1\" autocomplete=\"off\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-autocomplete=\"list\" aria-owns=\"rc_select_1_list\" aria-controls=\"rc_select_1_list\" class=\"ant-select-selection-search-input\"/> aka locator('#rc_select_1')\n    2) <input type=\"search\" id=\"category\" value=\"实时运营验收\" role=\"combobox\" autocomplete=\"off\" aria-required=\"true\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-autocomplete=\"list\" aria-owns=\"category_list\" aria-controls=\"category_list\" class=\"ant-select-selection-search-input\"/> aka getByRole('dialog', { name: '编辑监控商品' }).getByLabel('分类')\n\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '分类', exact: true })\u001b[22m\n\n    at <project-root>/scripts/verify-operations-browser.mjs:158:24",
+    "url": "http://127.0.0.1:4399/products",
+    "pageText": "星图价格监控\nXINGTU PRICE MONITOR\n运营工作台\n运营仪表盘\n监控商品\n同款比价\n采集记录\n预警中心\n系统设置\n嘉兴星图优选\n虚构演示企业 · 电商运营\n每一笔价格都可追溯\n工作台 / 监控商品\nAsia/Shanghai\n1\n管\n隔离验收运营管理员\n监控商品\n\n管理监控范围、目标价与采集规则。当前价格始终对应最新一条成功采集记录。\n\n刷新数据\n新增商品\n全部平台\n全部分类\n全部状态\n全部数据源\n商品列表 108\n金额保留两位小数 · 涨跌对比成功采集价\n监控商品\t最近成功价格 / 来源\t较昨日\t较基准价\t历史最低\t最近采集状态\t监控\t操作\n\n监控商品\n\t\n最近成功价格 / 来源\n\t\n较昨日\n\t\n较基准价\n\t\n历史最低\n\t\n最近采集状态\n\t\n监控\n\t\n操作\n\n\n远端分类验收商品\n京东\n远端第106分类可检索\nSKU 远端分类验收商品\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品104\n京东\n历史分类104\nSKU 分类覆盖商品104\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品103\n京东\n历史分类103\nSKU 分类覆盖商品103\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品102\n京东\n历史分类102\nSKU 分类覆盖商品102\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品101\n京东\n历史分类101\nSKU 分类覆盖商品101\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品100\n京东\n历史分类100\nSKU 分类覆盖商品100\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品99\n京东\n历史分类099\nSKU 分类覆盖商品99\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品98\n京东\n历史分类098\nSKU 分类覆盖商品98\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品97\n京东\n历史分类097\nSKU 分类覆盖商品97\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品96\n京东\n历史分类096\nSKU 分类覆盖商品96\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品95\n京东\n历史分类095\nSKU 分类覆盖商品95\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品94\n京东\n历史分类094\nSKU 分类覆盖商品94\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品93\n京东\n历史分类093\nSKU 分类覆盖商品93\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品92\n京东\n历史分类092\nSKU 分类覆盖商品92\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品91\n京东\n历史分类091\nSKU 分类覆盖商品91\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品90\n京东\n历史分类090\nSKU 分类覆盖商品90\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品89\n京东\n历史分类089\nSKU 分类覆盖商品89\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品88\n京东\n历史分类088\nSKU 分类覆盖商品88\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品87\n京东\n历史分类087\nSKU 分类覆盖商品87\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n\n\n分类覆盖商品86\n京东\n历史分类086\nSKU 分类覆盖商品86\n\t\n—\n尚未成功采集\n目标 ¥5.00\n\t—\t—\t\n—\n\t\n尚未采集\n—\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n共 108 件商品\n1\n2\n3\n4\n5\n6\n20 条/页\n演示模拟\n基于确定性游走，可复算；\n真实采集\n拉取实际响应，失败会保留原因。切换数据源后，旧价格仍保留原采集来源。\n嘉兴星图优选 · 价格运营工作台\n演示价格明确标注来源 · 时间统一按上海时区"
+  },
+  "completedAt": "2026-10-04T07:23:36.393Z",
+  "durationMs": 18214
+}

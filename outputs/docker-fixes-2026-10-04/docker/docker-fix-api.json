@@ -1,0 +1,663 @@
+{
+  "name": "docker-fix-api",
+  "startedAt": "2026-10-04T10:29:52.281Z",
+  "sourceScope": "新生产镜像的隔离Docker容器；价格为受控测试HTTP报价",
+  "checks": [
+    {
+      "name": "隔离正式模式关闭模拟",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "初始化与登录账号一致",
+      "passed": true,
+      "actual": "cmutoiwuv0000sd01ta20p62a",
+      "expected": "cmutoiwuv0000sd01ta20p62a"
+    },
+    {
+      "name": "隔离采集默认间隔30分钟",
+      "passed": true,
+      "actual": 30,
+      "expected": 30
+    },
+    {
+      "name": "新商品没有虚构报价 jd",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "受控真实采集状态 jd0",
+      "passed": true,
+      "actual": "success",
+      "expected": "success"
+    },
+    {
+      "name": "受控真实采集金额 jd0",
+      "passed": true,
+      "actual": 100,
+      "expected": 100
+    },
+    {
+      "name": "唯一当前价 jd0",
+      "passed": true,
+      "actual": 100,
+      "expected": 100
+    },
+    {
+      "name": "明确真实采集来源 jd0",
+      "passed": true,
+      "actual": "真实采集",
+      "expected": "真实采集"
+    },
+    {
+      "name": "受控真实采集状态 jd1",
+      "passed": true,
+      "actual": "success",
+      "expected": "success"
+    },
+    {
+      "name": "受控真实采集金额 jd1",
+      "passed": true,
+      "actual": 100.5,
+      "expected": 100.5
+    },
+    {
+      "name": "唯一当前价 jd1",
+      "passed": true,
+      "actual": 100.5,
+      "expected": 100.5
+    },
+    {
+      "name": "明确真实采集来源 jd1",
+      "passed": true,
+      "actual": "真实采集",
+      "expected": "真实采集"
+    },
+    {
+      "name": "受控真实采集状态 jd2",
+      "passed": true,
+      "actual": "success",
+      "expected": "success"
+    },
+    {
+      "name": "受控真实采集金额 jd2",
+      "passed": true,
+      "actual": 101,
+      "expected": 101
+    },
+    {
+      "name": "唯一当前价 jd2",
+      "passed": true,
+      "actual": 101,
+      "expected": 101
+    },
+    {
+      "name": "明确真实采集来源 jd2",
+      "passed": true,
+      "actual": "真实采集",
+      "expected": "真实采集"
+    },
+    {
+      "name": "新商品没有虚构报价 tmall",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "受控真实采集状态 tmall0",
+      "passed": true,
+      "actual": "success",
+      "expected": "success"
+    },
+    {
+      "name": "受控真实采集金额 tmall0",
+      "passed": true,
+      "actual": 110,
+      "expected": 110
+    },
+    {
+      "name": "唯一当前价 tmall0",
+      "passed": true,
+      "actual": 110,
+      "expected": 110
+    },
+    {
+      "name": "明确真实采集来源 tmall0",
+      "passed": true,
+      "actual": "真实采集",
+      "expected": "真实采集"
+    },
+    {
+      "name": "受控真实采集状态 tmall1",
+      "passed": true,
+      "actual": "success",
+      "expected": "success"
+    },
+    {
+      "name": "受控真实采集金额 tmall1",
+      "passed": true,
+      "actual": 110.5,
+      "expected": 110.5
+    },
+    {
+      "name": "唯一当前价 tmall1",
+      "passed": true,
+      "actual": 110.5,
+      "expected": 110.5
+    },
+    {
+      "name": "明确真实采集来源 tmall1",
+      "passed": true,
+      "actual": "真实采集",
+      "expected": "真实采集"
+    },
+    {
+      "name": "受控真实采集状态 tmall2",
+      "passed": true,
+      "actual": "success",
+      "expected": "success"
+    },
+    {
+      "name": "受控真实采集金额 tmall2",
+      "passed": true,
+      "actual": 111,
+      "expected": 111
+    },
+    {
+      "name": "唯一当前价 tmall2",
+      "passed": true,
+      "actual": 111,
+      "expected": 111
+    },
+    {
+      "name": "明确真实采集来源 tmall2",
+      "passed": true,
+      "actual": "真实采集",
+      "expected": "真实采集"
+    },
+    {
+      "name": "新商品没有虚构报价 pdd",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "受控真实采集状态 pdd0",
+      "passed": true,
+      "actual": "success",
+      "expected": "success"
+    },
+    {
+      "name": "受控真实采集金额 pdd0",
+      "passed": true,
+      "actual": 90,
+      "expected": 90
+    },
+    {
+      "name": "唯一当前价 pdd0",
+      "passed": true,
+      "actual": 90,
+      "expected": 90
+    },
+    {
+      "name": "明确真实采集来源 pdd0",
+      "passed": true,
+      "actual": "真实采集",
+      "expected": "真实采集"
+    },
+    {
+      "name": "受控真实采集状态 pdd1",
+      "passed": true,
+      "actual": "success",
+      "expected": "success"
+    },
+    {
+      "name": "受控真实采集金额 pdd1",
+      "passed": true,
+      "actual": 90.5,
+      "expected": 90.5
+    },
+    {
+      "name": "唯一当前价 pdd1",
+      "passed": true,
+      "actual": 90.5,
+      "expected": 90.5
+    },
+    {
+      "name": "明确真实采集来源 pdd1",
+      "passed": true,
+      "actual": "真实采集",
+      "expected": "真实采集"
+    },
+    {
+      "name": "受控真实采集状态 pdd2",
+      "passed": true,
+      "actual": "success",
+      "expected": "success"
+    },
+    {
+      "name": "受控真实采集金额 pdd2",
+      "passed": true,
+      "actual": 91,
+      "expected": 91
+    },
+    {
+      "name": "唯一当前价 pdd2",
+      "passed": true,
+      "actual": 91,
+      "expected": 91
+    },
+    {
+      "name": "明确真实采集来源 pdd2",
+      "passed": true,
+      "actual": "真实采集",
+      "expected": "真实采集"
+    },
+    {
+      "name": "失败接口不编造价格 0",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "失败接口状态 0",
+      "passed": true,
+      "actual": "failure",
+      "expected": "failure"
+    },
+    {
+      "name": "失败接口如实记录HTTP503 0",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "失败接口不编造价格 1",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "失败接口状态 1",
+      "passed": true,
+      "actual": "failure",
+      "expected": "failure"
+    },
+    {
+      "name": "失败接口如实记录HTTP503 1",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "首次达标生成1条历史通知",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "首次达标当前状态1",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "首次达标active筛选1",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "价格恢复当前状态0",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "价格恢复active筛选0",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "价格恢复历史解除时间存在",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "重入当前价80",
+      "passed": true,
+      "actual": 80,
+      "expected": 80
+    },
+    {
+      "name": "冷却重入当前状态1",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "冷却重入active筛选1",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "重入通知历史仍1条",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "重入历史解除时间保持原值",
+      "passed": true,
+      "actual": "2026-10-04T10:29:53.293Z",
+      "expected": "2026-10-04T10:29:53.293Z"
+    },
+    {
+      "name": "历史通知提供当前isActive",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "当前规则价格独立为80",
+      "passed": true,
+      "actual": 80,
+      "expected": 80
+    },
+    {
+      "name": "当前规则active为true",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "标记已读落库",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "已读不解除当前规则",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "已读后仍active筛选1",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "仪表盘触发数与State一致",
+      "passed": true,
+      "actual": 3,
+      "expected": 3
+    },
+    {
+      "name": "同组最便宜拼多多",
+      "passed": true,
+      "actual": "pdd",
+      "expected": "pdd"
+    },
+    {
+      "name": "同组最低价由真实记录计算",
+      "passed": true,
+      "actual": 91,
+      "expected": 91
+    },
+    {
+      "name": "详情最新历史点等于当前价",
+      "passed": true,
+      "actual": 101,
+      "expected": 101
+    },
+    {
+      "name": "详情3点最低值正确",
+      "passed": true,
+      "actual": 100,
+      "expected": 100
+    },
+    {
+      "name": "详情3点最高值正确",
+      "passed": true,
+      "actual": 101,
+      "expected": 101
+    },
+    {
+      "name": "详情3点平均值正确",
+      "passed": true,
+      "actual": 100.5,
+      "expected": 100.5
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/auth/status",
+      "status": 200,
+      "ms": 96
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/bootstrap",
+      "status": 201,
+      "ms": 110
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "status": 200,
+      "ms": 94
+    },
+    {
+      "method": "GET",
+      "path": "/api/settings",
+      "status": 200,
+      "ms": 15
+    },
+    {
+      "method": "POST",
+      "path": "/api/groups",
+      "status": 201,
+      "ms": 12
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 33
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutoiwz50006sd01w86rx399/collect",
+      "status": 200,
+      "ms": 72
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutoiwz50006sd01w86rx399/collect",
+      "status": 200,
+      "ms": 43
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutoiwz50006sd01w86rx399/collect",
+      "status": 200,
+      "ms": 42
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 28
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutoix4r000wsd01e6dtarn7/collect",
+      "status": 200,
+      "ms": 35
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutoix4r000wsd01e6dtarn7/collect",
+      "status": 200,
+      "ms": 45
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutoix4r000wsd01e6dtarn7/collect",
+      "status": 200,
+      "ms": 41
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 21
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutoix8t001ksd01bnnyucbe/collect",
+      "status": 200,
+      "ms": 39
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutoix8t001ksd01bnnyucbe/collect",
+      "status": 200,
+      "ms": 45
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutoix8t001ksd01bnnyucbe/collect",
+      "status": 200,
+      "ms": 51
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 17
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutoixd7002asd01oy5rbtj5/collect",
+      "status": 200,
+      "ms": 35
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutoixd7002asd01oy5rbtj5/collect",
+      "status": 200,
+      "ms": 30
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 24
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutoixfn002jsd01m67jubzk/collect",
+      "status": 200,
+      "ms": 39
+    },
+    {
+      "method": "GET",
+      "path": "/api/alerts?productId=cmutoixfn002jsd01m67jubzk&pageSize=100",
+      "status": 200,
+      "ms": 10
+    },
+    {
+      "method": "GET",
+      "path": "/api/alerts?productId=cmutoixfn002jsd01m67jubzk&pageSize=100&status=active",
+      "status": 200,
+      "ms": 6
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutoixfn002jsd01m67jubzk/collect",
+      "status": 200,
+      "ms": 33
+    },
+    {
+      "method": "GET",
+      "path": "/api/alerts?productId=cmutoixfn002jsd01m67jubzk&pageSize=100",
+      "status": 200,
+      "ms": 9
+    },
+    {
+      "method": "GET",
+      "path": "/api/alerts?productId=cmutoixfn002jsd01m67jubzk&pageSize=100&status=active",
+      "status": 200,
+      "ms": 4
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutoixfn002jsd01m67jubzk/collect",
+      "status": 200,
+      "ms": 33
+    },
+    {
+      "method": "GET",
+      "path": "/api/alerts?productId=cmutoixfn002jsd01m67jubzk&pageSize=100&status=active",
+      "status": 200,
+      "ms": 15
+    },
+    {
+      "method": "GET",
+      "path": "/api/alerts?productId=cmutoixfn002jsd01m67jubzk&pageSize=100",
+      "status": 200,
+      "ms": 5
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/alerts/cmutoixgl002osd014s2ving4/read",
+      "status": 200,
+      "ms": 12
+    },
+    {
+      "method": "GET",
+      "path": "/api/alerts?productId=cmutoixfn002jsd01m67jubzk&pageSize=100",
+      "status": 200,
+      "ms": 14
+    },
+    {
+      "method": "GET",
+      "path": "/api/alerts?productId=cmutoixfn002jsd01m67jubzk&pageSize=100&status=active",
+      "status": 200,
+      "ms": 5
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard",
+      "status": 200,
+      "ms": 27
+    },
+    {
+      "method": "GET",
+      "path": "/api/comparison",
+      "status": 200,
+      "ms": 13
+    },
+    {
+      "method": "GET",
+      "path": "/api/products/cmutoiwz50006sd01w86rx399?days=30",
+      "status": 200,
+      "ms": 11
+    }
+  ],
+  "completedAt": "2026-10-04T10:29:53.895Z",
+  "durationMs": 1614,
+  "assertions": 72,
+  "passed": 72,
+  "failed": 0,
+  "status": "passed"
+}

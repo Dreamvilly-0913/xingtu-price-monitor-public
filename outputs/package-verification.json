@@ -1,0 +1,10 @@
+{
+  "uncompressedBytes": 4031713,
+  "archiveBytes": 2250558,
+  "fileEntriesRead": 160,
+  "passed": true,
+  "forbiddenEntries": 0,
+  "verifiedAt": "2026-10-04T05:43:51.8816558Z",
+  "missingRequiredFiles": 0,
+  "sha256MatchesManifest": true
+}

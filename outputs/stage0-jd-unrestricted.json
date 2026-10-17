@@ -1,0 +1,61 @@
+{
+  "tag": "unrestricted",
+  "verifiedSku": {
+    "sku": "100151490054",
+    "name": "小米15 12GB+512GB 丁香紫",
+    "source": "https://item.jd.com/100151490054.html",
+    "verification": "京东官方商品页的搜索索引标题核验；原 SKU 无法核验商品身份。"
+  },
+  "results": [
+    {
+      "sku": "100014348672",
+      "url": "https://p.3.cn/prices/mgets?skuIds=J_100014348672",
+      "startedAt": "2026-10-03T18:54:32.466Z",
+      "completedAt": "2026-10-03T18:54:37.580Z",
+      "elapsedMs": 5113,
+      "receivedHttpResponse": false,
+      "status": null,
+      "body": null,
+      "structure": null,
+      "validPositivePrice": false,
+      "error": {
+        "name": "TypeError",
+        "message": "fetch failed",
+        "stack": "TypeError: fetch failed",
+        "code": null,
+        "cause": {
+          "name": "Error",
+          "message": "Client network socket disconnected before secure TLS connection was established",
+          "stack": "Error: Client network socket disconnected before secure TLS connection was established\n    at TLSSocket.onConnectEnd (node:internal/tls/wrap:1827:19)\n    at TLSSocket.emit (node:events:526:24)\n    at endReadableNT (node:internal/streams/readable:1764:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)",
+          "code": "ECONNRESET",
+          "cause": null
+        }
+      }
+    },
+    {
+      "sku": "100151490054",
+      "url": "https://p.3.cn/prices/mgets?skuIds=J_100151490054",
+      "startedAt": "2026-10-03T18:54:37.581Z",
+      "completedAt": "2026-10-03T18:54:42.594Z",
+      "elapsedMs": 5012,
+      "receivedHttpResponse": false,
+      "status": null,
+      "body": null,
+      "structure": null,
+      "validPositivePrice": false,
+      "error": {
+        "name": "TypeError",
+        "message": "fetch failed",
+        "stack": "TypeError: fetch failed",
+        "code": null,
+        "cause": {
+          "name": "Error",
+          "message": "Client network socket disconnected before secure TLS connection was established",
+          "stack": "Error: Client network socket disconnected before secure TLS connection was established\n    at TLSSocket.onConnectEnd (node:internal/tls/wrap:1827:19)\n    at TLSSocket.emit (node:events:526:24)\n    at endReadableNT (node:internal/streams/readable:1764:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)",
+          "code": "ECONNRESET",
+          "cause": null
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "startedAt": "2026-10-04T07:16:53.424Z",
+  "webBase": "http://127.0.0.1:4399",
+  "apiBase": "http://127.0.0.1:4399/api",
+  "passed": false,
+  "steps": [
+    {
+      "name": "生产空库初始化",
+      "passed": true,
+      "initializationStatus": 201,
+      "demoEnabled": false,
+      "bootstrapTokenRequired": true,
+      "defaultAccountHintVisible": false,
+      "createdUsername": "ops-admin"
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "01-bootstrap-dashboard",
+      "file": "<project-root>/outputs/operations-browser-01-bootstrap-dashboard.png"
+    }
+  ],
+  "errors": [],
+  "failure": {
+    "name": "TimeoutError",
+    "message": "locator.click: Timeout 25000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: '修改密码', exact: true })\u001b[22m\n",
+    "stack": "locator.click: Timeout 25000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: '修改密码', exact: true })\u001b[22m\n\n    at clickForResponse (<project-root>/scripts/verify-operations-browser.mjs:54:17)\n    at <project-root>/scripts/verify-operations-browser.mjs:94:25",
+    "url": "http://127.0.0.1:4399/settings",
+    "pageText": "星图价格监控\nXINGTU PRICE MONITOR\n运营工作台\n运营仪表盘\n监控商品\n同款比价\n采集记录\n预警中心\n系统设置\n嘉兴星图优选\n虚构演示企业 · 电商运营\n每一笔价格都可追溯\n工作台 / 系统设置\nAsia/Shanghai\n1\n管\n隔离验收运营管理员\n系统设置\n\n管理采集节奏、演示波动与预警阈值，查看每一轮调度的实际结果。\n\n刷新状态\n当前为真实运营模式\n已禁用演示数据采集，价格来自实际响应。请关注报价时效、解析失败及数据源可用性。\n• 过去24小时有1次采集失败，请检查记录\n全局采集与预警配置\n采集间隔（分钟）\n\t分钟\n默认 30 分钟；只采集启用中的商品。调度每分钟检查一次是否到期。\n演示源波动率（%）\n\t%\n演示模拟的单次变动上限，默认 2.50%；允许 0–3%。价格始终位于基准价的 60%–130%。\n24 小时跌幅预警默认阈值（%）\n\t%\n默认 5.00%；单个商品可在采集配置中覆盖该阈值。目标价预警使用商品自身目标价。\n保存全局设置\n恢复已保存值\n调度运行状态\n调度未启用\n当前全局间隔\n每 30 分钟\n\n\n当前执行状态\n空闲\n\n\n上次运行 / 调度基准\n—\n\n\n下次定时采集（上海）\n—\n后端进程内运行定时任务，逐个采集启用商品。单个商品失败会继续本轮；相同轮次不会重叠。进程初次启动时建立调度时间基准。\n立即采集全部启用商品\n手动全轮保留原有定时计划。完成后自动刷新运行状态和轮次记录。\n数据源说明\n演示模拟\n按商品 ID 与业务日期生成确定性伪随机游走；仅用于演示与验收。所有价格与日志明确标注演示模拟。\n真实采集\n请求配置的 JSON 接口或网页，按 JSON 路径或 CSS 选择器解析实际响应；失败如实记录原因，不生成替代价格。京东默认尝试公开价格接口。\n所有成功价格来自采集器；失败不生成价格。当前价与统计均以成功采集流水为依据。\n采集轮次记录\n共 0 轮\n\t开始时间（上海）\t触发方式\t轮次状态\t商品数\t成功\t失败\t成功率\t耗时\t结束时间（上海）\n\n \n\t\n开始时间（上海）\n\t\n触发方式\n\t\n轮次状态\n\t\n商品数\n\t\n成功\n\t\n失败\n\t\n成功率\n\t\n耗时\n\t\n结束时间（上海）\n\n\n尚无采集轮次，可点击上方按钮执行第一轮\n账号密码\n为管理员设置专用密码，至少 12 个字符，UTF-8 长度不超过 72 字节。修改后所有旧登录会话失效。\n当前密码\n新密码\n确认新密码\n修改密码\n嘉兴星图优选 · 价格运营工作台\n演示价格明确标注来源 · 时间统一按上海时区"
+  },
+  "completedAt": "2026-10-04T07:17:22.346Z",
+  "durationMs": 28922
+}

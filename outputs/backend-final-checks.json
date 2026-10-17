@@ -1,0 +1,60 @@
+{
+  "verifiedAt": "2026-10-04T05:30:34.112Z",
+  "serverTypecheckExit": 0,
+  "serverBuildExit": 0,
+  "postgresSchemaValidateExit": 0,
+  "composeConfigurationExit": 0,
+  "composeSecret": "临时验收变量，未写入任何环境文件",
+  "stage2": {
+    "passed": true,
+    "apiRequests": 56,
+    "assertionCount": 120,
+    "demo": {
+      "firstPrice": 99.94,
+      "secondPrice": 101.15,
+      "movementPercent": 1.210726,
+      "limitPercent": 3
+    }
+  },
+  "compiledStatic": {
+    "passed": true,
+    "checkedRoutes": [
+      {
+        "route": "/",
+        "status": 200,
+        "script": "/assets/index-DFB0SFB4.js",
+        "assetStatus": 200
+      },
+      {
+        "route": "/login",
+        "status": 200,
+        "script": "/assets/index-DFB0SFB4.js",
+        "assetStatus": 200
+      },
+      {
+        "route": "/dashboard",
+        "status": 200,
+        "script": "/assets/index-DFB0SFB4.js",
+        "assetStatus": 200
+      },
+      {
+        "route": "/products/compiled-runtime-check",
+        "status": 200,
+        "script": "/assets/index-DFB0SFB4.js",
+        "assetStatus": 200
+      }
+    ],
+    "unknownApiStatus": 404,
+    "unknownAssetStatus": 404
+  },
+  "runtimeFiles": [
+    "server/dist/src/index.js",
+    "server/dist/prisma/seed.js",
+    "server/dist/scripts/password.js"
+  ],
+  "limits": [
+    "Docker daemon 未运行：未实际构建或启动镜像",
+    "PostgreSQL 无实例：仅校验模型",
+    "当前静态注入检查使用已存在的构建资源，最终生产浏览器验收另行执行"
+  ]
+}

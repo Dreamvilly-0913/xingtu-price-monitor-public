@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-10-04T05:30:32.501Z",
+  "independentAssertions": 6,
+  "fixtureSource": "本地HTTP真实响应，仅用于验收，并非市场价",
+  "testDatabase": "<project-root>/work/stage2/api-1791091661761.db",
+  "missedYesterday": {
+    "top5ContainsProduct": false,
+    "listChange": null
+  },
+  "restoredYesterday": {
+    "previousPrice": 90,
+    "currentPrice": 80,
+    "dropPercent": 11.1111,
+    "listChange": -11.1111
+  }
+}

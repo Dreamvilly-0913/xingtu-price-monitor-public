@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-10-04T08:02:39.484Z",
+  "projectPath": "<project-root>",
+  "localUrl": "http://localhost:4010",
+  "localMode": "演示模拟",
+  "productionPid": 21152,
+  "sourceCodeReadyForAuthorizedHttpIntegration": true,
+  "externalPlatformPricesVerified": false,
+  "database": {
+    "originalProducts": 12,
+    "originalCollections": 396,
+    "preservedBeforeNewCollections": true,
+    "currentProducts": 12,
+    "currentCollections": 408,
+    "replayedDemoRecords": 408,
+    "exactCurrentPriceMatches": 12,
+    "credentialsPreserved": true,
+    "reseeded": false
+  },
+  "verification": {
+    "collectorAssertions": 242,
+    "apiAssertions": 98,
+    "businessAssertions": 69,
+    "raceAssertions": 34,
+    "backupAssertions": 20,
+    "regressionAssertions": 121,
+    "productionAssertions": 1601,
+    "isolatedBrowserGroups": 9,
+    "productionBrowserGroups": 9,
+    "javascriptErrors": 0,
+    "productionBrowserBusinessWrites": 0
+  },
+  "build": {
+    "typecheckExitCode": 0,
+    "fullBuildExitCode": 0,
+    "viteDurationSeconds": 36.22,
+    "knownWarnings": [
+      "ECharts及UI公共chunk超过500KB"
+    ],
+    "clientIndexSha256": "b9734a3eb9fce8e5a00151ae8095618a8c0d98e95932aee5fe10f1ba78971fb0",
+    "serverEntrySha256": "b4604a4c39a849d8c02eda601790579e0e74a32d22771a6ef496c67e8fbeb77d"
+  },
+  "unavailableRuntimeChecks": [
+    "真实电商平台报价连接未成功验证",
+    "Docker daemon不可用，仅Compose校验通过",
+    "PostgreSQL实例未提供，仅模型校验通过"
+  ],
+  "report": "docs/运营优化报告.md",
+  "operationsGuide": "docs/真实运营指南.md",
+  "sourceArchive": "outputs/xingtu-price-monitor-source.zip"
+}

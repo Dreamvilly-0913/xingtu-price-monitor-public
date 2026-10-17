@@ -1,0 +1,50 @@
+{
+  "name": "docker-fix-cleanup",
+  "startedAt": "2026-10-04T10:54:01.545Z",
+  "sourceScope": "新生产镜像的隔离Docker容器；价格为受控测试HTTP报价",
+  "checks": [
+    {
+      "name": "临时凭证已删除 test.env",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "临时凭证已删除 test-config.json",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "临时浏览器用户目录已删除",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "QA容器全部清理",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "name": "QA数据卷全部清理",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "name": "QA网络全部清理",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    }
+  ],
+  "requests": [],
+  "completedAt": "2026-10-04T10:54:06.106Z",
+  "durationMs": 4561,
+  "assertions": 6,
+  "passed": 6,
+  "failed": 0,
+  "status": "passed"
+}

@@ -1,0 +1,97 @@
+{
+  "startedAt": "2026-10-04T07:36:17.585Z",
+  "webBase": "http://127.0.0.1:4399",
+  "apiBase": "http://127.0.0.1:4399/api",
+  "passed": false,
+  "steps": [
+    {
+      "name": "生产空库初始化",
+      "passed": true,
+      "initializationStatus": 201,
+      "demoEnabled": false,
+      "bootstrapTokenRequired": true,
+      "defaultAccountHintVisible": false,
+      "createdUsername": "ops-admin"
+    },
+    {
+      "name": "改密与真实页面重新登录",
+      "passed": true,
+      "oldTokenStatus": 401,
+      "newSessionStatus": 200,
+      "loginStatus": 200
+    },
+    {
+      "name": "过期报价保留但排除有效最低",
+      "passed": true,
+      "oldPrice": 10,
+      "oldPriceAgeMinutes": 4321.5,
+      "livePrice": 20,
+      "freshCheapestPrice": 20,
+      "freshCheapestIds": [
+        "cmuti9uxh0002ugdwwwm3wt47"
+      ]
+    },
+    {
+      "name": "真实配置预览与第100组之后远程搜索",
+      "passed": true,
+      "previewPrice": 20,
+      "sourceLabel": "真实采集",
+      "collectionCountBefore": 33,
+      "collectionCountAfter": 33,
+      "farGroupId": "cmuti9wk000asugdwo5e3pz8n",
+      "totalGroups": 107
+    },
+    {
+      "name": "第100类之后分类可筛选",
+      "passed": true,
+      "farCategory": "远端第106分类可检索",
+      "matchingProducts": 1,
+      "totalCategories": 107
+    },
+    {
+      "name": "标记已读后铃铛立即同步",
+      "passed": true,
+      "unreadBefore": 1,
+      "unreadAfter": 0,
+      "readAlertId": "cmuti9vau001wugdwojpywo35"
+    },
+    {
+      "name": "真实历史曲线与统计元信息",
+      "passed": true,
+      "detailChart": {
+        "renderedPointCount": 31,
+        "rawPointCount": 31,
+        "sampled": false,
+        "seriesCount": 1
+      },
+      "latestSuccessfulPrice": 20,
+      "historySourceLabels": [
+        "真实采集"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "01-bootstrap-dashboard",
+      "file": "<project-root>/outputs/operations-browser-01-bootstrap-dashboard.png"
+    },
+    {
+      "name": "02-fresh-comparison",
+      "file": "<project-root>/outputs/operations-browser-02-fresh-comparison.png"
+    },
+    {
+      "name": "03-preview-and-far-group",
+      "file": "<project-root>/outputs/operations-browser-03-preview-and-far-group.png"
+    }
+  ],
+  "errors": [],
+  "failure": {
+    "name": "TimeoutError",
+    "message": "locator.uncheck: Timeout 25000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByTestId('dashboard-product-selector').locator('input:checked').nth(2)\u001b[22m\n",
+    "stack": "locator.uncheck: Timeout 25000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByTestId('dashboard-product-selector').locator('input:checked').nth(2)\u001b[22m\n\n    at <project-root>/scripts/verify-operations-browser.mjs:190:82",
+    "url": "http://127.0.0.1:4399/dashboard",
+    "pageText": "星图价格监控\nXINGTU PRICE MONITOR\n运营工作台\n运营仪表盘\n监控商品\n同款比价\n采集记录\n预警中心\n系统设置\n嘉兴星图优选\n虚构演示企业 · 电商运营\n每一笔价格都可追溯\n工作台 / 运营仪表盘\nAsia/Shanghai\n管\n隔离验收运营管理员\n运营仪表盘\n\n集中查看数码家电价格动态，让每一次运营决策都有据可查。\n\n 可见页面每 30 秒更新\n刷新数据\n监控商品\n108件\n2 件正在监控\n今日采集次数\n2次\n成功 1 次 · 上海业务日期\n今日采集成功率\n50.0%\n按今日全部采集流水计算\n当前触发预警\n1条\n价格恢复后自动解除\n商品价格趋势\n近 30 天及今日 · 单位：元\n7天\n30天\n90天\n勾选商品对比 · 最多 10 件\n京东 · 运营验收实时商品\n天猫 · 运营验收陈旧商品\n京东 · 分类覆盖商品0\n京东 · 分类覆盖商品1\n京东 · 分类覆盖商品2\n京东 · 分类覆盖商品3\n京东 · 分类覆盖商品4\n京东 · 分类覆盖商品5\n京东 · 分类覆盖商品6\n京东 · 分类覆盖商品7\n京东 · 分类覆盖商品8\n京东 · 分类覆盖商品9\n京东 · 分类覆盖商品10\n京东 · 分类覆盖商品11\n京东 · 分类覆盖商品12\n京东 · 分类覆盖商品13\n京东 · 分类覆盖商品14\n京东 · 分类覆盖商品15\n京东 · 分类覆盖商品16\n京东 · 分类覆盖商品17\n京东 · 分类覆盖商品18\n京东 · 分类覆盖商品19\n京东 · 分类覆盖商品20\n京东 · 分类覆盖商品21\n京东 · 分类覆盖商品22\n京东 · 分类覆盖商品23\n京东 · 分类覆盖商品24\n京东 · 分类覆盖商品25\n京东 · 分类覆盖商品26\n京东 · 分类覆盖商品27\n京东 · 分类覆盖商品28\n京东 · 分类覆盖商品29\n京东 · 分类覆盖商品30\n京东 · 分类覆盖商品31\n京东 · 分类覆盖商品32\n京东 · 分类覆盖商品33\n京东 · 分类覆盖商品34\n京东 · 分类覆盖商品35\n京东 · 分类覆盖商品36\n京东 · 分类覆盖商品37\n京东 · 分类覆盖商品38\n京东 · 分类覆盖商品39\n京东 · 分类覆盖商品40\n京东 · 分类覆盖商品41\n京东 · 分类覆盖商品42\n京东 · 分类覆盖商品43\n京东 · 分类覆盖商品44\n京东 · 分类覆盖商品45\n京东 · 分类覆盖商品46\n京东 · 分类覆盖商品47\n京东 · 分类覆盖商品48\n京东 · 分类覆盖商品49\n京东 · 分类覆盖商品50\n京东 · 分类覆盖商品51\n京东 · 分类覆盖商品52\n京东 · 分类覆盖商品53\n京东 · 分类覆盖商品54\n京东 · 分类覆盖商品55\n京东 · 分类覆盖商品56\n京东 · 分类覆盖商品57\n京东 · 分类覆盖商品58\n京东 · 分类覆盖商品59\n京东 · 分类覆盖商品60\n京东 · 分类覆盖商品61\n京东 · 分类覆盖商品62\n京东 · 分类覆盖商品63\n京东 · 分类覆盖商品64\n京东 · 分类覆盖商品65\n京东 · 分类覆盖商品66\n京东 · 分类覆盖商品67\n京东 · 分类覆盖商品68\n京东 · 分类覆盖商品69\n京东 · 分类覆盖商品70\n京东 · 分类覆盖商品71\n京东 · 分类覆盖商品72\n京东 · 分类覆盖商品73\n京东 · 分类覆盖商品74\n京东 · 分类覆盖商品75\n京东 · 分类覆盖商品76\n京东 · 分类覆盖商品77\n京东 · 分类覆盖商品78\n京东 · 分类覆盖商品79\n京东 · 分类覆盖商品80\n京东 · 分类覆盖商品81\n京东 · 分类覆盖商品82\n京东 · 分类覆盖商品83\n京东 · 分类覆盖商品84\n京东 · 分类覆盖商品85\n京东 · 分类覆盖商品86\n京东 · 分类覆盖商品87\n京东 · 分类覆盖商品88\n京东 · 分类覆盖商品89\n京东 · 分类覆盖商品90\n京东 · 分类覆盖商品91\n京东 · 分类覆盖商品92\n京东 · 分类覆盖商品93\n京东 · 分类覆盖商品94\n京东 · 分类覆盖商品95\n京东 · 分类覆盖商品96\n京东 · 分类覆盖商品97\n京东 · 分类覆盖商品98\n京东 · 分类覆盖商品99\n京东 · 分类覆盖商品100\n京东 · 分类覆盖商品101\n京东 · 分类覆盖商品102\n京东 · 分类覆盖商品103\n京东 · 分类覆盖商品104\n京东 · 远端分类验收商品\n真实采集\n曲线只使用成功采集记录，失败不会产生价格点。\n平台商品分布\n全部监控商品\n108\n监控商品\n京东\n107 件\n天猫\n1 件\n拼多多\n0 件\ni\n\n演示数据用于复算与验收。切换真实采集时，请先配置接口或网页解析规则。\n\n今日最大降幅 Top 5\n今日最新价相对昨日最后成功价\n查看全部 \n01\n运营验收实时商品\n京东真实采集\n¥20.00\n昨日 ¥20.10\n真实采集\n↓ 0.50%\n让监控形成完整闭环\n01\n配置监控商品\n\n设置平台、SKU、数据源与目标价格。\n\n02\n持续采集与复核\n\n定时采集，保留每次成功与失败的完整流水。\n\n03\n跟进降价预警\n\n目标价与 24 小时跌幅双规则，处理提醒。\n\n查看预警中心\n嘉兴星图优选 · 价格运营工作台\n演示价格明确标注来源 · 时间统一按上海时区"
+  },
+  "completedAt": "2026-10-04T07:37:04.906Z",
+  "durationMs": 47321
+}

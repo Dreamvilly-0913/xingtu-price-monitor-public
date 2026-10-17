@@ -1,0 +1,69 @@
+{
+  "startedAt": "2026-10-04T07:19:19.045Z",
+  "webBase": "http://127.0.0.1:4399",
+  "apiBase": "http://127.0.0.1:4399/api",
+  "passed": false,
+  "steps": [
+    {
+      "name": "生产空库初始化",
+      "passed": true,
+      "initializationStatus": 201,
+      "demoEnabled": false,
+      "bootstrapTokenRequired": true,
+      "defaultAccountHintVisible": false,
+      "createdUsername": "ops-admin"
+    },
+    {
+      "name": "改密与真实页面重新登录",
+      "passed": true,
+      "oldTokenStatus": 401,
+      "newSessionStatus": 200,
+      "loginStatus": 200
+    },
+    {
+      "name": "过期报价保留但排除有效最低",
+      "passed": true,
+      "oldPrice": 10,
+      "oldPriceAgeMinutes": 4327.32,
+      "livePrice": 20,
+      "freshCheapestPrice": 20,
+      "freshCheapestIds": [
+        "cmuthgjft0002ug6gy40lhjg8"
+      ]
+    },
+    {
+      "name": "真实配置预览与第100组之后远程搜索",
+      "passed": true,
+      "previewPrice": 20,
+      "sourceLabel": "真实采集",
+      "collectionCountBefore": 33,
+      "collectionCountAfter": 33,
+      "farGroupId": "cmuthglad00asug6gl43sj57q",
+      "totalGroups": 107
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "01-bootstrap-dashboard",
+      "file": "<project-root>/outputs/operations-browser-01-bootstrap-dashboard.png"
+    },
+    {
+      "name": "02-fresh-comparison",
+      "file": "<project-root>/outputs/operations-browser-02-fresh-comparison.png"
+    },
+    {
+      "name": "03-preview-and-far-group",
+      "file": "<project-root>/outputs/operations-browser-03-preview-and-far-group.png"
+    }
+  ],
+  "errors": [],
+  "failure": {
+    "name": "TimeoutError",
+    "message": "locator.click: Timeout 25000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('dialog', { name: '编辑监控商品' }).getByRole('button', { name: '取消', exact: true })\u001b[22m\n",
+    "stack": "locator.click: Timeout 25000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('dialog', { name: '编辑监控商品' }).getByRole('button', { name: '取消', exact: true })\u001b[22m\n\n    at <project-root>/scripts/verify-operations-browser.mjs:154:65",
+    "url": "http://127.0.0.1:4399/products",
+    "pageText": "星图价格监控\nXINGTU PRICE MONITOR\n运营工作台\n运营仪表盘\n监控商品\n同款比价\n采集记录\n预警中心\n系统设置\n嘉兴星图优选\n虚构演示企业 · 电商运营\n每一笔价格都可追溯\n工作台 / 监控商品\nAsia/Shanghai\n1\n管\n隔离验收运营管理员\n监控商品\n\n管理监控范围、目标价与采集规则。当前价格始终对应最新一条成功采集记录。\n\n刷新数据\n新增商品\n全部平台\n全部分类\n全部状态\n全部数据源\n商品列表 1\n金额保留两位小数 · 涨跌对比成功采集价\n监控商品\t最近成功价格 / 来源\t较昨日\t较基准价\t历史最低\t最近采集状态\t监控\t操作\n\n监控商品\n\t\n最近成功价格 / 来源\n\t\n较昨日\n\t\n较基准价\n\t\n历史最低\n\t\n最近采集状态\n\t\n监控\n\t\n操作\n\n\n运营验收实时商品\n京东\n实时运营验收\nSKU 运营验收实时商品\n\t\n¥20.00\n真实采集\n有效报价\n价格采于 2026/10/04 15:12\n距今 7 分钟\n目标 ¥50.00\n\t↘ -0.50%\t↘ -80.00%\t\n¥20.00\n真实采集\n\t\n采集成功\n2026/10/04 15:12\n监控源：真实采集\n\t\n开启\n关闭\n\t\n查看详情\n编辑\n立即采集\n删除\n共 1 件商品\n1\n20 条/页\n演示模拟\n基于确定性游走，可复算；\n真实采集\n拉取实际响应，失败会保留原因。切换数据源后，旧价格仍保留原采集来源。\n嘉兴星图优选 · 价格运营工作台\n演示价格明确标注来源 · 时间统一按上海时区\n编辑监控商品\n商品信息\n商品名称\n平台\n京东\n分类\nSKU\n商品链接\n基准价（元）\n¥\t\n目标价（元）\n¥\t\n商品组\n远端第106组可检索\n远端第106组可检索\n远程搜索同款组，已选商品组会保留。\n启用监控\n开启\n关闭\n关闭后不参与定时采集，仍可手动采集。\n数据源与预警\n数据源\n真实采集\n单品跌幅阈值（%）\n\t%\n留空使用系统默认的 24 小时跌幅阈值。\n解析方式\nJSON 价格接口\n网页 CSS 选择器\n价格接口 URL\n京东留空时默认请求公开价格接口，SKU 取上方商品配置。\nJSON 路径\n京东默认路径为 $[0].p。\n请求超时（毫秒）\n真实采集可能失败\n网络超时、平台拦截或解析失败都会记入采集日志，不会用演示价格补填。接口需无需登录即可访问。\n售价匹配规则（可选）\n填写售价字面量前缀及标准金额捕获组，例如 到手价¥(\\d+(?:\\.\\d{1,2})?)；必须唯一匹配。\n测试采集配置\n预览会实际请求配置的地址并解析响应，不写入商品、价格历史或预警。保存配置后再立即采集。\n取 消\n保存修改"
+  },
+  "completedAt": "2026-10-04T07:20:00.092Z",
+  "durationMs": 41047
+}

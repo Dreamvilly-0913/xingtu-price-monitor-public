@@ -1,0 +1,256 @@
+{
+  "startedAt": "2026-10-04T09:00:33.524Z",
+  "checks": [
+    {
+      "name": "部署数据卷挂载",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "部署备份卷挂载",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "部署重启策略",
+      "passed": true,
+      "actual": "unless-stopped",
+      "expected": "unless-stopped"
+    },
+    {
+      "name": "生产数据库完整性",
+      "passed": true,
+      "actual": "ok",
+      "expected": "ok"
+    },
+    {
+      "name": "商品无重复缓存价格字段",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "生产在线备份成功",
+      "passed": true,
+      "actual": "passed",
+      "expected": "passed"
+    },
+    {
+      "name": "生产在线备份完整性",
+      "passed": true,
+      "actual": "ok",
+      "expected": "ok"
+    },
+    {
+      "name": "生产备份行数 Alert",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "生产备份行数 AuditLog",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "生产备份行数 CollectionRecord",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "生产备份行数 CollectionRun",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "生产备份行数 Product",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "生产备份行数 ProductGroup",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "生产备份行数 Setting",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "生产备份行数 User",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "重启后健康",
+      "passed": true,
+      "actual": "healthy",
+      "expected": "healthy"
+    },
+    {
+      "name": "生产重启所有业务表逐行摘要一致",
+      "passed": true,
+      "actual": "b1dfc35f9ae6f17f6936e4633a08963ee5dd289256522d8d99c5143858c71db5",
+      "expected": "b1dfc35f9ae6f17f6936e4633a08963ee5dd289256522d8d99c5143858c71db5"
+    },
+    {
+      "name": "生产重启表数量一致",
+      "passed": true,
+      "actual": {
+        "Alert": 0,
+        "AuditLog": 0,
+        "CollectionRecord": 0,
+        "CollectionRun": 0,
+        "Product": 0,
+        "ProductGroup": 0,
+        "Setting": 1,
+        "User": 0
+      },
+      "expected": {
+        "Alert": 0,
+        "AuditLog": 0,
+        "CollectionRecord": 0,
+        "CollectionRun": 0,
+        "Product": 0,
+        "ProductGroup": 0,
+        "Setting": 1,
+        "User": 0
+      }
+    },
+    {
+      "name": "生产重启保留初始化状态",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "生产重启仍关闭模拟",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    }
+  ],
+  "deployments": {
+    "before": {
+      "counts": {
+        "Alert": 0,
+        "AuditLog": 0,
+        "CollectionRecord": 0,
+        "CollectionRun": 0,
+        "Product": 0,
+        "ProductGroup": 0,
+        "Setting": 1,
+        "User": 0
+      },
+      "rowDigest": "b1dfc35f9ae6f17f6936e4633a08963ee5dd289256522d8d99c5143858c71db5",
+      "integrityCheck": "ok",
+      "productColumns": [
+        "id",
+        "name",
+        "platform",
+        "url",
+        "sku",
+        "category",
+        "basePriceCents",
+        "targetPriceCents",
+        "sourceType",
+        "collectorConfig",
+        "enabled",
+        "groupId",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "after": {
+      "counts": {
+        "Alert": 0,
+        "AuditLog": 0,
+        "CollectionRecord": 0,
+        "CollectionRun": 0,
+        "Product": 0,
+        "ProductGroup": 0,
+        "Setting": 1,
+        "User": 0
+      },
+      "rowDigest": "b1dfc35f9ae6f17f6936e4633a08963ee5dd289256522d8d99c5143858c71db5",
+      "integrityCheck": "ok",
+      "productColumns": [
+        "id",
+        "name",
+        "platform",
+        "url",
+        "sku",
+        "category",
+        "basePriceCents",
+        "targetPriceCents",
+        "sourceType",
+        "collectorConfig",
+        "enabled",
+        "groupId",
+        "createdAt",
+        "updatedAt"
+      ]
+    }
+  },
+  "backups": {
+    "production": {
+      "status": "passed",
+      "createdAt": "2026-10-04T09:00:35.282Z",
+      "method": "SQLite VACUUM INTO",
+      "backupFile": "work/backups/xingtu-20261004T090035282Z-11c512aa-0231-4495-a07a-9fb87f2e9fdc.db",
+      "bytes": 122880,
+      "sha256": "c8a8f7d0857ed00124bfa5451847125822b787ee1da7ef062b18f4d76bb14ecf",
+      "integrityCheck": "ok",
+      "tables": [
+        {
+          "tableName": "Alert",
+          "rows": 0
+        },
+        {
+          "tableName": "AuditLog",
+          "rows": 0
+        },
+        {
+          "tableName": "CollectionRecord",
+          "rows": 0
+        },
+        {
+          "tableName": "CollectionRun",
+          "rows": 0
+        },
+        {
+          "tableName": "Product",
+          "rows": 0
+        },
+        {
+          "tableName": "ProductGroup",
+          "rows": 0
+        },
+        {
+          "tableName": "Setting",
+          "rows": 1
+        },
+        {
+          "tableName": "User",
+          "rows": 0
+        }
+      ]
+    }
+  },
+  "imageId": "sha256:1bf84c2951eeb4544fcef6819d9d2f0007387deca298848fdc8e7d8fae94f0b9",
+  "imageSizeBytes": 1129723121,
+  "finishedAt": "2026-10-04T09:00:42.450Z",
+  "assertions": 20,
+  "failed": 0,
+  "status": "passed"
+}

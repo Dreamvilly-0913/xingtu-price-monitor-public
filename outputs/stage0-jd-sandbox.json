@@ -1,0 +1,61 @@
+{
+  "tag": "sandbox",
+  "verifiedSku": {
+    "sku": "100151490054",
+    "name": "小米15 12GB+512GB 丁香紫",
+    "source": "https://item.jd.com/100151490054.html",
+    "verification": "京东官方商品页的搜索索引标题核验；原 SKU 无法核验商品身份。"
+  },
+  "results": [
+    {
+      "sku": "100014348672",
+      "url": "https://p.3.cn/prices/mgets?skuIds=J_100014348672",
+      "startedAt": "2026-10-03T18:54:17.952Z",
+      "completedAt": "2026-10-03T18:54:18.062Z",
+      "elapsedMs": 108,
+      "receivedHttpResponse": false,
+      "status": null,
+      "body": null,
+      "structure": null,
+      "validPositivePrice": false,
+      "error": {
+        "name": "TypeError",
+        "message": "fetch failed",
+        "stack": "TypeError: fetch failed",
+        "code": null,
+        "cause": {
+          "name": "Error",
+          "message": "connect EACCES 198.18.2.186:443",
+          "stack": "Error: connect EACCES 198.18.2.186:443\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)",
+          "code": "EACCES",
+          "cause": null
+        }
+      }
+    },
+    {
+      "sku": "100151490054",
+      "url": "https://p.3.cn/prices/mgets?skuIds=J_100151490054",
+      "startedAt": "2026-10-03T18:54:18.063Z",
+      "completedAt": "2026-10-03T18:54:18.068Z",
+      "elapsedMs": 4,
+      "receivedHttpResponse": false,
+      "status": null,
+      "body": null,
+      "structure": null,
+      "validPositivePrice": false,
+      "error": {
+        "name": "TypeError",
+        "message": "fetch failed",
+        "stack": "TypeError: fetch failed",
+        "code": null,
+        "cause": {
+          "name": "Error",
+          "message": "connect EACCES 198.18.2.186:443",
+          "stack": "Error: connect EACCES 198.18.2.186:443\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)",
+          "code": "EACCES",
+          "cause": null
+        }
+      }
+    }
+  ]
+}

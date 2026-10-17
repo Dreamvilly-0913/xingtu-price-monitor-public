@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "generatedAt": "2026-10-04T10:45:24.547Z",
+  "assertions": 84,
+  "requests": 6,
+  "isolation": "一次性 SQLite；所有人工点标注隔离验证夹具，未访问真实价格接口，未写正式实例",
+  "database": "<project-root>/work/alert-rule-state/rule-state-1791110686562.db",
+  "results": {
+    "targetReentry": {
+      "prices": [
+        80,
+        95,
+        80
+      ],
+      "activeCounts": [
+        1,
+        0,
+        1
+      ],
+      "alertsDuringCooldown": 1,
+      "originalPrice": 80,
+      "laterCurrentPrice": 85,
+      "readKeepsActive": true,
+      "notificationsAfter24Hours": 2
+    },
+    "dropReentry": {
+      "baseline": 100,
+      "prices": [
+        80,
+        99,
+        80
+      ],
+      "active": [
+        true,
+        false,
+        true
+      ],
+      "notifications": 1
+    },
+    "quoteRefresh": {
+      "expiredAtMinutes": 91,
+      "samePrice": 80,
+      "newRecordRestored": true,
+      "oldRecordIgnored": true
+    },
+    "sourceIsolation": {
+      "demoToHttpNewNotifications": 1,
+      "newSkuNotifications": 1,
+      "mismatchedQuoteActive": false,
+      "reconcileAddedRecords": 0
+    },
+    "legacyInitialization": {
+      "restoredAlerts": 1,
+      "initializedProducts": 6,
+      "addedPrices": 0,
+      "addedNotifications": 0,
+      "activeWithoutNotification": true,
+      "repeatedInitializationIdempotent": true
+    },
+    "invalidSourceAndDisabled": {
+      "demoRulesDisabledInOperations": true,
+      "disabledProductActive": false,
+      "generatedPrices": 0
+    }
+  }
+}

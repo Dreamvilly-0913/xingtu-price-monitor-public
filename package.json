@@ -1,0 +1,35 @@
+{
+  "name": "xingtu-price-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "node scripts/setup-env.mjs && concurrently -k -n API,WEB -c blue,cyan \"pnpm --filter @xingtu/server dev\" \"pnpm --filter @xingtu/client dev\"",
+    "db:generate": "node scripts/database.mjs generate",
+    "db:push": "node scripts/database.mjs push",
+    "db:seed": "pnpm --filter @xingtu/server db:seed",
+    "db:init": "node scripts/setup-env.mjs && pnpm db:push && pnpm db:seed",
+    "db:check-postgres": "node scripts/database.mjs validate-postgres",
+    "db:backup": "node scripts/backup-sqlite.mjs",
+    "typecheck": "pnpm --filter @xingtu/server typecheck && pnpm --filter @xingtu/client typecheck",
+    "build": "pnpm db:generate && pnpm --filter @xingtu/server build && pnpm --filter @xingtu/client build",
+    "start": "pnpm --filter @xingtu/server start",
+    "verify:stage0": "pnpm --filter @xingtu/server exec tsx ../scripts/probe-demo.mts",
+    "probe:jd": "node scripts/probe-jd.mjs",
+    "verify:stage1": "pnpm --filter @xingtu/server verify:stage1",
+    "verify:stage2": "pnpm --filter @xingtu/server verify:stage2",
+    "verify:browser": "node scripts/verify-browser.mjs",
+    "verify:system": "node scripts/verify-system.mjs",
+    "password": "pnpm --filter @xingtu/server password",
+    "verify:operations": "pnpm db:generate && pnpm --filter @xingtu/server exec tsx scripts/verify-collector-hardening.ts && pnpm --filter @xingtu/server exec tsx scripts/verify-operations-business.ts && pnpm --filter @xingtu/server exec tsx scripts/verify-operations-api.ts && pnpm --filter @xingtu/server exec tsx scripts/verify-operations-race.ts && pnpm --filter @xingtu/server exec tsx scripts/verify-operations-regression.ts && node scripts/verify-backup.mjs",
+    "verify:docker-fixes": "pnpm db:generate && pnpm --filter @xingtu/server exec tsx scripts/verify-alert-rule-state.ts && pnpm --filter @xingtu/server exec tsx scripts/verify-run-recovery.ts"
+  },
+  "devDependencies": {
+    "concurrently": "9.2.1",
+    "dotenv": "17.2.2",
+    "@playwright/test": "1.55.1"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-10-04T07:49:44.120Z",
+  "requests": 51,
+  "assertions": 98,
+  "isolatedDatabase": "<project-root>/work/operations/auth-api-1791100169138.db",
+  "oldTokenStatus": 401,
+  "defaultPasswordBusinessStatus": 403,
+  "rateLimitStatus": 429,
+  "previewAddedRecords": 0,
+  "actualCollectionCurrentPrice": 80,
+  "ruleEditAddedRecords": 0,
+  "laterGroupSearchFound": true,
+  "categories": 106,
+  "productionSecretCases": [
+    {
+      "name": "示例JWT密钥",
+      "exitCode": 1,
+      "expectedExitCode": 1
+    },
+    {
+      "name": "旧演示默认JWT",
+      "exitCode": 1,
+      "expectedExitCode": 1
+    },
+    {
+      "name": "重复字符JWT",
+      "exitCode": 1,
+      "expectedExitCode": 1
+    },
+    {
+      "name": "示例初始化凭证",
+      "exitCode": 1,
+      "expectedExitCode": 1
+    },
+    {
+      "name": "随机JWT与初始化凭证",
+      "exitCode": 0,
+      "expectedExitCode": 0
+    },
+    {
+      "name": "已初始化部署不提供初始化凭证",
+      "exitCode": 0,
+      "expectedExitCode": 0
+    }
+  ],
+  "comparison": {
+    "staleLastKnownPrice": 10,
+    "validCheapestPrice": 20,
+    "validCheapestPlatform": "tmall",
+    "staleAgeDays": 3,
+    "disabledCheapestPrice": null,
+    "incompatibleCheapestPrice": null
+  },
+  "readiness": {
+    "enabledWithoutValidPrice": 2,
+    "validBeforeRestore": 0,
+    "blockerPresent": true,
+    "validAfterRestore": 1,
+    "ruleChangesAddedPrices": 0
+  },
+  "alertsVisibility": {
+    "visibleOnlyHttp": true,
+    "hiddenDemoActiveAlerts": 1,
+    "visibleAlerts": 3,
+    "visibleActiveAlerts": 1
+  },
+  "fixtureExplanation": "真实HTTP采集器请求本地随机端口夹具，演示预警来自DemoCollector；全程只操作一次性SQLite，不代表电商市场报价",
+  "productionDataTouched": false
+}

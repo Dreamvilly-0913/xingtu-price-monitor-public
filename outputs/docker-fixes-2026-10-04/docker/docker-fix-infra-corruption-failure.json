@@ -1,0 +1,14 @@
+{
+  "name": "docker-fix-infra",
+  "startedAt": "2026-10-04T10:19:55.271Z",
+  "sourceScope": "新生产镜像的隔离Docker容器；价格为受控测试HTTP报价",
+  "checks": [],
+  "requests": [],
+  "fatalError": "QA container failed to become healthy",
+  "completedAt": "2026-10-04T10:20:53.235Z",
+  "durationMs": 57964,
+  "assertions": 0,
+  "passed": 0,
+  "failed": 0,
+  "status": "incomplete"
+}

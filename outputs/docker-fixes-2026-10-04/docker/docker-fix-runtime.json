@@ -1,0 +1,754 @@
+{
+  "name": "docker-fix-runtime",
+  "startedAt": "2026-10-04T10:50:47.237Z",
+  "sourceScope": "新生产镜像的隔离Docker容器；价格为受控测试HTTP报价",
+  "checks": [
+    {
+      "name": "慢采集在重启前确实running",
+      "passed": true,
+      "actual": "running",
+      "expected": "running"
+    },
+    {
+      "name": "singleSlowRestart退出码为0",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "singleSlowRestart没有137强杀",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "singleSlowRestart收尾时间小于45秒",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "singleSlowRestart重启恢复healthy",
+      "passed": true,
+      "actual": "healthy",
+      "expected": "healthy"
+    },
+    {
+      "name": "18秒重启 所有任务有结束时间",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "18秒重启 任务数与total一致",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "18秒重启 success计数与任务账本一致",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "18秒重启 success计数与关联流水一致",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "18秒重启 failure计数与任务账本一致",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "18秒重启 failure计数与关联流水一致",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "18秒重启 interrupted计数与任务账本一致",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "18秒重启 流水全部关联本轮",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "18秒重启 成功失败任务均关联真实流水",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "18秒重启 中断任务没有伪造流水",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "18秒重启 轮次finishedAt非空",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "18秒重启 总数由三类终态对账",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "18秒正常重启轮次完成",
+      "passed": true,
+      "actual": "completed",
+      "expected": "completed"
+    },
+    {
+      "name": "18秒正常重启保存42.50元",
+      "passed": true,
+      "actual": 4250,
+      "expected": 4250
+    },
+    {
+      "name": "18秒正常重启无中断任务",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "queuedSlowRestart退出码为0",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "queuedSlowRestart没有137强杀",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "queuedSlowRestart收尾时间小于45秒",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "queuedSlowRestart重启恢复healthy",
+      "passed": true,
+      "actual": "healthy",
+      "expected": "healthy"
+    },
+    {
+      "name": "队列停止 所有任务有结束时间",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "队列停止 任务数与total一致",
+      "passed": true,
+      "actual": 6,
+      "expected": 6
+    },
+    {
+      "name": "队列停止 success计数与任务账本一致",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "队列停止 success计数与关联流水一致",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "队列停止 failure计数与任务账本一致",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "队列停止 failure计数与关联流水一致",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "队列停止 interrupted计数与任务账本一致",
+      "passed": true,
+      "actual": 5,
+      "expected": 5
+    },
+    {
+      "name": "队列停止 流水全部关联本轮",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "队列停止 成功失败任务均关联真实流水",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "队列停止 中断任务没有伪造流水",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "队列停止 轮次finishedAt非空",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "队列停止 总数由三类终态对账",
+      "passed": true,
+      "actual": 6,
+      "expected": 6
+    },
+    {
+      "name": "队列轮次明确中断",
+      "passed": true,
+      "actual": "interrupted",
+      "expected": "interrupted"
+    },
+    {
+      "name": "已开始的1件正常成功",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "未派发5件明确中断",
+      "passed": true,
+      "actual": 5,
+      "expected": 5
+    },
+    {
+      "name": "没有派发完整108秒队列",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "强杀前1条成功已保存",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "强杀前1条失败已保存",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "强杀前计数与2条流水一致",
+      "passed": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "name": "故障注入确实SIGKILL137",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "强杀重启恢复healthy",
+      "passed": true,
+      "actual": "healthy",
+      "expected": "healthy"
+    },
+    {
+      "name": "强杀恢复 所有任务有结束时间",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "强杀恢复 任务数与total一致",
+      "passed": true,
+      "actual": 7,
+      "expected": 7
+    },
+    {
+      "name": "强杀恢复 success计数与任务账本一致",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "强杀恢复 success计数与关联流水一致",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "强杀恢复 failure计数与任务账本一致",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "强杀恢复 failure计数与关联流水一致",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "强杀恢复 interrupted计数与任务账本一致",
+      "passed": true,
+      "actual": 5,
+      "expected": 5
+    },
+    {
+      "name": "强杀恢复 流水全部关联本轮",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "强杀恢复 成功失败任务均关联真实流水",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "强杀恢复 中断任务没有伪造流水",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "强杀恢复 轮次finishedAt非空",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "强杀恢复 总数由三类终态对账",
+      "passed": true,
+      "actual": 7,
+      "expected": 7
+    },
+    {
+      "name": "强杀遗留轮次标为interrupted",
+      "passed": true,
+      "actual": "interrupted",
+      "expected": "interrupted"
+    },
+    {
+      "name": "强杀恢复成功数1",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "强杀恢复失败数1",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "强杀恢复未完成数5",
+      "passed": true,
+      "actual": 5,
+      "expected": 5
+    },
+    {
+      "name": "强杀恢复不修改已保存流水",
+      "passed": true,
+      "actual": [
+        {
+          "id": "cmutpaxb4001us0010f1po7ss",
+          "productId": "cmutpax640011s001s2umnshy",
+          "sourceType": "http",
+          "sourceLabel": "真实采集",
+          "status": "success",
+          "priceCents": 8000,
+          "failureReason": null,
+          "collectedAt": "2026-10-04T10:51:39.391Z",
+          "trigger": "manual",
+          "demoSequence": null,
+          "collectorSnapshot": "{\"algorithmVersion\":\"http-validated-v2\",\"collectionIdentity\":\"http-v2:d0590878884b07e6f99fc1895990a6d66234fa6443326b6c3ad039f596ec6441\",\"requestUrl\":\"http://fixture:7070/prices/jd\",\"finalUrl\":\"http://fixture:7070/prices/jd\",\"requestRule\":{\"mode\":\"json\",\"jsonPath\":\"$.data.price\"},\"httpStatus\":200,\"durationMs\":24,\"responseBytes\":68,\"bodySha256\":\"d1744159c91f02dea7047985944c5c6587c4b8ff32c14b315cb1bfa382eb522e\",\"bodySummary\":\"JSON 对象(2字段)；响应 68 字节\",\"redirects\":[{\"url\":\"http://fixture:7070/prices/jd\",\"httpStatus\":200,\"verifiedAddress\":\"172.20.0.2\",\"explicitAllowedHost\":true}]}",
+          "createdAt": "2026-10-04T10:51:39.424Z",
+          "runId": "cmutpax9v001ls001huqqttb6"
+        },
+        {
+          "id": "cmutpaxj60020s001fj7sc6ap",
+          "productId": "cmutpax6u0014s001i3rt1pvt",
+          "sourceType": "http",
+          "sourceLabel": "真实采集",
+          "status": "failure",
+          "priceCents": null,
+          "failureReason": "HTTP 503 Service Unavailable",
+          "collectedAt": "2026-10-04T10:51:39.703Z",
+          "trigger": "manual",
+          "demoSequence": null,
+          "collectorSnapshot": "{\"algorithmVersion\":\"http-validated-v2\",\"collectionIdentity\":\"http-v2:ed97814c54f49324ecc216644b80d0c709921fbf13c5bbad6ad57dda3f7972ca\",\"requestUrl\":\"http://fixture:7070/fail\",\"finalUrl\":\"http://fixture:7070/fail\",\"requestRule\":{\"mode\":\"json\",\"jsonPath\":\"$.data.price\"},\"httpStatus\":503,\"durationMs\":4,\"responseBytes\":null,\"bodySha256\":null,\"bodySummary\":null,\"redirects\":[{\"url\":\"http://fixture:7070/fail\",\"httpStatus\":503,\"verifiedAddress\":\"172.20.0.2\",\"explicitAllowedHost\":true}]}",
+          "createdAt": "2026-10-04T10:51:39.714Z",
+          "runId": "cmutpax9v001ls001huqqttb6"
+        }
+      ],
+      "expected": [
+        {
+          "id": "cmutpaxb4001us0010f1po7ss",
+          "productId": "cmutpax640011s001s2umnshy",
+          "sourceType": "http",
+          "sourceLabel": "真实采集",
+          "status": "success",
+          "priceCents": 8000,
+          "failureReason": null,
+          "collectedAt": "2026-10-04T10:51:39.391Z",
+          "trigger": "manual",
+          "demoSequence": null,
+          "collectorSnapshot": "{\"algorithmVersion\":\"http-validated-v2\",\"collectionIdentity\":\"http-v2:d0590878884b07e6f99fc1895990a6d66234fa6443326b6c3ad039f596ec6441\",\"requestUrl\":\"http://fixture:7070/prices/jd\",\"finalUrl\":\"http://fixture:7070/prices/jd\",\"requestRule\":{\"mode\":\"json\",\"jsonPath\":\"$.data.price\"},\"httpStatus\":200,\"durationMs\":24,\"responseBytes\":68,\"bodySha256\":\"d1744159c91f02dea7047985944c5c6587c4b8ff32c14b315cb1bfa382eb522e\",\"bodySummary\":\"JSON 对象(2字段)；响应 68 字节\",\"redirects\":[{\"url\":\"http://fixture:7070/prices/jd\",\"httpStatus\":200,\"verifiedAddress\":\"172.20.0.2\",\"explicitAllowedHost\":true}]}",
+          "createdAt": "2026-10-04T10:51:39.424Z",
+          "runId": "cmutpax9v001ls001huqqttb6"
+        },
+        {
+          "id": "cmutpaxj60020s001fj7sc6ap",
+          "productId": "cmutpax6u0014s001i3rt1pvt",
+          "sourceType": "http",
+          "sourceLabel": "真实采集",
+          "status": "failure",
+          "priceCents": null,
+          "failureReason": "HTTP 503 Service Unavailable",
+          "collectedAt": "2026-10-04T10:51:39.703Z",
+          "trigger": "manual",
+          "demoSequence": null,
+          "collectorSnapshot": "{\"algorithmVersion\":\"http-validated-v2\",\"collectionIdentity\":\"http-v2:ed97814c54f49324ecc216644b80d0c709921fbf13c5bbad6ad57dda3f7972ca\",\"requestUrl\":\"http://fixture:7070/fail\",\"finalUrl\":\"http://fixture:7070/fail\",\"requestRule\":{\"mode\":\"json\",\"jsonPath\":\"$.data.price\"},\"httpStatus\":503,\"durationMs\":4,\"responseBytes\":null,\"bodySha256\":null,\"bodySummary\":null,\"redirects\":[{\"url\":\"http://fixture:7070/fail\",\"httpStatus\":503,\"verifiedAddress\":\"172.20.0.2\",\"explicitAllowedHost\":true}]}",
+          "createdAt": "2026-10-04T10:51:39.714Z",
+          "runId": "cmutpax9v001ls001huqqttb6"
+        }
+      ]
+    },
+    {
+      "name": "旧无账本轮次标interrupted",
+      "passed": true,
+      "actual": "interrupted",
+      "expected": "interrupted"
+    },
+    {
+      "name": "旧无账本轮次有finishedAt",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "旧无账本保留successCount2",
+      "passed": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "name": "旧无账本保留failureCount1",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "旧无账本不猜interruptedCount",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "旧无账本明确说明恢复限制",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "恢复后新轮次正常completed",
+      "passed": true,
+      "actual": "completed",
+      "expected": "completed"
+    },
+    {
+      "name": "恢复后新轮次成功1",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "后续轮次 所有任务有结束时间",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "后续轮次 任务数与total一致",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "后续轮次 success计数与任务账本一致",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "后续轮次 success计数与关联流水一致",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "后续轮次 failure计数与任务账本一致",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "后续轮次 failure计数与关联流水一致",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "后续轮次 interrupted计数与任务账本一致",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "后续轮次 流水全部关联本轮",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "后续轮次 成功失败任务均关联真实流水",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "后续轮次 中断任务没有伪造流水",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "后续轮次 轮次finishedAt非空",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "后续轮次 总数由三类终态对账",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "健康接口仍正常",
+      "passed": true,
+      "actual": "ok",
+      "expected": "ok"
+    }
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 116
+    },
+    {
+      "method": "POST",
+      "path": "/api/scheduler/run",
+      "status": 200,
+      "ms": 19704
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 33
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 21
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 20
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 21
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 19
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 19
+    },
+    {
+      "method": "POST",
+      "path": "/api/scheduler/run",
+      "status": 200,
+      "ms": 19679
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 29
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 21
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 18
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 19
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 18
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 18
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "ms": 17
+    },
+    {
+      "method": "POST",
+      "path": "/api/scheduler/run",
+      "status": 200,
+      "ms": 113
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "ms": 5
+    }
+  ],
+  "singleSlowRestart": {
+    "stopAndStartMs": 18273,
+    "exitEvents": [
+      {
+        "action": "die",
+        "exitCode": "0"
+      }
+    ]
+  },
+  "singleRequestOutcome": {
+    "data": {
+      "runId": "cmutp9th7000vs001jptcdj7q",
+      "total": 1,
+      "successCount": 1,
+      "failureCount": 0,
+      "interruptedCount": 0,
+      "status": "completed"
+    }
+  },
+  "queuedSlowRestart": {
+    "stopAndStartMs": 18265,
+    "exitEvents": [
+      {
+        "action": "die",
+        "exitCode": "0"
+      }
+    ]
+  },
+  "queuedRequestOutcome": {
+    "data": {
+      "runId": "cmutpadd2001es001nabok418",
+      "total": 6,
+      "successCount": 1,
+      "failureCount": 0,
+      "interruptedCount": 5,
+      "status": "interrupted"
+    }
+  },
+  "queuedScenario": {
+    "total": 6,
+    "successCount": 1,
+    "failureCount": 0,
+    "interruptedCount": 5,
+    "naiveSerialDurationMs": 108000
+  },
+  "killRequestOutcome": {
+    "connectionMessage": "fetch failed"
+  },
+  "intentionalKillEvents": [
+    {
+      "action": "die",
+      "exitCode": "137"
+    }
+  ],
+  "forcedKillScenario": {
+    "total": 7,
+    "successCount": 1,
+    "failureCount": 1,
+    "interruptedCount": 5,
+    "status": "interrupted",
+    "finishedAt": "2026-10-04T10:51:45.676Z",
+    "recordsPreserved": 2
+  },
+  "legacyScenario": {
+    "total": 5,
+    "successCount": 2,
+    "failureCount": 1,
+    "interruptedCount": 0,
+    "status": "interrupted",
+    "finishedAt": "2026-10-04T10:51:45.676Z"
+  },
+  "completedAt": "2026-10-04T10:51:50.824Z",
+  "durationMs": 63587,
+  "assertions": 83,
+  "passed": 83,
+  "failed": 0,
+  "status": "passed"
+}

@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "generatedAt": "2026-10-04T10:19:31.815Z",
+  "before": {
+    "User": {
+      "rows": 1,
+      "sha256": "81b10e18bde4ba97a6152b5f318fa444367590f98561f10908159579013582d7"
+    },
+    "ProductGroup": {
+      "rows": 2,
+      "sha256": "5bb1fb1ba95504854789344dad3f6244de749ae044c45e3cbb30961822e8cc2f"
+    },
+    "Product": {
+      "rows": 12,
+      "sha256": "5c4696f8b8a7e7f27f77e93033c77c17cbf4df68f8ec385f48c14d028a5e4e36"
+    },
+    "CollectionRecord": {
+      "rows": 468,
+      "sha256": "260d3f80ca4149c0ecae005f5cba45996b617a14fed8ff4cc1c8d8ca9d3405cd"
+    },
+    "Alert": {
+      "rows": 6,
+      "sha256": "d09de699157207834c9151ce357802db2d10233609ad9129e84868695351a9e2"
+    },
+    "AuditLog": {
+      "rows": 5,
+      "sha256": "0334aa1bb9bc04d47b9032c0d1d2d50a3b9e50ec33fd65ef702a6006f80c14d9"
+    }
+  },
+  "after": {
+    "User": {
+      "rows": 1,
+      "sha256": "81b10e18bde4ba97a6152b5f318fa444367590f98561f10908159579013582d7"
+    },
+    "ProductGroup": {
+      "rows": 2,
+      "sha256": "5bb1fb1ba95504854789344dad3f6244de749ae044c45e3cbb30961822e8cc2f"
+    },
+    "Product": {
+      "rows": 12,
+      "sha256": "5c4696f8b8a7e7f27f77e93033c77c17cbf4df68f8ec385f48c14d028a5e4e36"
+    },
+    "CollectionRecord": {
+      "rows": 468,
+      "sha256": "260d3f80ca4149c0ecae005f5cba45996b617a14fed8ff4cc1c8d8ca9d3405cd"
+    },
+    "Alert": {
+      "rows": 6,
+      "sha256": "d09de699157207834c9151ce357802db2d10233609ad9129e84868695351a9e2"
+    },
+    "AuditLog": {
+      "rows": 5,
+      "sha256": "0334aa1bb9bc04d47b9032c0d1d2d50a3b9e50ec33fd65ef702a6006f80c14d9"
+    }
+  },
+  "exclusions": [
+    "CollectionRecord.runId 新增归属",
+    "Alert.collectionIdentity 新增口径",
+    "Alert.resolvedAt 可因过期重评变化"
+  ]
+}

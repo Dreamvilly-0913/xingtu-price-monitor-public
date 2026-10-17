@@ -1,0 +1,23 @@
+{
+  "startedAt": "2026-10-04T07:27:53.924Z",
+  "webBase": "http://127.0.0.1:4399",
+  "apiBase": "http://127.0.0.1:4399/api",
+  "passed": false,
+  "steps": [],
+  "screenshots": [],
+  "errors": [
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 429 (Too Many Requests)"
+    }
+  ],
+  "failure": {
+    "name": "AssertionError",
+    "message": "Expected values to be strictly equal:\n\n429 !== 201\n",
+    "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n429 !== 201\n\n    at <project-root>/scripts/verify-operations-browser.mjs:81:10",
+    "url": "http://127.0.0.1:4399/login",
+    "pageText": "星图价格监控\n为电商运营而构建\n把握价格变化，\n让运营更有依据。\n\n跨平台价格监控、趋势分析与降价提醒，\n在一个清晰的工作台里协同运转。\n\n 多平台同款比价\n 可追溯的采集记录\n 目标价与跌幅预警\n京东 · 天猫 · 拼多多\n嘉兴星图优选 · 虚构演示企业\nXINGTU WORKSPACE\n初始化运营管理员\n\n首次启动，请创建管理员账号和专用密码。初始化仅允许完成一次。\n\n登录尝试过于频繁，请15分钟后重试\n用户名\n管理员姓名\n初始化令牌\n管理员密码\n确认管理员密码\n创建管理员并进入\n运营模式：实际价格须通过真实采集产生；请使用团队的管理员账号。"
+  },
+  "completedAt": "2026-10-04T07:27:56.261Z",
+  "durationMs": 2337
+}

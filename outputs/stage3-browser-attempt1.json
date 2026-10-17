@@ -1,0 +1,293 @@
+{
+  "webBase": "http://127.0.0.1:4173",
+  "apiBase": "http://127.0.0.1:4173/api",
+  "startedAt": "2026-10-03T20:05:36.348Z",
+  "executablePath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+  "passed": false,
+  "steps": [
+    {
+      "name": "登录与仪表盘图表",
+      "passed": true,
+      "verifiedAt": "2026-10-03T20:05:55.196Z",
+      "productCount": 12,
+      "todayCollectionCount": 12,
+      "activeAlertCount": 3,
+      "chart": {
+        "pointCount": 93,
+        "seriesCount": 3,
+        "canvasCount": 1,
+        "width": 784,
+        "height": 330
+      },
+      "checkedComparisonProductId": "jd-airpods-5",
+      "changedSeriesCount": 4,
+      "changedPointCount": 124,
+      "originalSelectionRestored": true
+    },
+    {
+      "name": "商品列表平台筛选",
+      "passed": true,
+      "verifiedAt": "2026-10-03T20:06:02.445Z",
+      "selectedPlatform": "jd",
+      "displayedCount": 4,
+      "expectedCount": 4,
+      "displayedProductIds": [
+        "jd-switch-0",
+        "jd-xiaomi15-0",
+        "jd-airpods-5",
+        "jd-iphone16-2"
+      ]
+    },
+    {
+      "name": "商品详情30天曲线",
+      "passed": true,
+      "verifiedAt": "2026-10-03T20:06:09.211Z",
+      "productId": "jd-iphone16-2",
+      "pointCount": 31,
+      "chart": {
+        "pointCount": 31,
+        "seriesCount": 1,
+        "canvasCount": 1,
+        "width": 1102,
+        "height": 380
+      },
+      "currentPrice": 5558.62,
+      "latestHistoryPrice": 5558.62
+    },
+    {
+      "name": "立即采集后列表与详情同步",
+      "passed": true,
+      "verifiedAt": "2026-10-03T20:06:11.295Z",
+      "productId": "jd-iphone16-2",
+      "beforePrice": 5558.62,
+      "afterPrice": 5426.24,
+      "movementPercent": 2.381526350065306,
+      "displayedListPrice": "¥5,426.24",
+      "collectionPrice": 5426.24,
+      "detailCurrentPrice": 5426.24,
+      "latestHistoryPrice": 5426.24,
+      "historyPointCountBefore": 31,
+      "historyPointCountAfter": 32,
+      "chart": {
+        "pointCount": 32,
+        "seriesCount": 1,
+        "canvasCount": 1,
+        "width": 1102,
+        "height": 380
+      }
+    },
+    {
+      "name": "预警中心种子预警",
+      "passed": true,
+      "verifiedAt": "2026-10-03T20:06:17.964Z",
+      "totalAlerts": 3,
+      "seedTargetCount": 2,
+      "seedAlertIds": [
+        "cmusskdr8000xugqsmxftr9sh",
+        "cmusskds3001uugqsok7o5im0"
+      ]
+    },
+    {
+      "name": "同款比价最低平台标记",
+      "passed": true,
+      "verifiedAt": "2026-10-03T20:06:24.381Z",
+      "groupCount": 2,
+      "groups": [
+        {
+          "id": "group-airpods",
+          "productCount": 2,
+          "cheapestPlatform": "pdd",
+          "cheapestPrice": 1513.56,
+          "independentMinimumPrice": 1513.56
+        },
+        {
+          "id": "group-iphone16",
+          "productCount": 3,
+          "cheapestPlatform": "jd",
+          "cheapestPrice": 5426.24,
+          "independentMinimumPrice": 5426.24
+        }
+      ]
+    },
+    {
+      "name": "真实页面商品CRUD与关闭监控",
+      "passed": true,
+      "verifiedAt": "2026-10-03T20:06:31.217Z",
+      "productId": "cmustojam0003ugbkcmfkjaae",
+      "createdPrice": null,
+      "initialTargetPrice": 90,
+      "editedTargetPrice": 88,
+      "disabled": true,
+      "manualCollectionAfterDisabled": "success",
+      "collectionPrice": 99.53,
+      "deleted": true,
+      "productCountRestored": 12
+    }
+  ],
+  "screenshots": [
+    "stage3-01-dashboard.png",
+    "stage3-02-products-filtered.png",
+    "stage3-03-detail-collected.png",
+    "stage3-04-alerts.png",
+    "stage3-05-comparison.png"
+  ],
+  "errors": [
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "type": "console.error",
+      "message": "Warning: [antd: compatible] antd v5 support React is 16 ~ 18. see https://u.ant.design/v5-for-19 for compatible."
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "pageerror",
+      "message": "Failed to fetch dynamically imported module: http://127.0.0.1:4173/src/pages/DashboardPage.tsx"
+    },
+    {
+      "type": "console.error",
+      "message": "Warning: [antd: compatible] antd v5 support React is 16 ~ 18. see https://u.ant.design/v5-for-19 for compatible."
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "pageerror",
+      "message": "Failed to fetch dynamically imported module: http://127.0.0.1:4173/src/pages/ProductsPage.tsx"
+    },
+    {
+      "type": "console.error",
+      "message": "Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)"
+    },
+    {
+      "type": "console.error",
+      "message": "Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem."
+    },
+    {
+      "type": "console.error",
+      "message": "Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem."
+    },
+    {
+      "type": "pageerror",
+      "message": "Cannot read properties of null (reading 'useContext')"
+    },
+    {
+      "type": "console.error",
+      "message": "Warning: [antd: compatible] antd v5 support React is 16 ~ 18. see https://u.ant.design/v5-for-19 for compatible."
+    },
+    {
+      "type": "console.error",
+      "message": "Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem."
+    },
+    {
+      "type": "console.error",
+      "message": "Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem."
+    },
+    {
+      "type": "pageerror",
+      "message": "Cannot read properties of null (reading 'useContext')"
+    },
+    {
+      "type": "console.error",
+      "message": "Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem."
+    },
+    {
+      "type": "console.error",
+      "message": "Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem."
+    },
+    {
+      "type": "pageerror",
+      "message": "Cannot read properties of null (reading 'useContext')"
+    },
+    {
+      "type": "console.error",
+      "message": "Warning: [antd: compatible] antd v5 support React is 16 ~ 18. see https://u.ant.design/v5-for-19 for compatible."
+    }
+  ],
+  "failure": {
+    "name": "Error",
+    "message": "expect(locator).toHaveValue(expected) failed\n\nLocator: getByLabel('采集间隔（分钟）', { exact: true })\nExpected string: \"30\"\nReceived: <element(s) not found>\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"to.have.value\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('采集间隔（分钟）', { exact: true })\u001b[22m\n",
+    "stack": "Error: expect(locator).toHaveValue(expected) failed\n\nLocator: getByLabel('采集间隔（分钟）', { exact: true })\nExpected string: \"30\"\nReceived: <element(s) not found>\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"to.have.value\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('采集间隔（分钟）', { exact: true })\u001b[22m\n\n    at Proxy.<anonymous> (<project-root>/node_modules/.pnpm/playwright@1.55.1/node_modules/playwright/lib/matchers/expect.js:221:24)\n    at <project-root>/scripts/verify-browser.mjs:255:62",
+    "url": "http://127.0.0.1:4173/settings",
+    "pageText": "正在加载工作台"
+  },
+  "completedAt": "2026-10-03T20:06:36.861Z",
+  "durationMs": 60513
+}

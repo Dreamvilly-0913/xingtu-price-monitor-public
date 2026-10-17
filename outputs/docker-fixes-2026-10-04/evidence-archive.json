@@ -1,0 +1,204 @@
+{
+  "generatedAt": "2026-10-04T11:29:23.790Z",
+  "fileCount": 39,
+  "bytes": 1200572,
+  "hashesMatched": true,
+  "credentialScanPassed": true,
+  "files": [
+    {
+      "file": "docker/docker-browser/01-dashboard.png",
+      "bytes": 131590,
+      "sha256": "7eb5e0f9a779885e1a565abbb87bb584206e986f21a2429232a4515bf3a0cc91"
+    },
+    {
+      "file": "docker/docker-browser/02-detail-before.png",
+      "bytes": 165443,
+      "sha256": "5c29265de52962b68e80bce199d99e5dcebdc406f8332ee22fe44d267ebe2c38"
+    },
+    {
+      "file": "docker/docker-browser/03-detail-after.png",
+      "bytes": 175584,
+      "sha256": "089c0a431b81ab0be6df5cc146494b144b4871c4aaf2c99cc748c396cae3d7e4"
+    },
+    {
+      "file": "docker/docker-browser/04-alerts.png",
+      "bytes": 138571,
+      "sha256": "8a9accfd470480b3be265c10c984bf098878de290e97d46b9497543a6452a746"
+    },
+    {
+      "file": "docker/docker-browser/05-comparison.png",
+      "bytes": 181382,
+      "sha256": "459f19f68ee9d902d64af43425ec8814c6ee6dff8bb484ff308412be0a533ee9"
+    },
+    {
+      "file": "docker/docker-browser/06-cooldown-active.png",
+      "bytes": 136378,
+      "sha256": "ab10aa19b4153a965b7c0e91be0ae9b201ec1395d3f5cb140b176bb21388d12a"
+    },
+    {
+      "file": "docker/docker-browser.json",
+      "bytes": 3480,
+      "sha256": "f1dae415825d6156c7b309ae5a0aa814314a167c886a2b1c58bff8767b258c56"
+    },
+    {
+      "file": "docker/docker-fix-api.json",
+      "bytes": 14365,
+      "sha256": "76817d6805018e3697fc731fb49ea8b7890a36f6a03685ee5e902f58f864fefa"
+    },
+    {
+      "file": "docker/docker-fix-cleanup.json",
+      "bytes": 1091,
+      "sha256": "1122125c2b280f4699e6a09ac501ce81d7b878f8b8075dec2d21203af86d2d4e"
+    },
+    {
+      "file": "docker/docker-fix-infra-corruption-failure.json",
+      "bytes": 400,
+      "sha256": "a6317f3f1c92a07bd3ea8c51bd66b43a0ef59753e6561e7b4aa0c6f3add0ca17"
+    },
+    {
+      "file": "docker/docker-fix-infra-storage-failure.json",
+      "bytes": 567,
+      "sha256": "cebdd1379dff326df3b2d027105c5e155a5a709de312f804441581f4743de52d"
+    },
+    {
+      "file": "docker/docker-fix-infra.json",
+      "bytes": 992,
+      "sha256": "b6925daf095959e18e60cd19ae331e55e1e3d8e06514c0db5d6c79413359bb8e"
+    },
+    {
+      "file": "docker/docker-fix-runtime-first-attempt.json",
+      "bytes": 18974,
+      "sha256": "4c7015177a5fab563cbce40e44c2deb81a61f1da4835799853c186aeb1d4785e"
+    },
+    {
+      "file": "docker/docker-fix-runtime-first-events.json",
+      "bytes": 892,
+      "sha256": "95b5aa1388388e9fbae5e9520386d75f87552b7de2833813db582e78684094d8"
+    },
+    {
+      "file": "docker/docker-fix-runtime-first-snapshot.json",
+      "bytes": 10240,
+      "sha256": "27ef0dce22910d5c8b6bbd7150ebaa2c3209fb42108a5f1cd92034c5c8beff32"
+    },
+    {
+      "file": "docker/docker-fix-runtime-first.log",
+      "bytes": 123068,
+      "sha256": "afa70bebb4a837f7fd5bb837162e525486abaf048751b7cef3db78d5409163be"
+    },
+    {
+      "file": "docker/docker-fix-runtime.json",
+      "bytes": 19427,
+      "sha256": "475c75ba2d1f1867a7645db0a05e926ef373d913312b76a68e59c7a67a19742e"
+    },
+    {
+      "file": "docker/docker-fix-summary.json",
+      "bytes": 2677,
+      "sha256": "29bc734ed2f1d226e567ca0f56e490923b1294743738d5f323e6109f6b87bd7a"
+    },
+    {
+      "file": "docker/docker-fix-upgrade.json",
+      "bytes": 6636,
+      "sha256": "6dc024367bba0cdd0822d5131048e996f52d277d2a6129313c899c49cb1302dc"
+    },
+    {
+      "file": "docker/docker-fix-v3-smoke.json",
+      "bytes": 2423,
+      "sha256": "7f37c84fb140ae1018af0ca309ae1f60d31b32c6651d25907a28ec1d2c2dcaaa"
+    },
+    {
+      "file": "docker/docker-image-corruption.json",
+      "bytes": 911,
+      "sha256": "96d1a0867a49b3831ae9a6a9033dacb50f2e941553a0226780a055254fcbc16b"
+    },
+    {
+      "file": "docker/docker-storage-diagnostic.json",
+      "bytes": 1418,
+      "sha256": "737e0d52decdc593b551ec22811ecdf8c3ab98043249a9e03519ae592685dabc"
+    },
+    {
+      "file": "image-integrity.json",
+      "bytes": 16822,
+      "sha256": "d7749a0899d1095d5bc071e04f2e5a4998a530c945b63a345cd4cb81cc34422b"
+    },
+    {
+      "file": "local-upgrade.json",
+      "bytes": 1777,
+      "sha256": "1d0e7cc8c0b3be2d86c4c27e9bb5b5148a6a0a3d3114c81c27a7f327a5dbe24f"
+    },
+    {
+      "file": "native/alert-rule-state-verification.json",
+      "bytes": 1606,
+      "sha256": "8afd4e6759e078d18508839661a68c39b7b0898b950f080501cc37ddb08a710f"
+    },
+    {
+      "file": "native/collector-hardening-verification.json",
+      "bytes": 7453,
+      "sha256": "4255f4018f868675810cff196fa1f49114cc9d15310c0f97d2e8b4c1be8deb8e"
+    },
+    {
+      "file": "native/operations-api.json",
+      "bytes": 1858,
+      "sha256": "981b820717f2003a27aeb6ef58a4970b4f70d9550cf7c65547ef9eacb4fa59a1"
+    },
+    {
+      "file": "native/operations-backup.json",
+      "bytes": 491,
+      "sha256": "dbcb683d8776436c467a48d0835db429cd3b19f77f5a85c000ca4b2f8d728cb4"
+    },
+    {
+      "file": "native/operations-business.json",
+      "bytes": 3409,
+      "sha256": "8e7a5bf06a42f3482d00e8501e45b9588886b03fd94ad305107d35039d3eefdf"
+    },
+    {
+      "file": "native/operations-race.json",
+      "bytes": 1941,
+      "sha256": "67a7f945896cee831ebe9bddcfb2962d452622a1c0f38becc7cbd3a271220bb6"
+    },
+    {
+      "file": "native/operations-regression.json",
+      "bytes": 10222,
+      "sha256": "d6eae9f5651d25d282bcd84d802bb81e772457379733c2f3197d3b756baeb358"
+    },
+    {
+      "file": "native/run-recovery.json",
+      "bytes": 2436,
+      "sha256": "bfd3aaf50c2fa44dac63f2fea36af80ff4acefed666a2f0d3e8ef4c51aaaa54c"
+    },
+    {
+      "file": "native/stage1-current-verification.json",
+      "bytes": 4925,
+      "sha256": "8d41d6189a50d273ee505c4993b9c29e4a50efe670cd0b156d6eba68e21e0c19"
+    },
+    {
+      "file": "production-after-upgrade.json",
+      "bytes": 819,
+      "sha256": "d1f8c470a143b3a7c5df174c8cae43666a5bda166057e458509de84aad5a306c"
+    },
+    {
+      "file": "production-before-upgrade.json",
+      "bytes": 819,
+      "sha256": "52fc31e6b6c37b4644cc447dffba88666ce43f979b8abde2c523526b2ee8e147"
+    },
+    {
+      "file": "production-verification.json",
+      "bytes": 3173,
+      "sha256": "8a02d03bd3879ada505188c80efc035e0528b434f08c597b39f675b282e4ed2a"
+    },
+    {
+      "file": "source-manifest-initial.json",
+      "bytes": 4262,
+      "sha256": "b3f819933c33d0c14858146c88b010fd56148763c267d306382b7189ddb6581d"
+    },
+    {
+      "file": "source-manifest-second.json",
+      "bytes": 1172,
+      "sha256": "3dc2e84216651dcce120cf7156a7eb76796f731ade7d6175e4a99e6445c7629b"
+    },
+    {
+      "file": "source-manifest.json",
+      "bytes": 878,
+      "sha256": "27e01ee1b45961799e3cb2b5cf7657cd3589a5275975fc00ddedb22ebea632c2"
+    }
+  ]
+}

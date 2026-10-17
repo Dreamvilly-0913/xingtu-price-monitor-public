@@ -1,0 +1,299 @@
+{
+  "input": {
+    "productId": "stage0-jd-iphone16",
+    "basePriceCents": 599900,
+    "startDate": "2026-09-03",
+    "days": 30
+  },
+  "source": "演示模拟",
+  "pointCount": 30,
+  "checkedSteps": 30,
+  "minPriceCents": 611013,
+  "maxPriceCents": 778146,
+  "latestPriceCents": 739717,
+  "maxAbsoluteDailyChangePercent": 2.4586645693738705,
+  "deterministic": true,
+  "allChangesWithin2_5Percent": true,
+  "allPricesWithin60To130Percent": true,
+  "smallAmountChecks": [
+    {
+      "basePriceCents": 1,
+      "valid": true
+    },
+    {
+      "basePriceCents": 2,
+      "valid": true
+    },
+    {
+      "basePriceCents": 3,
+      "valid": true
+    },
+    {
+      "basePriceCents": 7,
+      "valid": true
+    },
+    {
+      "basePriceCents": 10,
+      "valid": true
+    },
+    {
+      "basePriceCents": 99,
+      "valid": true
+    },
+    {
+      "basePriceCents": 100,
+      "valid": true
+    },
+    {
+      "basePriceCents": 101,
+      "valid": true
+    },
+    {
+      "basePriceCents": 199,
+      "valid": true
+    }
+  ],
+  "passed": true,
+  "points": [
+    {
+      "date": "2026-09-03",
+      "source": "演示模拟",
+      "previousPriceCents": 599900,
+      "priceCents": 611013,
+      "price": "6110.13",
+      "changePercent": 1.8524754125687615
+    },
+    {
+      "date": "2026-09-04",
+      "source": "演示模拟",
+      "previousPriceCents": 611013,
+      "priceCents": 619168,
+      "price": "6191.68",
+      "changePercent": 1.334668820466995
+    },
+    {
+      "date": "2026-09-05",
+      "source": "演示模拟",
+      "previousPriceCents": 619168,
+      "priceCents": 631222,
+      "price": "6312.22",
+      "changePercent": 1.9468060364876738
+    },
+    {
+      "date": "2026-09-06",
+      "source": "演示模拟",
+      "previousPriceCents": 631222,
+      "priceCents": 632522,
+      "price": "6325.22",
+      "changePercent": 0.2059497292553175
+    },
+    {
+      "date": "2026-09-07",
+      "source": "演示模拟",
+      "previousPriceCents": 632522,
+      "priceCents": 639028,
+      "price": "6390.28",
+      "changePercent": 1.0285808240661987
+    },
+    {
+      "date": "2026-09-08",
+      "source": "演示模拟",
+      "previousPriceCents": 639028,
+      "priceCents": 654180,
+      "price": "6541.80",
+      "changePercent": 2.3711011098105246
+    },
+    {
+      "date": "2026-09-09",
+      "source": "演示模拟",
+      "previousPriceCents": 654180,
+      "priceCents": 665402,
+      "price": "6654.02",
+      "changePercent": 1.7154300039744412
+    },
+    {
+      "date": "2026-09-10",
+      "source": "演示模拟",
+      "previousPriceCents": 665402,
+      "priceCents": 676988,
+      "price": "6769.88",
+      "changePercent": 1.7412030622090104
+    },
+    {
+      "date": "2026-09-11",
+      "source": "演示模拟",
+      "previousPriceCents": 676988,
+      "priceCents": 685139,
+      "price": "6851.39",
+      "changePercent": 1.2040095245410554
+    },
+    {
+      "date": "2026-09-12",
+      "source": "演示模拟",
+      "previousPriceCents": 685139,
+      "priceCents": 681010,
+      "price": "6810.10",
+      "changePercent": -0.6026514327749551
+    },
+    {
+      "date": "2026-09-13",
+      "source": "演示模拟",
+      "previousPriceCents": 681010,
+      "priceCents": 682157,
+      "price": "6821.57",
+      "changePercent": 0.16842630798373004
+    },
+    {
+      "date": "2026-09-14",
+      "source": "演示模拟",
+      "previousPriceCents": 682157,
+      "priceCents": 682575,
+      "price": "6825.75",
+      "changePercent": 0.0612762164721611
+    },
+    {
+      "date": "2026-09-15",
+      "source": "演示模拟",
+      "previousPriceCents": 682575,
+      "priceCents": 694797,
+      "price": "6947.97",
+      "changePercent": 1.7905724645643335
+    },
+    {
+      "date": "2026-09-16",
+      "source": "演示模拟",
+      "previousPriceCents": 694797,
+      "priceCents": 710415,
+      "price": "7104.15",
+      "changePercent": 2.2478508111002204
+    },
+    {
+      "date": "2026-09-17",
+      "source": "演示模拟",
+      "previousPriceCents": 710415,
+      "priceCents": 726324,
+      "price": "7263.24",
+      "changePercent": 2.239395283038787
+    },
+    {
+      "date": "2026-09-18",
+      "source": "演示模拟",
+      "previousPriceCents": 726324,
+      "priceCents": 708750,
+      "price": "7087.50",
+      "changePercent": -2.4195813438630696
+    },
+    {
+      "date": "2026-09-19",
+      "source": "演示模拟",
+      "previousPriceCents": 708750,
+      "priceCents": 708430,
+      "price": "7084.30",
+      "changePercent": -0.045149911816578486
+    },
+    {
+      "date": "2026-09-20",
+      "source": "演示模拟",
+      "previousPriceCents": 708430,
+      "priceCents": 692238,
+      "price": "6922.38",
+      "changePercent": -2.2856174922010646
+    },
+    {
+      "date": "2026-09-21",
+      "source": "演示模拟",
+      "previousPriceCents": 692238,
+      "priceCents": 682208,
+      "price": "6822.08",
+      "changePercent": -1.4489236360904776
+    },
+    {
+      "date": "2026-09-22",
+      "source": "演示模拟",
+      "previousPriceCents": 682208,
+      "priceCents": 690893,
+      "price": "6908.93",
+      "changePercent": 1.2730721422205544
+    },
+    {
+      "date": "2026-09-23",
+      "source": "演示模拟",
+      "previousPriceCents": 690893,
+      "priceCents": 704908,
+      "price": "7049.08",
+      "changePercent": 2.0285340855964673
+    },
+    {
+      "date": "2026-09-24",
+      "source": "演示模拟",
+      "previousPriceCents": 704908,
+      "priceCents": 720932,
+      "price": "7209.32",
+      "changePercent": 2.2732044465377044
+    },
+    {
+      "date": "2026-09-25",
+      "source": "演示模拟",
+      "previousPriceCents": 720932,
+      "priceCents": 733839,
+      "price": "7338.39",
+      "changePercent": 1.7903214172765254
+    },
+    {
+      "date": "2026-09-26",
+      "source": "演示模拟",
+      "previousPriceCents": 733839,
+      "priceCents": 746654,
+      "price": "7466.54",
+      "changePercent": 1.746295849634593
+    },
+    {
+      "date": "2026-09-27",
+      "source": "演示模拟",
+      "previousPriceCents": 746654,
+      "priceCents": 763346,
+      "price": "7633.46",
+      "changePercent": 2.235573639195665
+    },
+    {
+      "date": "2026-09-28",
+      "source": "演示模拟",
+      "previousPriceCents": 763346,
+      "priceCents": 769033,
+      "price": "7690.33",
+      "changePercent": 0.7450094714585522
+    },
+    {
+      "date": "2026-09-29",
+      "source": "演示模拟",
+      "previousPriceCents": 769033,
+      "priceCents": 778146,
+      "price": "7781.46",
+      "changePercent": 1.184994662127633
+    },
+    {
+      "date": "2026-09-30",
+      "source": "演示模拟",
+      "previousPriceCents": 778146,
+      "priceCents": 759014,
+      "price": "7590.14",
+      "changePercent": -2.4586645693738705
+    },
+    {
+      "date": "2026-10-01",
+      "source": "演示模拟",
+      "previousPriceCents": 759014,
+      "priceCents": 748119,
+      "price": "7481.19",
+      "changePercent": -1.4354148935329256
+    },
+    {
+      "date": "2026-10-02",
+      "source": "演示模拟",
+      "previousPriceCents": 748119,
+      "priceCents": 739717,
+      "price": "7397.17",
+      "changePercent": -1.1230833597328767
+    }
+  ]
+}

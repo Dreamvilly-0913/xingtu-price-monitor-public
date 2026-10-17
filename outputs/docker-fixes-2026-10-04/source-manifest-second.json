@@ -1,0 +1,36 @@
+{
+  "source": "<project-root>",
+  "target": "<project-root>",
+  "applied": true,
+  "count": 7,
+  "files": [
+    {
+      "file": "Dockerfile.hotfix",
+      "sha256": "145c338fb162c46d00a0dce5ef40b4776b51d559dc26da0eb45d652b06a60245"
+    },
+    {
+      "file": "Dockerfile.hotfix.dockerignore",
+      "sha256": "356445ca766c1804f79e39a608275edfa9390b5ed450bc8039ff254f095f701e"
+    },
+    {
+      "file": "docs/Docker问题修复报告.md",
+      "sha256": "e99426deee4e8b95b2d43eb2590e5d9e35353cf9918611d3f153ac4096fe45f6"
+    },
+    {
+      "file": "scripts/verify-docker-image.mjs",
+      "sha256": "d18e19eee16a89fa2a6afe6a334da299abdd2b5f1c2e05b91e912720e242674b"
+    },
+    {
+      "file": "server/src/index.ts",
+      "sha256": "b90b35b4c62612a1ac70139a2bc8e9ab142b0c2a9bd389ebe1209e9393d09964"
+    },
+    {
+      "file": "server/src/app.ts",
+      "sha256": "76ad06ff61a625d0dd7e87dfeee17e9d735447cd9acdbad13275b4d50880f957"
+    },
+    {
+      "file": "server/scripts/verify-run-recovery.ts",
+      "sha256": "4e3224689f0153063ccdee0bbaaaf083c913bbbf2425f722171a1ec78369f659"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "since": "2026-10-04T10:31:17.233Z",
+  "events": [
+    {
+      "timestamp": "2026-10-04T10:32:11.000Z",
+      "timestampSeconds": 1791109931,
+      "action": "kill",
+      "signal": "15",
+      "exitCode": null
+    },
+    {
+      "timestamp": "2026-10-04T10:32:56.000Z",
+      "timestampSeconds": 1791109976,
+      "action": "kill",
+      "signal": "9",
+      "exitCode": null
+    },
+    {
+      "timestamp": "2026-10-04T10:32:56.000Z",
+      "timestampSeconds": 1791109976,
+      "action": "die",
+      "signal": null,
+      "exitCode": "137"
+    },
+    {
+      "timestamp": "2026-10-04T10:33:06.000Z",
+      "timestampSeconds": 1791109986,
+      "action": "kill",
+      "signal": "9",
+      "exitCode": null
+    },
+    {
+      "timestamp": "2026-10-04T10:33:06.000Z",
+      "timestampSeconds": 1791109986,
+      "action": "die",
+      "signal": null,
+      "exitCode": "137"
+    }
+  ]
+}

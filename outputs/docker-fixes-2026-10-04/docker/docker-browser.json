@@ -1,0 +1,118 @@
+{
+  "baseUrl": "http://localhost:8081",
+  "sourceScope": "同一生产镜像的隔离容器，HTTP 价格由受控测试服务返回",
+  "startedAt": "2026-10-04T10:30:31.240Z",
+  "passed": true,
+  "assertions": 113,
+  "steps": [
+    {
+      "name": "浏览器表单登录",
+      "passed": true,
+      "pageStatus": 200,
+      "loginStatus": 200
+    },
+    {
+      "name": "仪表盘两个商品曲线实际渲染",
+      "passed": true,
+      "productCount": 5,
+      "chart": {
+        "points": 6,
+        "rawPoints": 6,
+        "series": 2,
+        "canvasCount": 1,
+        "width": 784,
+        "height": 330
+      }
+    },
+    {
+      "name": "商品列表平台筛选和价格对账",
+      "passed": true,
+      "platform": "jd",
+      "matchingTotal": 3,
+      "displayedRows": 3,
+      "currentPrice": 101
+    },
+    {
+      "name": "进入商品详情查看30天曲线",
+      "passed": true,
+      "productId": "cmutoiwz50006sd01w86rx399",
+      "latestPrice": 101,
+      "chart": {
+        "points": 3,
+        "rawPoints": 3,
+        "series": 1,
+        "canvasCount": 1,
+        "width": 1102,
+        "height": 380
+      }
+    },
+    {
+      "name": "列表立即采集与详情最新价格点同步",
+      "passed": true,
+      "collectionId": "cmutojxdo003nsd01x7drrpl3",
+      "beforePrice": 101,
+      "afterPrice": 102,
+      "beforePoints": 3,
+      "afterPoints": 4
+    },
+    {
+      "name": "预警显示与标记已读同步",
+      "passed": true,
+      "unreadBefore": 2,
+      "unreadAfter": 1,
+      "readAlertId": "cmutoix1g000bsd016y7fu1ji"
+    },
+    {
+      "name": "同款比价最低价独立计算正确",
+      "passed": true,
+      "groupId": "cmutoiwyj0003sd01wu2jym2r",
+      "comparedProducts": 3,
+      "independentlyCalculatedMinimum": 91,
+      "cheapestPlatform": "pdd"
+    },
+    {
+      "name": "采集流水显示来源、成功价格及失败原因",
+      "passed": true,
+      "totalRecords": 15,
+      "failureReasonsChecked": 2,
+      "manualCollectionIdVisible": "cmutojxdo003nsd01x7drrpl3"
+    },
+    {
+      "name": "系统设置与数据源说明",
+      "passed": true,
+      "intervalMinutes": 30,
+      "dataSourceCount": 2
+    },
+    {
+      "name": "冷却重入当前触发在页面正确显示",
+      "passed": true,
+      "currentPrice": 80,
+      "activeRuleCount": 1,
+      "historicalNotifications": 1,
+      "historicalResolvedAt": "2026-10-04T10:29:53.293Z"
+    }
+  ],
+  "screenshots": [
+    "<project-root>/outputs/docker-browser/01-dashboard.png",
+    "<project-root>/outputs/docker-browser/02-detail-before.png",
+    "<project-root>/outputs/docker-browser/03-detail-after.png",
+    "<project-root>/outputs/docker-browser/04-alerts.png",
+    "<project-root>/outputs/docker-browser/05-comparison.png",
+    "<project-root>/outputs/docker-browser/06-cooldown-active.png"
+  ],
+  "javascriptErrors": [],
+  "assetFailures": [],
+  "mutations": [
+    {
+      "method": "POST",
+      "pathname": "/api/products/cmutoiwz50006sd01w86rx399/collect"
+    },
+    {
+      "method": "PATCH",
+      "pathname": "/api/alerts/cmutoix1g000bsd016y7fu1ji/read"
+    }
+  ],
+  "browserVersion": "154.0.4258.53",
+  "completedAt": "2026-10-04T10:30:50.242Z",
+  "durationMs": 19002
+}

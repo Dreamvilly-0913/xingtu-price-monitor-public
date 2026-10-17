@@ -1,0 +1,107 @@
+{
+  "webBase": "http://127.0.0.1:4010",
+  "startedAt": "2026-10-04T07:54:41.284Z",
+  "passed": true,
+  "readOnly": true,
+  "browserApiGetRequests": 39,
+  "mutatingBusinessRequests": [],
+  "steps": [
+    {
+      "name": "生产静态登录页与 JWT 登录",
+      "passed": true,
+      "pageStatus": 200,
+      "loginStatus": 200
+    },
+    {
+      "name": "生产仪表盘真实图表",
+      "passed": true,
+      "productCount": 12,
+      "todayCollectionCount": 48,
+      "activeAlertCount": 3,
+      "chart": {
+        "pointCount": 102,
+        "seriesCount": 3,
+        "canvasCount": 1,
+        "width": 784,
+        "height": 330
+      }
+    },
+    {
+      "name": "生产商品列表价格对账",
+      "passed": true,
+      "productId": "jd-iphone16-2",
+      "currentPrice": 5473.39,
+      "productCount": 12
+    },
+    {
+      "name": "生产详情曲线与列表同价",
+      "passed": true,
+      "productId": "jd-iphone16-2",
+      "currentPrice": 5473.39,
+      "latestPointPrice": 5473.39,
+      "chart": {
+        "pointCount": 34,
+        "seriesCount": 1,
+        "canvasCount": 1,
+        "width": 1102,
+        "height": 380
+      }
+    },
+    {
+      "name": "生产比价最便宜平台",
+      "passed": true,
+      "groupCount": 2,
+      "groups": [
+        {
+          "groupId": "group-airpods",
+          "cheapestPlatform": "pdd",
+          "cheapestPrice": 1580.6,
+          "independentlyCalculatedMinimum": 1580.6
+        },
+        {
+          "groupId": "group-iphone16",
+          "cheapestPlatform": "jd",
+          "cheapestPrice": 5473.39,
+          "independentlyCalculatedMinimum": 5473.39
+        }
+      ]
+    },
+    {
+      "name": "生产采集流水",
+      "passed": true,
+      "collectionCount": 408,
+      "latestCollectionIdVisible": "cmutibbfi000pugdobbknlc4w"
+    },
+    {
+      "name": "生产预警已落库",
+      "passed": true,
+      "totalAlerts": 5,
+      "activeTargetAlertCount": 3
+    },
+    {
+      "name": "生产设置与双轨源说明",
+      "passed": true,
+      "intervalMinutes": 30,
+      "dataSourceCount": 2
+    },
+    {
+      "name": "生产移动导航和懒加载资源",
+      "passed": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "javascriptErrorCount": 0,
+      "assetHttpFailureCount": 0,
+      "mutatingBusinessRequestCount": 0
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "operations-01-production-dashboard.png",
+    "operations-02-production-detail.png",
+    "operations-03-production-mobile-settings.png"
+  ],
+  "executablePath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+  "browserVersion": "154.0.4258.53",
+  "completedAt": "2026-10-04T07:54:57.203Z",
+  "durationMs": 15919
+}

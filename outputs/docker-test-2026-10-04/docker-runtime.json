@@ -1,0 +1,643 @@
+{
+  "startedAt": "2026-10-04T09:05:15.950Z",
+  "checks": [
+    {
+      "name": "实际定时轮次产生",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "定时轮次处理全部10件",
+      "passed": true,
+      "actual": 10,
+      "expected": 10
+    },
+    {
+      "name": "定时成功4件",
+      "passed": true,
+      "actual": 4,
+      "expected": 4
+    },
+    {
+      "name": "定时失败6件",
+      "passed": true,
+      "actual": 6,
+      "expected": 6
+    },
+    {
+      "name": "定时失败不退出",
+      "passed": true,
+      "actual": "completed_with_errors",
+      "expected": "completed_with_errors"
+    },
+    {
+      "name": "有业务数据的在线备份",
+      "passed": true,
+      "actual": "passed",
+      "expected": "passed"
+    },
+    {
+      "name": "备份完整性",
+      "passed": true,
+      "actual": "ok",
+      "expected": "ok"
+    },
+    {
+      "name": "备份表 Alert",
+      "passed": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "name": "备份表 AuditLog",
+      "passed": true,
+      "actual": 46,
+      "expected": 46
+    },
+    {
+      "name": "备份表 CollectionRecord",
+      "passed": true,
+      "actual": 33,
+      "expected": 33
+    },
+    {
+      "name": "备份表 CollectionRun",
+      "passed": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "name": "备份表 Product",
+      "passed": true,
+      "actual": 10,
+      "expected": 10
+    },
+    {
+      "name": "备份表 ProductGroup",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "备份表 Setting",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "备份表 User",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "恢复容器健康",
+      "passed": true,
+      "actual": "healthy",
+      "expected": "healthy"
+    },
+    {
+      "name": "恢复所有表内容摘要一致",
+      "passed": true,
+      "actual": "7a7a482cc9d8c37f47e436eb456fe4754c5a4321dcbb7f82db7f219b19c2e292",
+      "expected": "7a7a482cc9d8c37f47e436eb456fe4754c5a4321dcbb7f82db7f219b19c2e292"
+    },
+    {
+      "name": "恢复所有表数量一致",
+      "passed": true,
+      "actual": {
+        "Alert": 2,
+        "AuditLog": 46,
+        "CollectionRecord": 33,
+        "CollectionRun": 2,
+        "Product": 10,
+        "ProductGroup": 1,
+        "Setting": 1,
+        "User": 1
+      },
+      "expected": {
+        "Alert": 2,
+        "AuditLog": 46,
+        "CollectionRecord": 33,
+        "CollectionRun": 2,
+        "Product": 10,
+        "ProductGroup": 1,
+        "Setting": 1,
+        "User": 1
+      }
+    },
+    {
+      "name": "备份恢复后bcrypt登录",
+      "passed": true,
+      "actual": "docker_qa_admin",
+      "expected": "docker_qa_admin"
+    },
+    {
+      "name": "恢复价格统计与原库逐项一致",
+      "passed": true,
+      "actual": [
+        {
+          "id": "cmutl8eij0007mw01mucasm1u",
+          "currentPrice": 100.5,
+          "minPrice": 97,
+          "maxPrice": 100.5,
+          "avgPrice": 98.75,
+          "pointCount": 6
+        },
+        {
+          "id": "cmutl8ej9000amw01gkw8t073",
+          "currentPrice": 110,
+          "minPrice": 110,
+          "maxPrice": 110,
+          "avgPrice": 110,
+          "pointCount": 3
+        },
+        {
+          "id": "cmutl8ejw000dmw01tib0k1qy",
+          "currentPrice": 90,
+          "minPrice": 90,
+          "maxPrice": 90,
+          "avgPrice": 90,
+          "pointCount": 3
+        },
+        {
+          "id": "cmutl8ev50012mw01cc8qj690",
+          "currentPrice": 129.99,
+          "minPrice": 129.99,
+          "maxPrice": 129.99,
+          "avgPrice": 129.99,
+          "pointCount": 3
+        },
+        {
+          "id": "cmutl8ewz0018mw01kmlf354m",
+          "currentPrice": null,
+          "minPrice": null,
+          "maxPrice": null,
+          "avgPrice": null,
+          "pointCount": 0
+        },
+        {
+          "id": "cmutl8eyi001emw01aho89zz1",
+          "currentPrice": null,
+          "minPrice": null,
+          "maxPrice": null,
+          "avgPrice": null,
+          "pointCount": 0
+        },
+        {
+          "id": "cmutl8ezy001kmw01qhe8zrhx",
+          "currentPrice": null,
+          "minPrice": null,
+          "maxPrice": null,
+          "avgPrice": null,
+          "pointCount": 0
+        },
+        {
+          "id": "cmutl8f1i001qmw015z6j64dn",
+          "currentPrice": null,
+          "minPrice": null,
+          "maxPrice": null,
+          "avgPrice": null,
+          "pointCount": 0
+        },
+        {
+          "id": "cmutl8f33001wmw010hhwizwg",
+          "currentPrice": null,
+          "minPrice": null,
+          "maxPrice": null,
+          "avgPrice": null,
+          "pointCount": 0
+        },
+        {
+          "id": "cmutl8f4n0022mw01lvs4blrm",
+          "currentPrice": null,
+          "minPrice": null,
+          "maxPrice": null,
+          "avgPrice": null,
+          "pointCount": 0
+        }
+      ],
+      "expected": [
+        {
+          "id": "cmutl8eij0007mw01mucasm1u",
+          "currentPrice": 100.5,
+          "minPrice": 97,
+          "maxPrice": 100.5,
+          "avgPrice": 98.75,
+          "pointCount": 6
+        },
+        {
+          "id": "cmutl8ej9000amw01gkw8t073",
+          "currentPrice": 110,
+          "minPrice": 110,
+          "maxPrice": 110,
+          "avgPrice": 110,
+          "pointCount": 3
+        },
+        {
+          "id": "cmutl8ejw000dmw01tib0k1qy",
+          "currentPrice": 90,
+          "minPrice": 90,
+          "maxPrice": 90,
+          "avgPrice": 90,
+          "pointCount": 3
+        },
+        {
+          "id": "cmutl8ev50012mw01cc8qj690",
+          "currentPrice": 129.99,
+          "minPrice": 129.99,
+          "maxPrice": 129.99,
+          "avgPrice": 129.99,
+          "pointCount": 3
+        },
+        {
+          "id": "cmutl8ewz0018mw01kmlf354m",
+          "currentPrice": null,
+          "minPrice": null,
+          "maxPrice": null,
+          "avgPrice": null,
+          "pointCount": 0
+        },
+        {
+          "id": "cmutl8eyi001emw01aho89zz1",
+          "currentPrice": null,
+          "minPrice": null,
+          "maxPrice": null,
+          "avgPrice": null,
+          "pointCount": 0
+        },
+        {
+          "id": "cmutl8ezy001kmw01qhe8zrhx",
+          "currentPrice": null,
+          "minPrice": null,
+          "maxPrice": null,
+          "avgPrice": null,
+          "pointCount": 0
+        },
+        {
+          "id": "cmutl8f1i001qmw015z6j64dn",
+          "currentPrice": null,
+          "minPrice": null,
+          "maxPrice": null,
+          "avgPrice": null,
+          "pointCount": 0
+        },
+        {
+          "id": "cmutl8f33001wmw010hhwizwg",
+          "currentPrice": null,
+          "minPrice": null,
+          "maxPrice": null,
+          "avgPrice": null,
+          "pointCount": 0
+        },
+        {
+          "id": "cmutl8f4n0022mw01lvs4blrm",
+          "currentPrice": null,
+          "minPrice": null,
+          "maxPrice": null,
+          "avgPrice": null,
+          "pointCount": 0
+        }
+      ]
+    },
+    {
+      "name": "正常重启健康",
+      "passed": true,
+      "actual": "healthy",
+      "expected": "healthy"
+    },
+    {
+      "name": "有数据重启所有表内容一致",
+      "passed": true,
+      "actual": "7a7a482cc9d8c37f47e436eb456fe4754c5a4321dcbb7f82db7f219b19c2e292",
+      "expected": "7a7a482cc9d8c37f47e436eb456fe4754c5a4321dcbb7f82db7f219b19c2e292"
+    },
+    {
+      "name": "中断前慢采集正在执行",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "中断重启后服务恢复",
+      "passed": true,
+      "actual": "healthy",
+      "expected": "healthy"
+    },
+    {
+      "name": "默认停止窗口应允许30秒以内采集完成",
+      "passed": false,
+      "actual": true,
+      "expected": false
+    },
+    {
+      "name": "重启后中断轮次应有结束状态",
+      "passed": false,
+      "actual": false,
+      "expected": true
+    },
+    {
+      "name": "重启后已保存成功价仍可读",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    }
+  ],
+  "requests": [
+    {
+      "method": "PUT",
+      "path": "/api/settings",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "GET",
+      "path": "/api/scheduler/runs?pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "GET",
+      "path": "/api/scheduler/runs?pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "GET",
+      "path": "/api/scheduler/runs?pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "GET",
+      "path": "/api/scheduler/runs?pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "GET",
+      "path": "/api/scheduler/runs?pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "GET",
+      "path": "/api/scheduler/runs?pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "GET",
+      "path": "/api/scheduler/runs?pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "GET",
+      "path": "/api/scheduler/runs?pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "GET",
+      "path": "/api/scheduler/runs?pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "GET",
+      "path": "/api/scheduler/runs?pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "GET",
+      "path": "/api/scheduler/runs?pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "GET",
+      "path": "/api/scheduler/runs?pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "GET",
+      "path": "/api/scheduler/runs?pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "PUT",
+      "path": "/api/settings",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "status": 200,
+      "base": "http://localhost:8082"
+    },
+    {
+      "method": "GET",
+      "path": "/api/products?pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8082"
+    },
+    {
+      "method": "GET",
+      "path": "/api/products?pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "GET",
+      "path": "/api/scheduler/runs?pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "GET",
+      "path": "/api/scheduler/runs?pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8081"
+    },
+    {
+      "method": "GET",
+      "path": "/api/products/cmutl8eij0007mw01mucasm1u",
+      "status": 200,
+      "base": "http://localhost:8081"
+    }
+  ],
+  "defects": [
+    {
+      "severity": "P1",
+      "title": "默认Docker停止窗口短于采集超时，慢采集被SIGKILL",
+      "actualExitCode": 137,
+      "requestDurationMs": 18000,
+      "restartMs": 3888
+    },
+    {
+      "severity": "P1",
+      "title": "重启没有恢复中断采集轮次",
+      "runId": "cmutljksv0003mw01glido0am",
+      "total": 11,
+      "successCount": 0,
+      "failureCount": 0,
+      "status": "running",
+      "finishedAt": null
+    }
+  ],
+  "cronWaitMs": 48161,
+  "testDatabase": {
+    "counts": {
+      "Alert": 2,
+      "AuditLog": 46,
+      "CollectionRecord": 33,
+      "CollectionRun": 2,
+      "Product": 10,
+      "ProductGroup": 1,
+      "Setting": 1,
+      "User": 1
+    },
+    "rowDigest": "7a7a482cc9d8c37f47e436eb456fe4754c5a4321dcbb7f82db7f219b19c2e292",
+    "integrityCheck": "ok",
+    "productColumns": [
+      "id",
+      "name",
+      "platform",
+      "url",
+      "sku",
+      "category",
+      "basePriceCents",
+      "targetPriceCents",
+      "sourceType",
+      "collectorConfig",
+      "enabled",
+      "groupId",
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "backup": {
+    "status": "passed",
+    "createdAt": "2026-10-04T09:06:05.756Z",
+    "method": "SQLite VACUUM INTO",
+    "backupFile": "work/backups/xingtu-20261004T090605756Z-cdd9020e-e39c-4297-b48f-b404b65ea4e4.db",
+    "bytes": 159744,
+    "sha256": "832c21a75d274f5aa2bc8104a54340070f2a898d35c07c52ec4ba500a0204378",
+    "integrityCheck": "ok",
+    "tables": [
+      {
+        "tableName": "Alert",
+        "rows": 2
+      },
+      {
+        "tableName": "AuditLog",
+        "rows": 46
+      },
+      {
+        "tableName": "CollectionRecord",
+        "rows": 33
+      },
+      {
+        "tableName": "CollectionRun",
+        "rows": 2
+      },
+      {
+        "tableName": "Product",
+        "rows": 10
+      },
+      {
+        "tableName": "ProductGroup",
+        "rows": 1
+      },
+      {
+        "tableName": "Setting",
+        "rows": 1
+      },
+      {
+        "tableName": "User",
+        "rows": 1
+      }
+    ]
+  },
+  "restoredDatabase": {
+    "counts": {
+      "Alert": 2,
+      "AuditLog": 46,
+      "CollectionRecord": 33,
+      "CollectionRun": 2,
+      "Product": 10,
+      "ProductGroup": 1,
+      "Setting": 1,
+      "User": 1
+    },
+    "rowDigest": "7a7a482cc9d8c37f47e436eb456fe4754c5a4321dcbb7f82db7f219b19c2e292",
+    "integrityCheck": "ok",
+    "productColumns": [
+      "id",
+      "name",
+      "platform",
+      "url",
+      "sku",
+      "category",
+      "basePriceCents",
+      "targetPriceCents",
+      "sourceType",
+      "collectorConfig",
+      "enabled",
+      "groupId",
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "defaultRestartMs": 3888,
+  "interruptedRequest": {
+    "error": "fetch failed"
+  },
+  "exitEvents": [
+    {
+      "action": "die",
+      "exitCode": "137"
+    }
+  ],
+  "interruptedRun": {
+    "id": "cmutljksv0003mw01glido0am",
+    "trigger": "manual",
+    "startedAt": "2026-10-04T09:06:24.654Z",
+    "finishedAt": null,
+    "total": 11,
+    "successCount": 0,
+    "failureCount": 0,
+    "status": "running",
+    "error": null
+  },
+  "finishedAt": "2026-10-04T09:06:37.606Z",
+  "assertions": 27,
+  "passed": 25,
+  "failed": 2,
+  "status": "completed_with_findings",
+  "interruptedPersistedRecords": {
+    "total": 10,
+    "success": 4,
+    "failure": 6
+  },
+  "schedulerAfterRestart": {
+    "running": false,
+    "enabled": true,
+    "lastRunAt": "2026-10-04T09:06:00.005Z",
+    "nextRunAt": "2026-10-04T09:36:00.005Z",
+    "concurrency": 3,
+    "perHostDelayMs": 250
+  }
+}

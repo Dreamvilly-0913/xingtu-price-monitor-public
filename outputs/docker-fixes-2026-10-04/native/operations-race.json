@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-10-04T10:48:34.123Z",
+  "assertions": 34,
+  "scenarios": 5,
+  "savedCollections": 5,
+  "wrongAlerts": 0,
+  "isolatedDatabase": "<project-root>/work/operations-race/race-1791110908698.db",
+  "actualHttpFixture": true,
+  "productionDatabaseTouched": false,
+  "fixtureExplanation": "随机本地HTTP端口通过精确允许名单访问，响应门控真实fetch；价格仅用于隔离并发验证，不代表电商报价",
+  "results": {
+    "targetChanged": {
+      "status": "success",
+      "price": 80,
+      "savedRecords": 1,
+      "alertsCreated": 0,
+      "snapshotIdentityPreserved": true,
+      "currentIdentityMatchesSnapshot": true,
+      "returnedEnabled": true,
+      "returnedTargetPrice": 70,
+      "returnedPriceConfigurationCompatible": true
+    },
+    "disabled": {
+      "status": "success",
+      "price": 80,
+      "savedRecords": 1,
+      "alertsCreated": 0,
+      "snapshotIdentityPreserved": true,
+      "currentIdentityMatchesSnapshot": true,
+      "returnedEnabled": false,
+      "returnedTargetPrice": 90,
+      "returnedPriceConfigurationCompatible": true
+    },
+    "configurationChanged": {
+      "status": "success",
+      "price": 80,
+      "savedRecords": 1,
+      "alertsCreated": 0,
+      "snapshotIdentityPreserved": true,
+      "currentIdentityMatchesSnapshot": false,
+      "returnedEnabled": true,
+      "returnedTargetPrice": 90,
+      "returnedPriceConfigurationCompatible": false
+    },
+    "globalRuleChanged": {
+      "status": "success",
+      "price": 80,
+      "savedRecords": 2,
+      "alertsCreated": 0,
+      "snapshotIdentityPreserved": true,
+      "currentIdentityMatchesSnapshot": true,
+      "returnedEnabled": true,
+      "returnedTargetPrice": 70,
+      "returnedPriceConfigurationCompatible": true
+    },
+    "deleted": {
+      "status": 404,
+      "savedRecords": 0,
+      "alertsCreated": 0
+    }
+  }
+}

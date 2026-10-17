@@ -1,0 +1,167 @@
+{
+  "testedAt": "2026-10-04T09:12:19.078Z",
+  "displayTime": "2026年10月4日星期日 GMT-4 05:12:19",
+  "imageId": "sha256:1bf84c2951eeb4544fcef6819d9d2f0007387deca298848fdc8e7d8fae94f0b9",
+  "imageSizeBytes": 1129723121,
+  "status": "completed_with_findings",
+  "parts": [
+    {
+      "name": "部署HTTP与业务接口",
+      "assertions": 220,
+      "passed": 219,
+      "failed": 1
+    },
+    {
+      "name": "浏览器页面",
+      "assertions": 109,
+      "passed": 109,
+      "failed": 0
+    },
+    {
+      "name": "正式容器备份与重启",
+      "assertions": 20,
+      "passed": 20,
+      "failed": 0
+    },
+    {
+      "name": "定时、恢复与中断",
+      "assertions": 27,
+      "passed": 25,
+      "failed": 2
+    },
+    {
+      "name": "Linux演示采集器",
+      "assertions": 123,
+      "passed": 123,
+      "failed": 0
+    }
+  ],
+  "assertions": 499,
+  "passed": 496,
+  "failed": 3,
+  "recordedHttpRequests": 136,
+  "browserSteps": 10,
+  "javascriptErrors": 0,
+  "assetFailures": 0,
+  "defects": [
+    {
+      "severity": "P1",
+      "title": "24小时冷却掩盖再次达标的当前预警",
+      "reproduced": true,
+      "sequence": [
+        80,
+        95,
+        80
+      ],
+      "targetPrice": 90,
+      "finalPrice": 80,
+      "actualActiveCount": 0,
+      "expectedActiveCount": 1,
+      "duplicateAlertCount": 1
+    },
+    {
+      "severity": "P1",
+      "title": "默认Docker停止窗口短于采集超时，慢采集被SIGKILL",
+      "actualExitCode": 137,
+      "requestDurationMs": 18000,
+      "restartMs": 3888
+    },
+    {
+      "severity": "P1",
+      "title": "重启没有恢复中断采集轮次",
+      "runId": "cmutljksv0003mw01glido0am",
+      "total": 11,
+      "successCount": 0,
+      "failureCount": 0,
+      "status": "running",
+      "finishedAt": null
+    }
+  ],
+  "productionDatabase": {
+    "counts": {
+      "Alert": 0,
+      "AuditLog": 0,
+      "CollectionRecord": 0,
+      "CollectionRun": 0,
+      "Product": 0,
+      "ProductGroup": 0,
+      "Setting": 1,
+      "User": 0
+    },
+    "rowDigest": "b1dfc35f9ae6f17f6936e4633a08963ee5dd289256522d8d99c5143858c71db5",
+    "integrityCheck": "ok",
+    "productColumns": [
+      "id",
+      "name",
+      "platform",
+      "url",
+      "sku",
+      "category",
+      "basePriceCents",
+      "targetPriceCents",
+      "sourceType",
+      "collectorConfig",
+      "enabled",
+      "groupId",
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "cron": {
+    "waitMs": 48161,
+    "total": 10,
+    "success": 4,
+    "failure": 6
+  },
+  "scope": "正式8080只读、拒绝初始化与正常重启；同镜像8081/8082隔离业务写入与恢复；受控HTTP测试源；未实测京东/天猫/拼多多价格",
+  "cleanup": {
+    "status": "passed",
+    "deletedContainers": [
+      "xingtu-deployment-test-app",
+      "xingtu-deployment-fixture",
+      "xingtu-deployment-restore-app"
+    ],
+    "deletedVolumes": [
+      "xingtu-deployment-test-data",
+      "xingtu-deployment-test-backups",
+      "xingtu-deployment-restore-data"
+    ],
+    "deletedNetwork": "xingtu-deployment-test",
+    "privateFilesRemoved": [
+      "test-config.json",
+      "test.env",
+      "restore-snapshot.db"
+    ],
+    "production": {
+      "health": "healthy",
+      "http": 200,
+      "databaseDigestUnchanged": false,
+      "counts": {
+        "Alert": 0,
+        "AuditLog": 0,
+        "CollectionRecord": 0,
+        "CollectionRun": 1,
+        "Product": 0,
+        "ProductGroup": 0,
+        "Setting": 1,
+        "User": 0
+      },
+      "bootstrapRequired": true,
+      "demoEnabled": false,
+      "emptyBusinessTablesPreserved": true,
+      "backgroundRun": {
+        "id": "cmutls1vc0000p4016sg88qzv",
+        "trigger": "scheduled",
+        "startedAt": "2026-10-04T09:13:00.018Z",
+        "finishedAt": "2026-10-04T09:13:00.043Z",
+        "total": 0,
+        "successCount": 0,
+        "failureCount": 0,
+        "status": "completed",
+        "error": null
+      },
+      "backgroundBookkeepingExplainsDigestChange": true
+    },
+    "remainingQaContainers": ""
+  }
+}

@@ -1,0 +1,2163 @@
+{
+  "startedAt": "2026-10-04T08:57:42.737Z",
+  "deployedBaseUrl": "http://localhost:8080",
+  "businessBaseUrl": "http://localhost:8081",
+  "dataSource": "隔离Docker HTTP测试报价，非电商平台报价",
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "base": "http://localhost:8080",
+      "status": 200,
+      "ms": 94
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/status",
+      "base": "http://localhost:8080",
+      "status": 200,
+      "ms": 9
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard",
+      "base": "http://localhost:8080",
+      "status": 401,
+      "ms": 5
+    },
+    {
+      "method": "GET",
+      "path": "/api/products",
+      "base": "http://localhost:8080",
+      "status": 401,
+      "ms": 3
+    },
+    {
+      "method": "GET",
+      "path": "/api/groups",
+      "base": "http://localhost:8080",
+      "status": 401,
+      "ms": 3
+    },
+    {
+      "method": "GET",
+      "path": "/api/comparison",
+      "base": "http://localhost:8080",
+      "status": 401,
+      "ms": 3
+    },
+    {
+      "method": "GET",
+      "path": "/api/collections",
+      "base": "http://localhost:8080",
+      "status": 401,
+      "ms": 3
+    },
+    {
+      "method": "GET",
+      "path": "/api/alerts",
+      "base": "http://localhost:8080",
+      "status": 401,
+      "ms": 3
+    },
+    {
+      "method": "GET",
+      "path": "/api/settings",
+      "base": "http://localhost:8080",
+      "status": 401,
+      "ms": 3
+    },
+    {
+      "method": "GET",
+      "path": "/api/scheduler/runs",
+      "base": "http://localhost:8080",
+      "status": 401,
+      "ms": 3
+    },
+    {
+      "method": "GET",
+      "path": "/api/audit-logs",
+      "base": "http://localhost:8080",
+      "status": 401,
+      "ms": 2
+    },
+    {
+      "method": "GET",
+      "path": "/",
+      "base": "http://localhost:8080",
+      "status": 200,
+      "ms": 4
+    },
+    {
+      "method": "GET",
+      "path": "/assets/index-B-xVOURO.js",
+      "base": "http://localhost:8080",
+      "status": 200,
+      "ms": 3
+    },
+    {
+      "method": "GET",
+      "path": "/assets/react-CiVp0v_p.js",
+      "base": "http://localhost:8080",
+      "status": 200,
+      "ms": 4
+    },
+    {
+      "method": "GET",
+      "path": "/assets/ui-331NTVuP.js",
+      "base": "http://localhost:8080",
+      "status": 200,
+      "ms": 13
+    },
+    {
+      "method": "GET",
+      "path": "/assets/ui-BdOndhxL.css",
+      "base": "http://localhost:8080",
+      "status": 200,
+      "ms": 3
+    },
+    {
+      "method": "GET",
+      "path": "/assets/index-BDpo_kPL.css",
+      "base": "http://localhost:8080",
+      "status": 200,
+      "ms": 3
+    },
+    {
+      "method": "GET",
+      "path": "/login",
+      "base": "http://localhost:8080",
+      "status": 200,
+      "ms": 3
+    },
+    {
+      "method": "GET",
+      "path": "/products",
+      "base": "http://localhost:8080",
+      "status": 200,
+      "ms": 2
+    },
+    {
+      "method": "GET",
+      "path": "/comparison",
+      "base": "http://localhost:8080",
+      "status": 200,
+      "ms": 2
+    },
+    {
+      "method": "GET",
+      "path": "/alerts",
+      "base": "http://localhost:8080",
+      "status": 200,
+      "ms": 2
+    },
+    {
+      "method": "GET",
+      "path": "/settings",
+      "base": "http://localhost:8080",
+      "status": 200,
+      "ms": 2
+    },
+    {
+      "method": "GET",
+      "path": "/api/does-not-exist",
+      "base": "http://localhost:8080",
+      "status": 404,
+      "ms": 2
+    },
+    {
+      "method": "GET",
+      "path": "/assets/not-found.js",
+      "base": "http://localhost:8080",
+      "status": 404,
+      "ms": 1
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/bootstrap",
+      "base": "http://localhost:8080",
+      "status": 401,
+      "ms": 10
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/bootstrap",
+      "base": "http://localhost:8080",
+      "status": 400,
+      "ms": 3
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/status",
+      "base": "http://localhost:8080",
+      "status": 200,
+      "ms": 2
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/status",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 10
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/bootstrap",
+      "base": "http://localhost:8081",
+      "status": 401,
+      "ms": 12
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/bootstrap",
+      "base": "http://localhost:8081",
+      "status": 400,
+      "ms": 5
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/bootstrap",
+      "base": "http://localhost:8081",
+      "status": 201,
+      "ms": 98
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/bootstrap",
+      "base": "http://localhost:8081",
+      "status": 409,
+      "ms": 5
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "base": "http://localhost:8081",
+      "status": 401,
+      "ms": 84
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 90
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 7
+    },
+    {
+      "method": "GET",
+      "path": "/api/settings",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 9
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "base": "http://localhost:8081",
+      "status": 403,
+      "ms": 4
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "base": "http://localhost:8081",
+      "status": 400,
+      "ms": 4
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "base": "http://localhost:8081",
+      "status": 400,
+      "ms": 3
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "base": "http://localhost:8081",
+      "status": 400,
+      "ms": 4
+    },
+    {
+      "method": "POST",
+      "path": "/api/groups",
+      "base": "http://localhost:8081",
+      "status": 201,
+      "ms": 9
+    },
+    {
+      "method": "POST",
+      "path": "/api/groups",
+      "base": "http://localhost:8081",
+      "status": 409,
+      "ms": 14
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "base": "http://localhost:8081",
+      "status": 201,
+      "ms": 18
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "base": "http://localhost:8081",
+      "status": 201,
+      "ms": 23
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "base": "http://localhost:8081",
+      "status": 201,
+      "ms": 24
+    },
+    {
+      "method": "GET",
+      "path": "/api/collections",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 8
+    },
+    {
+      "method": "POST",
+      "path": "/api/collectors/preview",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 35
+    },
+    {
+      "method": "GET",
+      "path": "/api/collections",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 13
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutl8eij0007mw01mucasm1u/collect",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 32
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutl8eij0007mw01mucasm1u/collect",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 31
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutl8eij0007mw01mucasm1u/collect",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 30
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutl8ej9000amw01gkw8t073/collect",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 38
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutl8ejw000dmw01tib0k1qy/collect",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 38
+    },
+    {
+      "method": "GET",
+      "path": "/api/products/cmutl8eij0007mw01mucasm1u?days=30",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 16
+    },
+    {
+      "method": "GET",
+      "path": "/api/products/cmutl8eij0007mw01mucasm1u?days=7",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 10
+    },
+    {
+      "method": "GET",
+      "path": "/api/products/cmutl8eij0007mw01mucasm1u?days=90",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 9
+    },
+    {
+      "method": "GET",
+      "path": "/api/products/cmutl8eij0007mw01mucasm1u?days=15",
+      "base": "http://localhost:8081",
+      "status": 400,
+      "ms": 4
+    },
+    {
+      "method": "GET",
+      "path": "/api/products?platform=tmall",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 10
+    },
+    {
+      "method": "GET",
+      "path": "/api/products?category=Docker%E9%AA%8C%E6%94%B6%E6%95%B0%E7%A0%81",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 12
+    },
+    {
+      "method": "GET",
+      "path": "/api/products?search=%E4%BA%AC%E4%B8%9C%E6%89%8B%E6%9C%BA",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 9
+    },
+    {
+      "method": "GET",
+      "path": "/api/groups?search=%E5%90%8C%E6%AC%BE%E6%89%8B%E6%9C%BA",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 4
+    },
+    {
+      "method": "GET",
+      "path": "/api/comparison",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 10
+    },
+    {
+      "method": "PUT",
+      "path": "/api/products/cmutl8ejw000dmw01tib0k1qy",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 26
+    },
+    {
+      "method": "GET",
+      "path": "/api/comparison",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 13
+    },
+    {
+      "method": "GET",
+      "path": "/api/products?status=disabled",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 8
+    },
+    {
+      "method": "PUT",
+      "path": "/api/products/cmutl8ejw000dmw01tib0k1qy",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 22
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "base": "http://localhost:8081",
+      "status": 201,
+      "ms": 18
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutl8ev50012mw01cc8qj690/collect",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 44
+    },
+    {
+      "method": "GET",
+      "path": "/api/collections?status=success",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 8
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "base": "http://localhost:8081",
+      "status": 201,
+      "ms": 13
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutl8ewz0018mw01kmlf354m/collect",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 33
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "base": "http://localhost:8081",
+      "status": 201,
+      "ms": 22
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutl8eyi001emw01aho89zz1/collect",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 35
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "base": "http://localhost:8081",
+      "status": 201,
+      "ms": 17
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutl8ezy001kmw01qhe8zrhx/collect",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 33
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "base": "http://localhost:8081",
+      "status": 201,
+      "ms": 22
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutl8f1i001qmw015z6j64dn/collect",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 34
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "base": "http://localhost:8081",
+      "status": 201,
+      "ms": 22
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutl8f33001wmw010hhwizwg/collect",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 34
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "base": "http://localhost:8081",
+      "status": 201,
+      "ms": 23
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutl8f4n0022mw01lvs4blrm/collect",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 183
+    },
+    {
+      "method": "POST",
+      "path": "/api/collectors/preview",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 13
+    },
+    {
+      "method": "GET",
+      "path": "/api/collections?status=success",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 14
+    },
+    {
+      "method": "GET",
+      "path": "/api/products?status=failing",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 18
+    },
+    {
+      "method": "POST",
+      "path": "/api/scheduler/run",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 2446
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 3
+    },
+    {
+      "method": "GET",
+      "path": "/api/scheduler/runs",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 4
+    },
+    {
+      "method": "GET",
+      "path": "/api/collections?status=failure&pageSize=100",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 6
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 25
+    },
+    {
+      "method": "GET",
+      "path": "/api/collections?pageSize=100",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 6
+    },
+    {
+      "method": "GET",
+      "path": "/api/products/cmutl8eij0007mw01mucasm1u",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 9
+    },
+    {
+      "method": "PUT",
+      "path": "/api/settings",
+      "base": "http://localhost:8081",
+      "status": 400,
+      "ms": 4
+    },
+    {
+      "method": "PUT",
+      "path": "/api/settings",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 50
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "base": "http://localhost:8081",
+      "status": 201,
+      "ms": 23
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutl8hak002wmw017d3kx3tn/collect",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 27
+    },
+    {
+      "method": "GET",
+      "path": "/api/alerts?productId=cmutl8hak002wmw017d3kx3tn&status=active",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 13
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutl8hak002wmw017d3kx3tn/collect",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 25
+    },
+    {
+      "method": "GET",
+      "path": "/api/alerts?productId=cmutl8hak002wmw017d3kx3tn&status=active",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 7
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutl8hak002wmw017d3kx3tn/collect",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 27
+    },
+    {
+      "method": "GET",
+      "path": "/api/alerts?productId=cmutl8hak002wmw017d3kx3tn&status=active",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 13
+    },
+    {
+      "method": "GET",
+      "path": "/api/alerts?productId=cmutl8hak002wmw017d3kx3tn&pageSize=100",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 5
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/products/cmutl8hak002wmw017d3kx3tn",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 11
+    },
+    {
+      "method": "GET",
+      "path": "/api/products/cmutl8hak002wmw017d3kx3tn",
+      "base": "http://localhost:8081",
+      "status": 404,
+      "ms": 13
+    },
+    {
+      "method": "GET",
+      "path": "/api/audit-logs?pageSize=100",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 5
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/change-password",
+      "base": "http://localhost:8081",
+      "status": 400,
+      "ms": 82
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/change-password",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 168
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me",
+      "base": "http://localhost:8081",
+      "status": 401,
+      "ms": 12
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me",
+      "base": "http://localhost:8081",
+      "status": 200,
+      "ms": 4
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "base": "http://localhost:8081",
+      "status": 401,
+      "ms": 82
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "base": "http://localhost:8081",
+      "status": 401,
+      "ms": 87
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "base": "http://localhost:8081",
+      "status": 401,
+      "ms": 84
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "base": "http://localhost:8081",
+      "status": 401,
+      "ms": 82
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "base": "http://localhost:8081",
+      "status": 401,
+      "ms": 83
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "base": "http://localhost:8081",
+      "status": 429,
+      "ms": 3
+    }
+  ],
+  "checks": [
+    {
+      "name": "GET /api/health HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "正式健康响应",
+      "passed": true,
+      "actual": "ok",
+      "expected": "ok"
+    },
+    {
+      "name": "生产CSP存在",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "API不缓存",
+      "passed": true,
+      "actual": "no-store",
+      "expected": "no-store"
+    },
+    {
+      "name": "禁止MIME嗅探",
+      "passed": true,
+      "actual": "nosniff",
+      "expected": "nosniff"
+    },
+    {
+      "name": "GET /api/auth/status HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "正式关闭演示",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "GET /api/dashboard HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "GET /api/products HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "GET /api/groups HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "GET /api/comparison HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "GET /api/collections HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "GET /api/alerts HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "GET /api/settings HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "GET /api/scheduler/runs HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "GET /api/audit-logs HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "GET / HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "首页包含实际静态资源",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "GET /assets/index-B-xVOURO.js HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "静态资源非空 /assets/index-B-xVOURO.js",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "GET /assets/react-CiVp0v_p.js HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "静态资源非空 /assets/react-CiVp0v_p.js",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "GET /assets/ui-331NTVuP.js HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "静态资源非空 /assets/ui-331NTVuP.js",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "GET /assets/ui-BdOndhxL.css HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "静态资源非空 /assets/ui-BdOndhxL.css",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "GET /assets/index-BDpo_kPL.css HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "静态资源非空 /assets/index-BDpo_kPL.css",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "GET /login HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "SPA深链接 /login",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "GET /products HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "SPA深链接 /products",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "GET /comparison HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "SPA深链接 /comparison",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "GET /alerts HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "SPA深链接 /alerts",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "GET /settings HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "SPA深链接 /settings",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "GET /api/does-not-exist HTTP",
+      "passed": true,
+      "actual": 404,
+      "expected": 404
+    },
+    {
+      "name": "GET /assets/not-found.js HTTP",
+      "passed": true,
+      "actual": 404,
+      "expected": 404
+    },
+    {
+      "name": "POST /api/auth/bootstrap HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "POST /api/auth/bootstrap HTTP",
+      "passed": true,
+      "actual": 400,
+      "expected": 400
+    },
+    {
+      "name": "GET /api/auth/status HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "失败初始化不创建正式账号",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "GET /api/auth/status HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "隔离生产模式",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "隔离空库",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "POST /api/auth/bootstrap HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "POST /api/auth/bootstrap HTTP",
+      "passed": true,
+      "actual": 400,
+      "expected": 400
+    },
+    {
+      "name": "POST /api/auth/bootstrap HTTP",
+      "passed": true,
+      "actual": 201,
+      "expected": 201
+    },
+    {
+      "name": "bootstrap产生JWT",
+      "passed": true,
+      "actual": "string",
+      "expected": "string"
+    },
+    {
+      "name": "POST /api/auth/bootstrap HTTP",
+      "passed": true,
+      "actual": 409,
+      "expected": 409
+    },
+    {
+      "name": "POST /api/auth/login HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "POST /api/auth/login HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "bcrypt登录账号一致",
+      "passed": true,
+      "actual": "cmutl8ebi0000mw01mlp5mzxh",
+      "expected": "cmutl8ebi0000mw01mlp5mzxh"
+    },
+    {
+      "name": "强密码无需改密",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "GET /api/auth/me HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "JWT获取当前账号",
+      "passed": true,
+      "actual": "docker_qa_admin",
+      "expected": "docker_qa_admin"
+    },
+    {
+      "name": "GET /api/settings HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "默认30分钟",
+      "passed": true,
+      "actual": 30,
+      "expected": 30
+    },
+    {
+      "name": "进程内调度已启用",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "采集并发3",
+      "passed": true,
+      "actual": 3,
+      "expected": 3
+    },
+    {
+      "name": "POST /api/products HTTP",
+      "passed": true,
+      "actual": 403,
+      "expected": 403
+    },
+    {
+      "name": "POST /api/products HTTP",
+      "passed": true,
+      "actual": 400,
+      "expected": 400
+    },
+    {
+      "name": "POST /api/products HTTP",
+      "passed": true,
+      "actual": 400,
+      "expected": 400
+    },
+    {
+      "name": "POST /api/products HTTP",
+      "passed": true,
+      "actual": 400,
+      "expected": 400
+    },
+    {
+      "name": "POST /api/groups HTTP",
+      "passed": true,
+      "actual": 201,
+      "expected": 201
+    },
+    {
+      "name": "POST /api/groups HTTP",
+      "passed": true,
+      "actual": 409,
+      "expected": 409
+    },
+    {
+      "name": "POST /api/products HTTP",
+      "passed": true,
+      "actual": 201,
+      "expected": 201
+    },
+    {
+      "name": "POST /api/products HTTP",
+      "passed": true,
+      "actual": 201,
+      "expected": 201
+    },
+    {
+      "name": "POST /api/products HTTP",
+      "passed": true,
+      "actual": 201,
+      "expected": 201
+    },
+    {
+      "name": "新商品未虚构价格 jd",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "新商品未虚构价格 tmall",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "新商品未虚构价格 pdd",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "GET /api/collections HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "POST /api/collectors/preview HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "配置试采成功",
+      "passed": true,
+      "actual": "success",
+      "expected": "success"
+    },
+    {
+      "name": "配置试采金额",
+      "passed": true,
+      "actual": 100,
+      "expected": 100
+    },
+    {
+      "name": "配置试采不落库",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "GET /api/collections HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "预览流水数不变",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "POST /api/products/cmutl8eij0007mw01mucasm1u/collect HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "JSON采集100元",
+      "passed": true,
+      "actual": 100,
+      "expected": 100
+    },
+    {
+      "name": "来源真实HTTP读取",
+      "passed": true,
+      "actual": "真实采集",
+      "expected": "真实采集"
+    },
+    {
+      "name": "目标价预警1条",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "POST /api/products/cmutl8eij0007mw01mucasm1u/collect HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "新价同步currentPrice",
+      "passed": true,
+      "actual": 98,
+      "expected": 98
+    },
+    {
+      "name": "未处理去重",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "POST /api/products/cmutl8eij0007mw01mucasm1u/collect HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "第三点价格",
+      "passed": true,
+      "actual": 97,
+      "expected": 97
+    },
+    {
+      "name": "冷却不重复落预警",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "POST /api/products/cmutl8ej9000amw01gkw8t073/collect HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "POST /api/products/cmutl8ejw000dmw01tib0k1qy/collect HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "GET /api/products/cmutl8eij0007mw01mucasm1u?days=30 HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "价格序列",
+      "passed": true,
+      "actual": [
+        100,
+        98,
+        97
+      ],
+      "expected": [
+        100,
+        98,
+        97
+      ]
+    },
+    {
+      "name": "实时统计 currentPrice",
+      "passed": true,
+      "actual": 97,
+      "expected": 97
+    },
+    {
+      "name": "实时统计 minPrice",
+      "passed": true,
+      "actual": 97,
+      "expected": 97
+    },
+    {
+      "name": "实时统计 maxPrice",
+      "passed": true,
+      "actual": 100,
+      "expected": 100
+    },
+    {
+      "name": "实时统计 avgPrice",
+      "passed": true,
+      "actual": 98.33,
+      "expected": 98.33
+    },
+    {
+      "name": "实时统计 maxDrawdownPercent",
+      "passed": true,
+      "actual": 3,
+      "expected": 3
+    },
+    {
+      "name": "实时统计 pointCount",
+      "passed": true,
+      "actual": 3,
+      "expected": 3
+    },
+    {
+      "name": "详情最新价=最后成功记录",
+      "passed": true,
+      "actual": 97,
+      "expected": 97
+    },
+    {
+      "name": "GET /api/products/cmutl8eij0007mw01mucasm1u?days=7 HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "7天历史长度",
+      "passed": true,
+      "actual": 3,
+      "expected": 3
+    },
+    {
+      "name": "GET /api/products/cmutl8eij0007mw01mucasm1u?days=90 HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "90天历史长度",
+      "passed": true,
+      "actual": 3,
+      "expected": 3
+    },
+    {
+      "name": "GET /api/products/cmutl8eij0007mw01mucasm1u?days=15 HTTP",
+      "passed": true,
+      "actual": 400,
+      "expected": 400
+    },
+    {
+      "name": "GET /api/products?platform=tmall HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "平台筛选",
+      "passed": true,
+      "actual": [
+        "cmutl8ej9000amw01gkw8t073"
+      ],
+      "expected": [
+        "cmutl8ej9000amw01gkw8t073"
+      ]
+    },
+    {
+      "name": "GET /api/products?category=Docker%E9%AA%8C%E6%94%B6%E6%95%B0%E7%A0%81 HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "分类筛选",
+      "passed": true,
+      "actual": 3,
+      "expected": 3
+    },
+    {
+      "name": "GET /api/products?search=%E4%BA%AC%E4%B8%9C%E6%89%8B%E6%9C%BA HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "名称搜索",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "GET /api/groups?search=%E5%90%8C%E6%AC%BE%E6%89%8B%E6%9C%BA HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "分组检索",
+      "passed": true,
+      "actual": "cmutl8ehu0003mw01g16mehal",
+      "expected": "cmutl8ehu0003mw01g16mehal"
+    },
+    {
+      "name": "GET /api/comparison HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "同款最便宜平台",
+      "passed": true,
+      "actual": "pdd",
+      "expected": "pdd"
+    },
+    {
+      "name": "同款最低现价",
+      "passed": true,
+      "actual": 90,
+      "expected": 90
+    },
+    {
+      "name": "PUT /api/products/cmutl8ejw000dmw01tib0k1qy HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "GET /api/comparison HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "停用低价排除比价",
+      "passed": true,
+      "actual": "jd",
+      "expected": "jd"
+    },
+    {
+      "name": "GET /api/products?status=disabled HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "停用筛选",
+      "passed": true,
+      "actual": "cmutl8ejw000dmw01tib0k1qy",
+      "expected": "cmutl8ejw000dmw01tib0k1qy"
+    },
+    {
+      "name": "PUT /api/products/cmutl8ejw000dmw01tib0k1qy HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "POST /api/products HTTP",
+      "passed": true,
+      "actual": 201,
+      "expected": 201
+    },
+    {
+      "name": "POST /api/products/cmutl8ev50012mw01cc8qj690/collect HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "CSS解析129.99",
+      "passed": true,
+      "actual": 129.99,
+      "expected": 129.99
+    },
+    {
+      "name": "GET /api/collections?status=success HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "POST /api/products HTTP",
+      "passed": true,
+      "actual": 201,
+      "expected": 201
+    },
+    {
+      "name": "POST /api/products/cmutl8ewz0018mw01kmlf354m/collect HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "如实记录 /zero",
+      "passed": true,
+      "actual": "failure",
+      "expected": "failure"
+    },
+    {
+      "name": "失败金额为空 /zero",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "失败说明 /zero",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "失败无虚构currentPrice /zero",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "POST /api/products HTTP",
+      "passed": true,
+      "actual": 201,
+      "expected": 201
+    },
+    {
+      "name": "POST /api/products/cmutl8eyi001emw01aho89zz1/collect HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "如实记录 /negative",
+      "passed": true,
+      "actual": "failure",
+      "expected": "failure"
+    },
+    {
+      "name": "失败金额为空 /negative",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "失败说明 /negative",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "失败无虚构currentPrice /negative",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "POST /api/products HTTP",
+      "passed": true,
+      "actual": 201,
+      "expected": 201
+    },
+    {
+      "name": "POST /api/products/cmutl8ezy001kmw01qhe8zrhx/collect HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "如实记录 /missing",
+      "passed": true,
+      "actual": "failure",
+      "expected": "failure"
+    },
+    {
+      "name": "失败金额为空 /missing",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "失败说明 /missing",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "失败无虚构currentPrice /missing",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "POST /api/products HTTP",
+      "passed": true,
+      "actual": 201,
+      "expected": 201
+    },
+    {
+      "name": "POST /api/products/cmutl8f1i001qmw015z6j64dn/collect HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "如实记录 /ambiguous",
+      "passed": true,
+      "actual": "failure",
+      "expected": "failure"
+    },
+    {
+      "name": "失败金额为空 /ambiguous",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "失败说明 /ambiguous",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "失败无虚构currentPrice /ambiguous",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "POST /api/products HTTP",
+      "passed": true,
+      "actual": 201,
+      "expected": 201
+    },
+    {
+      "name": "POST /api/products/cmutl8f33001wmw010hhwizwg/collect HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "如实记录 /fail",
+      "passed": true,
+      "actual": "failure",
+      "expected": "failure"
+    },
+    {
+      "name": "失败金额为空 /fail",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "失败说明 /fail",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "失败无虚构currentPrice /fail",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "POST /api/products HTTP",
+      "passed": true,
+      "actual": 201,
+      "expected": 201
+    },
+    {
+      "name": "POST /api/products/cmutl8f4n0022mw01lvs4blrm/collect HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "如实记录 /slow",
+      "passed": true,
+      "actual": "failure",
+      "expected": "failure"
+    },
+    {
+      "name": "失败金额为空 /slow",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "失败说明 /slow",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "失败无虚构currentPrice /slow",
+      "passed": true,
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "POST /api/collectors/preview HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "默认私网地址被拦截",
+      "passed": true,
+      "actual": "failure",
+      "expected": "failure"
+    },
+    {
+      "name": "拦截说明可见",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "GET /api/collections?status=success HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "所有失败不增加成功点",
+      "passed": true,
+      "actual": 6,
+      "expected": 6
+    },
+    {
+      "name": "GET /api/products?status=failing HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "连续失败筛选6件",
+      "passed": true,
+      "actual": 6,
+      "expected": 6
+    },
+    {
+      "name": "POST /api/scheduler/run HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "失败隔离调度轮次",
+      "passed": true,
+      "actual": "completed_with_errors",
+      "expected": "completed_with_errors"
+    },
+    {
+      "name": "调度成功4件",
+      "passed": true,
+      "actual": 4,
+      "expected": 4
+    },
+    {
+      "name": "调度失败6件",
+      "passed": true,
+      "actual": 6,
+      "expected": 6
+    },
+    {
+      "name": "调度总计10件",
+      "passed": true,
+      "actual": 10,
+      "expected": 10
+    },
+    {
+      "name": "GET /api/health HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "调度后健康",
+      "passed": true,
+      "actual": "ok",
+      "expected": "ok"
+    },
+    {
+      "name": "GET /api/scheduler/runs HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "调度轮次落库",
+      "passed": true,
+      "actual": "cmutl8fbd0028mw01pybo8p39",
+      "expected": "cmutl8fbd0028mw01pybo8p39"
+    },
+    {
+      "name": "GET /api/collections?status=failure&pageSize=100 HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "失败均无价格",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "GET /api/dashboard HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "GET /api/collections?pageSize=100 HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "仪表盘商品数",
+      "passed": true,
+      "actual": 10,
+      "expected": 10
+    },
+    {
+      "name": "今日次数与流水一致",
+      "passed": true,
+      "actual": 22,
+      "expected": 22
+    },
+    {
+      "name": "成功率可对账",
+      "passed": true,
+      "actual": 45.45,
+      "expected": 45.45
+    },
+    {
+      "name": "GET /api/products/cmutl8eij0007mw01mucasm1u HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "仪表盘与详情同价",
+      "passed": true,
+      "actual": 97,
+      "expected": 97
+    },
+    {
+      "name": "PUT /api/settings HTTP",
+      "passed": true,
+      "actual": 400,
+      "expected": 400
+    },
+    {
+      "name": "PUT /api/settings HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "有效真实报价4件",
+      "passed": true,
+      "actual": 4,
+      "expected": 4
+    },
+    {
+      "name": "POST /api/products HTTP",
+      "passed": true,
+      "actual": 201,
+      "expected": 201
+    },
+    {
+      "name": "POST /api/products/cmutl8hak002wmw017d3kx3tn/collect HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "GET /api/alerts?productId=cmutl8hak002wmw017d3kx3tn&status=active HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "首次达标有活动预警",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "POST /api/products/cmutl8hak002wmw017d3kx3tn/collect HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "GET /api/alerts?productId=cmutl8hak002wmw017d3kx3tn&status=active HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "价格恢复解除",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "POST /api/products/cmutl8hak002wmw017d3kx3tn/collect HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "GET /api/alerts?productId=cmutl8hak002wmw017d3kx3tn&status=active HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "冷却期间再次达标仍应显示当前触发",
+      "passed": false,
+      "actual": 0,
+      "expected": 1
+    },
+    {
+      "name": "GET /api/alerts?productId=cmutl8hak002wmw017d3kx3tn&pageSize=100 HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "DELETE /api/products/cmutl8hak002wmw017d3kx3tn HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "GET /api/products/cmutl8hak002wmw017d3kx3tn HTTP",
+      "passed": true,
+      "actual": 404,
+      "expected": 404
+    },
+    {
+      "name": "GET /api/audit-logs?pageSize=100 HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "审计有初始化及登录",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "审计无密码令牌",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "POST /api/auth/change-password HTTP",
+      "passed": true,
+      "actual": 400,
+      "expected": 400
+    },
+    {
+      "name": "POST /api/auth/change-password HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "GET /api/auth/me HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "GET /api/auth/me HTTP",
+      "passed": true,
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "新会话可用",
+      "passed": true,
+      "actual": "docker_qa_admin",
+      "expected": "docker_qa_admin"
+    },
+    {
+      "name": "POST /api/auth/login HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "POST /api/auth/login HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "POST /api/auth/login HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "POST /api/auth/login HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "POST /api/auth/login HTTP",
+      "passed": true,
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "POST /api/auth/login HTTP",
+      "passed": true,
+      "actual": 429,
+      "expected": 429
+    },
+    {
+      "name": "登录限流RetryAfter",
+      "passed": true,
+      "actual": "900",
+      "expected": "900"
+    }
+  ],
+  "defects": [
+    {
+      "severity": "P1",
+      "title": "24小时冷却掩盖再次达标的当前预警",
+      "reproduced": true,
+      "sequence": [
+        80,
+        95,
+        80
+      ],
+      "targetPrice": 90,
+      "finalPrice": 80,
+      "actualActiveCount": 0,
+      "expectedActiveCount": 1,
+      "duplicateAlertCount": 1
+    }
+  ],
+  "finishedAt": "2026-10-04T08:57:47.754Z",
+  "requestCount": 114,
+  "assertionCount": 220,
+  "passedCount": 219,
+  "failedCount": 1,
+  "status": "completed_with_findings"
+}

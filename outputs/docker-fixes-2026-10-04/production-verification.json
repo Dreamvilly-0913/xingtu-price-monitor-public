@@ -1,0 +1,137 @@
+{
+  "status": "passed",
+  "generatedAt": "2026-10-04T11:29:02.475Z",
+  "url": "http://localhost:8080",
+  "imageId": "sha256:ec4815717e6b132e49a0353e95a938806ae9c55e7ddae780ec306415db0c3272",
+  "assertions": 21,
+  "failures": 0,
+  "requests": 10,
+  "stopTimeoutSeconds": 45,
+  "health": "healthy",
+  "mode": {
+    "demoEnabled": false,
+    "bootstrapRequired": true
+  },
+  "mounts": [
+    {
+      "name": "xingtu-price-monitor_xingtu-backups",
+      "destination": "/app/work/backups"
+    },
+    {
+      "name": "xingtu-price-monitor_xingtu-data",
+      "destination": "/data"
+    }
+  ],
+  "businessTables": {
+    "User": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "ProductGroup": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "Product": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "CollectionRecord": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "Alert": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "AuditLog": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  },
+  "checks": [
+    {
+      "name": "实际部署镜像与v3验收镜像完全相同",
+      "passed": true
+    },
+    {
+      "name": "Docker运行状态为running",
+      "passed": true
+    },
+    {
+      "name": "Docker健康状态为healthy",
+      "passed": true
+    },
+    {
+      "name": "停机窗口45秒",
+      "passed": true
+    },
+    {
+      "name": "生产环境保留",
+      "passed": true
+    },
+    {
+      "name": "演示数据关闭",
+      "passed": true
+    },
+    {
+      "name": "原数据库卷与备份卷保留",
+      "passed": true
+    },
+    {
+      "name": "原业务表逐字段摘要及行数一致",
+      "passed": true
+    },
+    {
+      "name": "健康接口200",
+      "passed": true
+    },
+    {
+      "name": "健康接口数据库查询成功",
+      "passed": true
+    },
+    {
+      "name": "生产初始化状态正确",
+      "passed": true
+    },
+    {
+      "name": "前端HTML非空且有React入口",
+      "passed": true
+    },
+    {
+      "name": "前端构建包含实际资源",
+      "passed": true
+    },
+    {
+      "name": "静态资源可加载 /assets/index-Bh1eJN_M.js",
+      "passed": true
+    },
+    {
+      "name": "静态资源可加载 /assets/react-CiVp0v_p.js",
+      "passed": true
+    },
+    {
+      "name": "静态资源可加载 /assets/ui-331NTVuP.js",
+      "passed": true
+    },
+    {
+      "name": "静态资源可加载 /assets/ui-BdOndhxL.css",
+      "passed": true
+    },
+    {
+      "name": "静态资源可加载 /assets/index-BDpo_kPL.css",
+      "passed": true
+    },
+    {
+      "name": "React Router详情路由回退正确",
+      "passed": true
+    },
+    {
+      "name": "业务接口未登录拒绝访问",
+      "passed": true
+    },
+    {
+      "name": "生产安全响应头生效",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "name": "docker-fix-upgrade",
+  "startedAt": "2026-10-04T10:34:52.770Z",
+  "sourceScope": "新生产镜像的隔离Docker容器；价格为受控测试HTTP报价",
+  "checks": [
+    {
+      "name": "旧镜像隔离容器健康",
+      "passed": true,
+      "actual": "healthy",
+      "expected": "healthy"
+    },
+    {
+      "name": "旧库有成功80元报价",
+      "passed": true,
+      "actual": 80,
+      "expected": 80
+    },
+    {
+      "name": "旧库有1条目标价提醒",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "旧库原CollectionRecord没有runId",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "原卷替换新镜像后健康",
+      "passed": true,
+      "actual": "healthy",
+      "expected": "healthy"
+    },
+    {
+      "name": "升级保留原字段摘要 CollectionRecord",
+      "passed": true,
+      "actual": "44aa66e1ad83809175b286cee621e4b74ecf35af0b89bda217b61da2c835d35e",
+      "expected": "44aa66e1ad83809175b286cee621e4b74ecf35af0b89bda217b61da2c835d35e"
+    },
+    {
+      "name": "升级不新增原流水 CollectionRecord",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "升级保留原字段摘要 Alert",
+      "passed": true,
+      "actual": "363044521b266f57b4d23ed5fdc1b4c066afbba0fd93a605075e7f67d3653d04",
+      "expected": "363044521b266f57b4d23ed5fdc1b4c066afbba0fd93a605075e7f67d3653d04"
+    },
+    {
+      "name": "升级不新增原流水 Alert",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "升级后原密码可登录",
+      "passed": true,
+      "actual": "cmutophiw0000kz014hggnwke",
+      "expected": "cmutophiw0000kz014hggnwke"
+    },
+    {
+      "name": "升级后当前价仍80元",
+      "passed": true,
+      "actual": 80,
+      "expected": 80
+    },
+    {
+      "name": "升级后最新点仍80元",
+      "passed": true,
+      "actual": 80,
+      "expected": 80
+    },
+    {
+      "name": "升级后历史仍1点",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "升级后统计最低最高平均一致",
+      "passed": true,
+      "actual": [
+        80,
+        80,
+        80
+      ],
+      "expected": [
+        80,
+        80,
+        80
+      ]
+    },
+    {
+      "name": "升级后活动规则回填1",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "升级后历史提醒仍1",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "升级后不伪造新AlertID",
+      "passed": true,
+      "actual": "cmutophls0008kz01q2t1x826",
+      "expected": "cmutophls0008kz01q2t1x826"
+    },
+    {
+      "name": "升级后原历史提醒isActive正确",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "升级后回填真实当前规则价80",
+      "passed": true,
+      "actual": 80,
+      "expected": 80
+    },
+    {
+      "name": "升级后仪表盘活动规则1",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    }
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "path": "/api/auth/bootstrap",
+      "status": 201,
+      "base": "http://localhost:8082"
+    },
+    {
+      "method": "POST",
+      "path": "/api/products",
+      "status": 201,
+      "base": "http://localhost:8082"
+    },
+    {
+      "method": "POST",
+      "path": "/api/products/cmutophjv0003kz01kiex89fr/collect",
+      "status": 200,
+      "base": "http://localhost:8082"
+    },
+    {
+      "method": "GET",
+      "path": "/api/alerts?productId=cmutophjv0003kz01kiex89fr&pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8082"
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "status": 200,
+      "base": "http://localhost:8082"
+    },
+    {
+      "method": "GET",
+      "path": "/api/products/cmutophjv0003kz01kiex89fr?days=30",
+      "status": 200,
+      "base": "http://localhost:8082"
+    },
+    {
+      "method": "GET",
+      "path": "/api/alerts?productId=cmutophjv0003kz01kiex89fr&status=active&pageSize=100",
+      "status": 200,
+      "base": "http://localhost:8082"
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard",
+      "status": 200,
+      "base": "http://localhost:8082"
+    }
+  ],
+  "before": {
+    "CollectionRecord": {
+      "columns": [
+        "id",
+        "productId",
+        "sourceType",
+        "sourceLabel",
+        "status",
+        "priceCents",
+        "failureReason",
+        "collectedAt",
+        "trigger",
+        "demoSequence",
+        "collectorSnapshot",
+        "createdAt"
+      ],
+      "count": 1,
+      "digest": "44aa66e1ad83809175b286cee621e4b74ecf35af0b89bda217b61da2c835d35e"
+    },
+    "Alert": {
+      "columns": [
+        "id",
+        "productId",
+        "rule",
+        "priceCents",
+        "threshold",
+        "message",
+        "sourceType",
+        "sourceLabel",
+        "triggeredAt",
+        "readAt",
+        "resolvedAt",
+        "baselineRecordId",
+        "baselinePriceCents",
+        "baselineCollectedAt",
+        "baselineSourceType"
+      ],
+      "count": 1,
+      "digest": "363044521b266f57b4d23ed5fdc1b4c066afbba0fd93a605075e7f67d3653d04"
+    }
+  },
+  "afterOriginalColumns": {
+    "CollectionRecord": {
+      "columns": [
+        "id",
+        "productId",
+        "sourceType",
+        "sourceLabel",
+        "status",
+        "priceCents",
+        "failureReason",
+        "collectedAt",
+        "trigger",
+        "demoSequence",
+        "collectorSnapshot",
+        "createdAt"
+      ],
+      "count": 1,
+      "digest": "44aa66e1ad83809175b286cee621e4b74ecf35af0b89bda217b61da2c835d35e"
+    },
+    "Alert": {
+      "columns": [
+        "id",
+        "productId",
+        "rule",
+        "priceCents",
+        "threshold",
+        "message",
+        "sourceType",
+        "sourceLabel",
+        "triggeredAt",
+        "readAt",
+        "resolvedAt",
+        "baselineRecordId",
+        "baselinePriceCents",
+        "baselineCollectedAt",
+        "baselineSourceType"
+      ],
+      "count": 1,
+      "digest": "363044521b266f57b4d23ed5fdc1b4c066afbba0fd93a605075e7f67d3653d04"
+    }
+  },
+  "oldImage": "sha256:1bf84c2951eeb4544fcef6819d9d2f0007387deca298848fdc8e7d8fae94f0b9",
+  "newImage": "xingtu-price-monitor-app:fix-20261004-v2",
+  "productId": "cmutophjv0003kz01kiex89fr",
+  "preservedPriceRecords": 1,
+  "preservedAlertRecords": 1,
+  "completedAt": "2026-10-04T10:35:07.292Z",
+  "durationMs": 14522,
+  "assertions": 20,
+  "passed": 20,
+  "failed": 0,
+  "status": "passed"
+}

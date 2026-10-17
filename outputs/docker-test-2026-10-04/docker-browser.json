@@ -1,0 +1,120 @@
+{
+  "baseUrl": "http://localhost:8081",
+  "sourceScope": "同一生产镜像的隔离容器，HTTP 价格由受控测试服务返回",
+  "startedAt": "2026-10-04T09:04:00.843Z",
+  "passed": true,
+  "assertions": 109,
+  "steps": [
+    {
+      "name": "浏览器表单登录",
+      "passed": true,
+      "pageStatus": 200,
+      "loginStatus": 200
+    },
+    {
+      "name": "仪表盘两个商品曲线实际渲染",
+      "passed": true,
+      "productCount": 10,
+      "chart": {
+        "points": 6,
+        "rawPoints": 6,
+        "series": 2,
+        "canvasCount": 1,
+        "width": 784,
+        "height": 330
+      }
+    },
+    {
+      "name": "商品列表平台筛选和价格对账",
+      "passed": true,
+      "platform": "jd",
+      "matchingTotal": 7,
+      "displayedRows": 7,
+      "currentPrice": 97
+    },
+    {
+      "name": "进入商品详情查看30天曲线",
+      "passed": true,
+      "productId": "cmutl8eij0007mw01mucasm1u",
+      "latestPrice": 97,
+      "chart": {
+        "points": 4,
+        "rawPoints": 4,
+        "series": 1,
+        "canvasCount": 1,
+        "width": 1102,
+        "height": 380
+      }
+    },
+    {
+      "name": "列表立即采集与详情最新价格点同步",
+      "passed": true,
+      "collectionId": "cmutlgp8d003hmw01pvfwlpib",
+      "beforePrice": 97,
+      "afterPrice": 100,
+      "beforePoints": 4,
+      "afterPoints": 5
+    },
+    {
+      "name": "预警显示与标记已读同步",
+      "passed": true,
+      "unreadBefore": 2,
+      "unreadAfter": 1,
+      "readAlertId": "cmutl8emc000jmw01t4ks4y1d"
+    },
+    {
+      "name": "同款比价最低价独立计算正确",
+      "passed": true,
+      "groupId": "cmutl8ehu0003mw01g16mehal",
+      "comparedProducts": 3,
+      "independentlyCalculatedMinimum": 90,
+      "cheapestPlatform": "pdd"
+    },
+    {
+      "name": "采集流水显示来源、成功价格及失败原因",
+      "passed": true,
+      "totalRecords": 23,
+      "failureReasonsChecked": 2,
+      "manualCollectionIdVisible": "cmutlgp8d003hmw01pvfwlpib"
+    },
+    {
+      "name": "系统设置与数据源说明",
+      "passed": true,
+      "intervalMinutes": 30,
+      "dataSourceCount": 2
+    },
+    {
+      "name": "实际部署8080初始化页面只读检查",
+      "passed": true,
+      "baseUrl": "http://localhost:8080",
+      "pageStatus": 200,
+      "bootstrapRequired": true,
+      "demoEnabled": false,
+      "javascriptErrors": 0,
+      "businessMutations": 0
+    }
+  ],
+  "screenshots": [
+    "<project-root>/outputs/docker-browser/01-dashboard.png",
+    "<project-root>/outputs/docker-browser/02-detail-before.png",
+    "<project-root>/outputs/docker-browser/03-detail-after.png",
+    "<project-root>/outputs/docker-browser/04-alerts.png",
+    "<project-root>/outputs/docker-browser/05-comparison.png",
+    "<project-root>/outputs/docker-browser/production-bootstrap.png"
+  ],
+  "javascriptErrors": [],
+  "assetFailures": [],
+  "mutations": [
+    {
+      "method": "POST",
+      "pathname": "/api/products/cmutl8eij0007mw01mucasm1u/collect"
+    },
+    {
+      "method": "PATCH",
+      "pathname": "/api/alerts/cmutl8emc000jmw01t4ks4y1d/read"
+    }
+  ],
+  "browserVersion": "154.0.4258.53",
+  "completedAt": "2026-10-04T09:04:19.949Z",
+  "durationMs": 19106
+}

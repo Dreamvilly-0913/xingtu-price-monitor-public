@@ -1,0 +1,101 @@
+{
+  "createdAt": "2026-10-04T10:55:19.460Z",
+  "finalRuntimeImage": "xingtu-price-monitor-app:fix-20261004-v3",
+  "finalRuntimeImageId": "sha256:ec4815717e6b132e49a0353e95a938806ae9c55e7ddae780ec306415db0c3272",
+  "sourceScope": "独立8081及8082升级容器，HTTP报价为受控测试数据；未访问8080业务库。分项明确标出实际测试的v2或v3，未将v2结果伪标为v3重跑。",
+  "assertions": 300,
+  "passed": 300,
+  "failed": 0,
+  "cleanupAssertions": 6,
+  "cleanupPassed": 6,
+  "cleanupFailed": 0,
+  "totalAssertionsIncludingCleanup": 306,
+  "status": "passed",
+  "browser": {
+    "testedImage": "fix-20261004-v2",
+    "steps": 10,
+    "assertions": 113,
+    "javascriptErrors": 0,
+    "screenshots": 6
+  },
+  "historicalRuntimeAttempt": {
+    "file": "docker-fix-runtime-first-attempt.json",
+    "testedImage": "fix-20261004-v2",
+    "assertions": 83,
+    "passed": 77,
+    "failed": 6,
+    "disposition": "修复Fastify关闭流程后v3原条件重跑83/83通过；首轮6失败证据保留"
+  },
+  "environmentDiagnostics": [
+    "docker-storage-diagnostic.json",
+    "docker-image-corruption.json"
+  ],
+  "suites": [
+    {
+      "file": "docker-fix-infra.json",
+      "testedImage": "fix-20261004-v2",
+      "status": "passed",
+      "assertions": 4,
+      "passed": 4,
+      "failed": 0,
+      "durationMs": 7572
+    },
+    {
+      "file": "docker-fix-api.json",
+      "testedImage": "fix-20261004-v2",
+      "status": "passed",
+      "assertions": 72,
+      "passed": 72,
+      "failed": 0,
+      "durationMs": 1614
+    },
+    {
+      "file": "docker-browser.json",
+      "testedImage": "fix-20261004-v2",
+      "status": "passed",
+      "assertions": 113,
+      "passed": 113,
+      "failed": 0,
+      "durationMs": 19002,
+      "steps": 10,
+      "javascriptErrors": 0,
+      "screenshots": 6
+    },
+    {
+      "file": "docker-fix-upgrade.json",
+      "testedImage": "fix-20261004-v2",
+      "status": "passed",
+      "assertions": 20,
+      "passed": 20,
+      "failed": 0,
+      "durationMs": 14522
+    },
+    {
+      "file": "docker-fix-v3-smoke.json",
+      "testedImage": "fix-20261004-v3",
+      "status": "passed",
+      "assertions": 8,
+      "passed": 8,
+      "failed": 0,
+      "durationMs": 9636
+    },
+    {
+      "file": "docker-fix-runtime.json",
+      "testedImage": "fix-20261004-v3",
+      "status": "passed",
+      "assertions": 83,
+      "passed": 83,
+      "failed": 0,
+      "durationMs": 63587
+    },
+    {
+      "file": "docker-fix-cleanup.json",
+      "testedImage": "v2/v3 QA resources only",
+      "status": "passed",
+      "assertions": 6,
+      "passed": 6,
+      "failed": 0,
+      "durationMs": 4561
+    }
+  ]
+}

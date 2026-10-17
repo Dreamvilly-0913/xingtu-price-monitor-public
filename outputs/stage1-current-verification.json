@@ -1,0 +1,199 @@
+{
+  "passed": true,
+  "products": 12,
+  "platforms": {
+    "jd": 4,
+    "tmall": 4,
+    "pdd": 4
+  },
+  "collections": 372,
+  "alerts": 3,
+  "replayedPoints": 372,
+  "testDatabase": "<project-root>/work/stage1/seed-regression-1791100205677.db",
+  "operatingDatabaseUntouched": true,
+  "maximumMovementPercent": 2.49435,
+  "currentPriceMatchCount": 12,
+  "sample": {
+    "id": "jd-iphone16-2",
+    "name": "iPhone 16 128G",
+    "platform": "jd",
+    "basePrice": 5999,
+    "targetPrice": 5699.05,
+    "history30": [
+      {
+        "time": "2026-09-04T04:00:00.000Z",
+        "price": 5912.15,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-05T04:00:00.000Z",
+        "price": 5818.99,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-06T04:00:00.000Z",
+        "price": 5951.81,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-07T04:00:00.000Z",
+        "price": 5836.9,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-08T04:00:00.000Z",
+        "price": 5941.38,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-09T04:00:00.000Z",
+        "price": 5999.75,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-10T04:00:00.000Z",
+        "price": 5932.59,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-11T04:00:00.000Z",
+        "price": 5819.24,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-12T04:00:00.000Z",
+        "price": 5843.62,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-13T04:00:00.000Z",
+        "price": 5896.66,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-14T04:00:00.000Z",
+        "price": 5941.55,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-15T04:00:00.000Z",
+        "price": 5952.89,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-16T04:00:00.000Z",
+        "price": 5948.01,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-17T04:00:00.000Z",
+        "price": 5893.27,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-18T04:00:00.000Z",
+        "price": 5760.37,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-19T04:00:00.000Z",
+        "price": 5665.81,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-20T04:00:00.000Z",
+        "price": 5549.69,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-21T04:00:00.000Z",
+        "price": 5534.98,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-22T04:00:00.000Z",
+        "price": 5475.85,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-23T04:00:00.000Z",
+        "price": 5510.49,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-24T04:00:00.000Z",
+        "price": 5479.05,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-25T04:00:00.000Z",
+        "price": 5370.81,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-26T04:00:00.000Z",
+        "price": 5293.18,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-27T04:00:00.000Z",
+        "price": 5226.54,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-28T04:00:00.000Z",
+        "price": 5320.72,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-29T04:00:00.000Z",
+        "price": 5372.15,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-09-30T04:00:00.000Z",
+        "price": 5297.61,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-10-01T04:00:00.000Z",
+        "price": 5311.06,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-10-02T04:00:00.000Z",
+        "price": 5356.29,
+        "sourceLabel": "演示模拟"
+      },
+      {
+        "time": "2026-10-03T04:00:00.000Z",
+        "price": 5425.54,
+        "sourceLabel": "演示模拟"
+      }
+    ],
+    "historical30Statistics": {
+      "minPrice": 5226.54,
+      "maxPrice": 5999.75,
+      "latestPrice": 5425.54
+    },
+    "todayPoint": {
+      "time": "2026-10-04T07:50:11.507Z",
+      "price": 5558.62
+    },
+    "independentlyComputedAll31": {
+      "minPrice": 5226.54,
+      "maxPrice": 5999.75,
+      "avgPrice": 5651.53,
+      "currentPrice": 5558.62,
+      "pointCount": 31
+    },
+    "dashboardAll31": {
+      "minPrice": 5226.54,
+      "maxPrice": 5999.75,
+      "avgPrice": 5651.53,
+      "currentPrice": 5558.62,
+      "pointCount": 31
+    },
+    "maxDrawdownPercent": 12.8874
+  }
+}

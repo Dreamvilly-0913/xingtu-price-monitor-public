@@ -1,0 +1,16 @@
+{
+  "status": "blocked_by_corrupted_image",
+  "imageId": "sha256:151869e250355eb2191fb0661d80d102fef603d08c6eff9e0c41868c550c9797",
+  "originalError": "exec /usr/local/bin/xingtu-entrypoint: exec format error",
+  "stageEntrypointFirst32Hex": "23212f62696e2f73680a736574202d65750a6e6f6465202f6170702f73637269",
+  "stageEntrypointFormat": "#!/bin/sh, LF, no BOM",
+  "imageFileProbe": [
+    {"path":"/usr/local/bin/xingtu-entrypoint","size":0,"hex":"","firstline":""},
+    {"path":"/app/scripts/database.mjs","size":0,"hex":"","firstline":""},
+    {"path":"/app/server/dist/src/index.js","size":0,"hex":"","firstline":""},
+    {"path":"/app/server/prisma/schema.prisma","size":0,"hex":"","firstline":""}
+  ],
+  "diagnosis": "Image files from disk-full build are empty; source entrypoint is valid. Rebuild without reusing corrupted layers required.",
+  "rootAgentNotified": true,
+  "codeFixAttemptsByVerifier": 0
+}

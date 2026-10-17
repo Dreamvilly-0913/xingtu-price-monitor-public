@@ -1,0 +1,29 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    # 最长30秒采集请求及落库需有足够时间结束；停机后不再派发新商品。
+    stop_grace_period: 45s
+    ports:
+      - "8080:4010"
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: 4010
+      DATABASE_URL: file:/data/xingtu.db
+      JWT_SECRET: ${JWT_SECRET:?请设置至少32字符的随机JWT_SECRET}
+      # 正式运营默认禁用模拟；仅专用演示部署显式改为 true。
+      DEMO_ENABLED: ${DEMO_ENABLED:-false}
+      # 空库首次管理员初始化需随机凭证；已有管理员后可删除部署配置中的此值。
+      BOOTSTRAP_TOKEN: ${BOOTSTRAP_TOKEN:-}
+      # 默认只允许公网；审核内网网关后按 hostname:port 精确填写，不支持通配符。
+      HTTP_ALLOWED_HOSTS: ${HTTP_ALLOWED_HOSTS:-}
+      TRUST_PROXY: ${TRUST_PROXY:-false}
+      CORS_ORIGIN: ${CORS_ORIGIN:-http://localhost:8080}
+      APP_TIMEZONE: Asia/Shanghai
+    volumes:
+      - xingtu-data:/data
+      - xingtu-backups:/app/work/backups
+volumes:
+  xingtu-data:
+  xingtu-backups:

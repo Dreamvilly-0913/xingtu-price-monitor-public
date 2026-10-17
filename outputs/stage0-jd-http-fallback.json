@@ -1,0 +1,61 @@
+{
+  "tag": "http-fallback",
+  "verifiedSku": {
+    "sku": "100151490054",
+    "name": "小米15 12GB+512GB 丁香紫",
+    "source": "https://item.jd.com/100151490054.html",
+    "verification": "京东官方商品页的搜索索引标题核验；原 SKU 无法核验商品身份。"
+  },
+  "results": [
+    {
+      "sku": "100014348672",
+      "url": "http://p.3.cn/prices/mgets?skuIds=J_100014348672",
+      "startedAt": "2026-10-03T18:56:14.981Z",
+      "completedAt": "2026-10-03T18:56:20.106Z",
+      "elapsedMs": 5121,
+      "receivedHttpResponse": false,
+      "status": null,
+      "body": null,
+      "structure": null,
+      "validPositivePrice": false,
+      "error": {
+        "name": "TypeError",
+        "message": "fetch failed",
+        "stack": "TypeError: fetch failed",
+        "code": null,
+        "cause": {
+          "name": "SocketError",
+          "message": "other side closed",
+          "stack": "SocketError: other side closed\n    at Socket.onHttpSocketEnd (node:internal/deps/undici/undici:7833:26)\n    at Socket.emit (node:events:526:24)\n    at endReadableNT (node:internal/streams/readable:1764:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)",
+          "code": "UND_ERR_SOCKET",
+          "cause": null
+        }
+      }
+    },
+    {
+      "sku": "100151490054",
+      "url": "http://p.3.cn/prices/mgets?skuIds=J_100151490054",
+      "startedAt": "2026-10-03T18:56:20.106Z",
+      "completedAt": "2026-10-03T18:56:25.119Z",
+      "elapsedMs": 5013,
+      "receivedHttpResponse": false,
+      "status": null,
+      "body": null,
+      "structure": null,
+      "validPositivePrice": false,
+      "error": {
+        "name": "TypeError",
+        "message": "fetch failed",
+        "stack": "TypeError: fetch failed",
+        "code": null,
+        "cause": {
+          "name": "SocketError",
+          "message": "other side closed",
+          "stack": "SocketError: other side closed\n    at Socket.onHttpSocketEnd (node:internal/deps/undici/undici:7833:26)\n    at Socket.emit (node:events:526:24)\n    at endReadableNT (node:internal/streams/readable:1764:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)",
+          "code": "UND_ERR_SOCKET",
+          "cause": null
+        }
+      }
+    }
+  ]
+}

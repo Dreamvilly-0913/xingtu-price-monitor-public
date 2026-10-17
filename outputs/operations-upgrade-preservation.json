@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-10-04T07:23:03.907Z",
+  "backup": "<project-root>/work/backups/before-operations-upgrade-1791098474756.db",
+  "before": {
+    "productCount": 12,
+    "collectionCount": 396,
+    "userCount": 1,
+    "alertCount": 4
+  },
+  "after": {
+    "productCount": 12,
+    "collectionCount": 396,
+    "userCount": 1,
+    "alertCount": 4
+  },
+  "checks": {
+    "collectionRecordsPreserved": true,
+    "productsPreserved": true,
+    "credentialsPreserved": true,
+    "countsPreserved": true
+  },
+  "reseeded": false
+}

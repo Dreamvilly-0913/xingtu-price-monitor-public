@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "isolatedDatabase": "<project-root>/work/stage2/api-1791055821593.db",
+  "repeatSeedRuns": 2,
+  "customProductsPreserved": 3,
+  "customRecordsPreserved": 15,
+  "changedAdminPasswordPreserved": true,
+  "settingsPreserved": {
+    "collectionIntervalMinutes": 7,
+    "demoVolatilityPercent": 3,
+    "dropThresholdPercent": 8
+  },
+  "resultingProducts": 15,
+  "resultingCollections": 387,
+  "demoProducts": 12,
+  "demoCollections": 372,
+  "demoInputSnapshots": 372,
+  "productionWithoutExplicitFlag": {
+    "exitCode": 1,
+    "rejected": true,
+    "reason": "生产环境禁止重建演示数据；首次演示初始化必须显式设置 ALLOW_DEMO_RESET=true"
+  },
+  "productionWithExplicitFlag": {
+    "exitCode": 0,
+    "passed": true
+  },
+  "deliveryDatabaseUntouched": true
+}

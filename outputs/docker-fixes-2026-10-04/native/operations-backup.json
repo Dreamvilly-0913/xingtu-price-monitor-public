@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "generatedAt": "2026-10-04T10:48:58.902Z",
+  "assertions": 20,
+  "noBusinessDatabaseMutation": true,
+  "initialLedgerRows": 10000,
+  "concurrentCommittedWrites": 20,
+  "capturedWrites": 2,
+  "backupLedgerRows": 10002,
+  "completedBackupLedgerRows": 10020,
+  "backupCount": 2,
+  "balanceSum": 1000000,
+  "snapshotBytes": 94208,
+  "snapshotSha256": "f155a8ea2d4c2346fc568c0e30e2ff9e9c6d2e36bad3dc7debb40f6ddb26138e",
+  "restoreIntegrity": "ok",
+  "durationMs": 680
+}

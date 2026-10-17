@@ -1,0 +1,17 @@
+# 本机低空间修复构建：先 pnpm build，复用已验收的原镜像依赖。
+# 常规从零部署仍使用 Dockerfile；BASE_IMAGE 必须是可信、完整的同依赖版本镜像。
+ARG BASE_IMAGE=xingtu-price-monitor-app:before-fix-20261004
+FROM ${BASE_IMAGE}
+WORKDIR /app
+COPY package.json pnpm-workspace.yaml ./
+COPY server/package.json ./server/package.json
+COPY server/dist ./server/dist
+COPY client/dist ./client/dist
+COPY server/prisma ./server/prisma
+COPY scripts ./scripts
+COPY scripts/docker-entrypoint.sh /usr/local/bin/xingtu-entrypoint
+# 只重新生成 Linux Prisma 客户端；没有安装新依赖，也不会连接或改写业务数据库。
+RUN --network=none node /app/server/node_modules/prisma/build/index.js generate --schema /app/server/prisma/schema.prisma
+RUN node -e "const fs=require('node:fs');for(const p of ['/usr/local/bin/xingtu-entrypoint','/app/scripts/database.mjs','/app/server/dist/src/index.js','/app/server/dist/src/alerts.js','/app/server/prisma/schema.prisma','/app/client/dist/index.html']){if(fs.statSync(p).size===0)throw Error('Runtime file empty: '+p)}" \
+    && chmod +x /usr/local/bin/xingtu-entrypoint
+ENTRYPOINT ["/usr/local/bin/xingtu-entrypoint"]

@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "deletedContainers": [
+    "xingtu-deployment-test-app",
+    "xingtu-deployment-fixture",
+    "xingtu-deployment-restore-app"
+  ],
+  "deletedVolumes": [
+    "xingtu-deployment-test-data",
+    "xingtu-deployment-test-backups",
+    "xingtu-deployment-restore-data"
+  ],
+  "deletedNetwork": "xingtu-deployment-test",
+  "privateFilesRemoved": [
+    "test-config.json",
+    "test.env",
+    "restore-snapshot.db"
+  ],
+  "production": {
+    "health": "healthy",
+    "http": 200,
+    "databaseDigestUnchanged": false,
+    "counts": {
+      "Alert": 0,
+      "AuditLog": 0,
+      "CollectionRecord": 0,
+      "CollectionRun": 1,
+      "Product": 0,
+      "ProductGroup": 0,
+      "Setting": 1,
+      "User": 0
+    },
+    "bootstrapRequired": true,
+    "demoEnabled": false,
+    "emptyBusinessTablesPreserved": true,
+    "backgroundRun": {
+      "id": "cmutls1vc0000p4016sg88qzv",
+      "trigger": "scheduled",
+      "startedAt": "2026-10-04T09:13:00.018Z",
+      "finishedAt": "2026-10-04T09:13:00.043Z",
+      "total": 0,
+      "successCount": 0,
+      "failureCount": 0,
+      "status": "completed",
+      "error": null
+    },
+    "backgroundBookkeepingExplainsDigestChange": true
+  },
+  "remainingQaContainers": ""
+}

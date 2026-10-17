@@ -1,0 +1,124 @@
+{
+  "source": "<project-root>",
+  "target": "<project-root>",
+  "applied": true,
+  "count": 29,
+  "files": [
+    {
+      "file": "package.json",
+      "sha256": "913d2f99805b601845c3db500110adc9ed4c064c12b04ba5b74ecefb7ad44b57"
+    },
+    {
+      "file": "README_继续项目.md",
+      "sha256": "10dbc70438e4c55caf51dba86b8196648bdb3764f116d2bf20799303d7dae6ee"
+    },
+    {
+      "file": "README.md",
+      "sha256": "5bf207fd22e3e6812571bc5287e4ac5fac853f6e3b8844b07366bd1ca6c67fd6"
+    },
+    {
+      "file": "compose.yaml",
+      "sha256": "0a8119288d083922f410313821f318697f81bfcb865224353144df547c8b942c"
+    },
+    {
+      "file": "scripts/verify-system.mjs",
+      "sha256": "6b9a820b1a6fa387df44f11665de3e6f3f4ef746fa7fe96f61b9556388238e43"
+    },
+    {
+      "file": "scripts/verify-production-browser.mjs",
+      "sha256": "600f93f90780d1b8ada01ab88601432399899e776f9555f918cb4273a043ae68"
+    },
+    {
+      "file": "docs/真实运营指南.md",
+      "sha256": "d2174d8d619ff627f074623c72599b07454d057112b573072a3490c6ab92b100"
+    },
+    {
+      "file": "docs/Docker问题修复报告.md",
+      "sha256": "251f80799279a32df803545978a8cb23a44cfde6b382e2c5dfea55445c580f52"
+    },
+    {
+      "file": "server/API-CONTRACT.md",
+      "sha256": "bbeee9a5912978f07fe85c816881c7f1de46e011d65446896cf75e948645f6c7"
+    },
+    {
+      "file": "client/src/types.ts",
+      "sha256": "14c27b2ae66c2f594fbeec0ccb777ac236a55722ef3e0172a7981e0cbb9cc517"
+    },
+    {
+      "file": "server/src/serializers.ts",
+      "sha256": "efc68d23ec5196d8b17b232b1969bf1d73ce83c69c0ff5225f0c4e82b51b5346"
+    },
+    {
+      "file": "server/src/scheduler.ts",
+      "sha256": "55c2a99873747aed34079398471bef7c9b8068ae7dc2dca8a2b70c6644af7f8b"
+    },
+    {
+      "file": "server/src/run-progress.ts",
+      "sha256": "bcb70538948088a646ff729438d0880d53d0efc492b7fdc0ee7551649cf73752"
+    },
+    {
+      "file": "server/src/routes.ts",
+      "sha256": "d2aa368dfad18698aba81f47f018b0afcef7da0e12ff338a94eda24b05b16d3c"
+    },
+    {
+      "file": "server/src/dashboard.ts",
+      "sha256": "8bfb60e858a520a146793506c1ca8e9f11ae9e64b834e06f7df0e33860faa020"
+    },
+    {
+      "file": "server/src/app.ts",
+      "sha256": "8448a0112a50ec95c066de63da50f79853eda558e5342694fb53e196cdacf6cf"
+    },
+    {
+      "file": "server/src/alerts.ts",
+      "sha256": "67d5e6a4f9f1298b41097de564fabba5f5b33853b951a806f2b2ff081e636818"
+    },
+    {
+      "file": "server/src/collection-service.ts",
+      "sha256": "a0a4a10658c45467879bdc51830989e0e312eb4655abd82e24d54ad512e2e60c"
+    },
+    {
+      "file": "server/prisma/schema.postgresql.prisma",
+      "sha256": "e50686bc6a5123a3e319f1576a936e55dad158a1d13b2a2254537e099e8e693e"
+    },
+    {
+      "file": "server/prisma/seed.ts",
+      "sha256": "86d0885b7ed78cfb0451a597b0d3014ba877a5adc96e72b77eb041d12eb37cca"
+    },
+    {
+      "file": "server/prisma/schema.prisma",
+      "sha256": "5373b37de07084730e64c6dcbd0981a6d7ba99ca613642e4b36b21a1bcd5b5fe"
+    },
+    {
+      "file": "server/scripts/verify-stage1.ts",
+      "sha256": "1ed411e007a486422e96e072714e951d1bfa6e22ef8811420d55231c640bb1b7"
+    },
+    {
+      "file": "server/scripts/verify-run-recovery.ts",
+      "sha256": "a009c63dbcf95793a83553c1323372de6deaee3f519a2cde64599cd594382d0b"
+    },
+    {
+      "file": "server/scripts/verify-operations-business.ts",
+      "sha256": "a9e8a6d9f513e85357efee51907ec69e73545fe9d68ca0865177bc00de1324ac"
+    },
+    {
+      "file": "server/scripts/verify-alert-rule-state.ts",
+      "sha256": "dcb98e0404e269ce54008d7925eb38dd5155d8af14c38ea50ed62a0e9595960f"
+    },
+    {
+      "file": "client/src/pages/SettingsPage.tsx",
+      "sha256": "a60d19b53f09a6d723e8b62d8a574c68f353782f214e31d67b81c5d3c49f8f94"
+    },
+    {
+      "file": "client/src/pages/DetailPage.tsx",
+      "sha256": "bd6d240c3a336b9b3a79dc863a34b49430ef5f12f704d3535c63759eac49721e"
+    },
+    {
+      "file": "client/src/pages/AlertsPage.tsx",
+      "sha256": "e82e9642069b074bc8e372e398cd7d365584c20e3d3235346eb1460af24754c8"
+    },
+    {
+      "file": "client/src/components/Ui.tsx",
+      "sha256": "a8ccb05905bb316f8d210bd07e535dbb7f93b4be7174534452e344545d0130c8"
+    }
+  ]
+}

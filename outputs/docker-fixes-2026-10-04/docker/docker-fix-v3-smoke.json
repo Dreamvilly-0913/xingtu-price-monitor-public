@@ -1,0 +1,108 @@
+{
+  "name": "docker-fix-v3-smoke",
+  "startedAt": "2026-10-04T10:50:07.762Z",
+  "sourceScope": "新生产镜像的隔离Docker容器；价格为受控测试HTTP报价",
+  "checks": [
+    {
+      "name": "v3原QA卷容器健康",
+      "passed": true,
+      "actual": "healthy",
+      "expected": "healthy"
+    },
+    {
+      "name": "v3停止窗口仍45秒",
+      "passed": true,
+      "actual": 45,
+      "expected": 45
+    },
+    {
+      "name": "v3启动未改写原价格流水",
+      "passed": true,
+      "actual": {
+        "count": 20,
+        "sha256": "f59c016460953184fd6dd27db16a613bbf63e793c886e104817360327eee0e11"
+      },
+      "expected": {
+        "count": 20,
+        "sha256": "f59c016460953184fd6dd27db16a613bbf63e793c886e104817360327eee0e11"
+      }
+    },
+    {
+      "name": "v3健康API",
+      "passed": true,
+      "actual": "ok",
+      "expected": "ok"
+    },
+    {
+      "name": "v3原账号JWT仍有效",
+      "passed": true,
+      "actual": "docker_qa_admin",
+      "expected": "docker_qa_admin"
+    },
+    {
+      "name": "v3详情当前价与最新点一致",
+      "passed": true,
+      "actual": 102,
+      "expected": 102
+    },
+    {
+      "name": "v3仪表盘当前规则数可对账",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "v3避免自动轮次干扰手动验收",
+      "passed": true,
+      "actual": 1440,
+      "expected": 1440
+    }
+  ],
+  "requests": [
+    {
+      "method": "PUT",
+      "path": "/api/settings",
+      "status": 200,
+      "ms": 221
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "ms": 11
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me",
+      "status": 200,
+      "ms": 9
+    },
+    {
+      "method": "GET",
+      "path": "/api/products/cmutoiwz50006sd01w86rx399?days=30",
+      "status": 200,
+      "ms": 28
+    },
+    {
+      "method": "GET",
+      "path": "/api/dashboard",
+      "status": 200,
+      "ms": 55
+    },
+    {
+      "method": "GET",
+      "path": "/api/settings",
+      "status": 200,
+      "ms": 15
+    }
+  ],
+  "previousContainerExitCode": 0,
+  "imageTag": "xingtu-price-monitor-app:fix-20261004-v3",
+  "imageId": "sha256:ec4815717e6b132e49a0353e95a938806ae9c55e7ddae780ec306415db0c3272",
+  "completedAt": "2026-10-04T10:50:17.398Z",
+  "durationMs": 9636,
+  "assertions": 8,
+  "passed": 8,
+  "failed": 0,
+  "status": "passed"
+}
